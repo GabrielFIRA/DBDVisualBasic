@@ -38,9 +38,7 @@
     End Sub
 
     Private Sub EmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmpleadosToolStripMenuItem.Click
-        Dim win = New Empleados()
-        Me.Dispose()
-        win.Show()
+
     End Sub
 
     Private Sub btnAsistencia1_Click(sender As Object, e As EventArgs) Handles btnAsistencia1.Click
@@ -65,9 +63,5 @@
             Me.Dispose()
             win.Show()
         End If
-    End Sub
-
-    Private Sub AtrasToolStripMenuItem_Click(sender As Object, e As EventArgs)
-
     End Sub
 End Class

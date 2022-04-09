@@ -73,22 +73,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EAgregarEmpleado.Designer.vb">
-      <DependentUpon>EAgregarEmpleado.vb</DependentUpon>
+    <Compile Include="CraerHorarios.Designer.vb">
+      <DependentUpon>CraerHorarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="EAgregarEmpleado.vb">
+    <Compile Include="CraerHorarios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EModificarEmpleado.Designer.vb">
-      <DependentUpon>EModificarEmpleado.vb</DependentUpon>
+    <Compile Include="CrearPermisosvb.Designer.vb">
+      <DependentUpon>CrearPermisosvb.vb</DependentUpon>
     </Compile>
-    <Compile Include="EModificarEmpleado.vb">
+    <Compile Include="CrearPermisosvb.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empleados.Designer.vb">
-      <DependentUpon>Empleados.vb</DependentUpon>
+    <Compile Include="EliminarHorarios.Designer.vb">
+      <DependentUpon>EliminarHorarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="Empleados.vb">
+    <Compile Include="EliminarHorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarPermisos.Designer.vb">
+      <DependentUpon>EliminarPermisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarPermisos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EntradaSalidaEmp.Designer.vb">
@@ -108,6 +114,42 @@
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
     <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuHorarios.Designer.vb">
+      <DependentUpon>MenuHorarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuHorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPermisos.Designer.vb">
+      <DependentUpon>MenuPermisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPermisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarHorarios.Designer.vb">
+      <DependentUpon>ModificarHorarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarHorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarPermisos.Designer.vb">
+      <DependentUpon>ModificarPermisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPermisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarHorarios.Designer.vb">
+      <DependentUpon>MostrarHorarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarHorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarPermisos.Designer.vb">
+      <DependentUpon>MostrarPermisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarPermisos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -181,14 +223,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EAgregarEmpleado.resx">
-      <DependentUpon>EAgregarEmpleado.vb</DependentUpon>
+    <EmbeddedResource Include="CraerHorarios.resx">
+      <DependentUpon>CraerHorarios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleado.resx">
-      <DependentUpon>EModificarEmpleado.vb</DependentUpon>
+    <EmbeddedResource Include="CrearPermisosvb.resx">
+      <DependentUpon>CrearPermisosvb.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empleados.resx">
-      <DependentUpon>Empleados.vb</DependentUpon>
+    <EmbeddedResource Include="EliminarHorarios.resx">
+      <DependentUpon>EliminarHorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarPermisos.resx">
+      <DependentUpon>EliminarPermisos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EntradaSalidaEmp.resx">
       <DependentUpon>EntradaSalidaEmp.vb</DependentUpon>
@@ -198,6 +243,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuHorarios.resx">
+      <DependentUpon>MenuHorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPermisos.resx">
+      <DependentUpon>MenuPermisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarHorarios.resx">
+      <DependentUpon>ModificarHorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarPermisos.resx">
+      <DependentUpon>ModificarPermisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarHorarios.resx">
+      <DependentUpon>MostrarHorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarPermisos.resx">
+      <DependentUpon>MostrarPermisos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -244,45 +307,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GroupBox1.BackgroundImage.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnAtras.BackgroundImage.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-agregar-usuario-masculino-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-editar-usuaria-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-retire-hombre-usuario-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-lista-de-ingredientes-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-check-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-eliminar-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-tomar-el-sol-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-maletín-médico-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-hurry-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-símbolo-nulo-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-símbolo-nulo-1001.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
