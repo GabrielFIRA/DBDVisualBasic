@@ -68,9 +68,11 @@ Partial Class RAsistencia1Depart
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox2.Location = New System.Drawing.Point(13, 88)
+        Me.GroupBox2.Location = New System.Drawing.Point(17, 108)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1325, 629)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(1767, 774)
         Me.GroupBox2.TabIndex = 12
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Asistencia"
@@ -79,17 +81,19 @@ Partial Class RAsistencia1Depart
         '
         Me.GroupBox3.Controls.Add(Me.VScrollBar1)
         Me.GroupBox3.Controls.Add(Me.tblpAsistencia)
-        Me.GroupBox3.Location = New System.Drawing.Point(14, 283)
+        Me.GroupBox3.Location = New System.Drawing.Point(19, 348)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(1305, 340)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Size = New System.Drawing.Size(1740, 418)
         Me.GroupBox3.TabIndex = 11
         Me.GroupBox3.TabStop = False
         '
         'VScrollBar1
         '
-        Me.VScrollBar1.Location = New System.Drawing.Point(1283, 12)
+        Me.VScrollBar1.Location = New System.Drawing.Point(1711, 15)
         Me.VScrollBar1.Name = "VScrollBar1"
-        Me.VScrollBar1.Size = New System.Drawing.Size(19, 322)
+        Me.VScrollBar1.Size = New System.Drawing.Size(19, 396)
         Me.VScrollBar1.TabIndex = 1
         '
         'tblpAsistencia
@@ -98,22 +102,23 @@ Partial Class RAsistencia1Depart
         Me.tblpAsistencia.ColumnCount = 4
         Me.tblpAsistencia.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.25203!))
         Me.tblpAsistencia.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.74797!))
-        Me.tblpAsistencia.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 327.0!))
-        Me.tblpAsistencia.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 332.0!))
+        Me.tblpAsistencia.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 436.0!))
+        Me.tblpAsistencia.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 444.0!))
         Me.tblpAsistencia.Controls.Add(Me.Label14, 0, 0)
         Me.tblpAsistencia.Controls.Add(Me.Label15, 1, 0)
         Me.tblpAsistencia.Controls.Add(Me.Label17, 3, 0)
         Me.tblpAsistencia.Controls.Add(Me.Label1, 2, 0)
-        Me.tblpAsistencia.Location = New System.Drawing.Point(6, 12)
+        Me.tblpAsistencia.Location = New System.Drawing.Point(8, 15)
+        Me.tblpAsistencia.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tblpAsistencia.Name = "tblpAsistencia"
         Me.tblpAsistencia.RowCount = 6
         Me.tblpAsistencia.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.79167!))
         Me.tblpAsistencia.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.20833!))
-        Me.tblpAsistencia.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60.0!))
-        Me.tblpAsistencia.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67.0!))
-        Me.tblpAsistencia.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52.0!))
-        Me.tblpAsistencia.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46.0!))
-        Me.tblpAsistencia.Size = New System.Drawing.Size(1274, 322)
+        Me.tblpAsistencia.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74.0!))
+        Me.tblpAsistencia.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
+        Me.tblpAsistencia.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64.0!))
+        Me.tblpAsistencia.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57.0!))
+        Me.tblpAsistencia.Size = New System.Drawing.Size(1699, 396)
         Me.tblpAsistencia.TabIndex = 0
         '
         'Label14
@@ -121,9 +126,10 @@ Partial Class RAsistencia1Depart
         Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(13, 0)
+        Me.Label14.Location = New System.Drawing.Point(26, 0)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(238, 31)
+        Me.Label14.Size = New System.Drawing.Size(301, 39)
         Me.Label14.TabIndex = 0
         Me.Label14.Text = "Nombre Empleado"
         '
@@ -132,9 +138,10 @@ Partial Class RAsistencia1Depart
         Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(333, 0)
+        Me.Label15.Location = New System.Drawing.Point(453, 0)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(212, 31)
+        Me.Label15.Size = New System.Drawing.Size(266, 39)
         Me.Label15.TabIndex = 1
         Me.Label15.Text = "Hora de Entrada"
         '
@@ -143,9 +150,10 @@ Partial Class RAsistencia1Depart
         Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(1062, 0)
+        Me.Label17.Location = New System.Drawing.Point(1420, 0)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(90, 31)
+        Me.Label17.Size = New System.Drawing.Size(112, 39)
         Me.Label17.TabIndex = 2
         Me.Label17.Text = "Fecha"
         '
@@ -154,108 +162,120 @@ Partial Class RAsistencia1Depart
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(681, 0)
+        Me.Label1.Location = New System.Drawing.Point(914, 0)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(192, 31)
+        Me.Label1.Size = New System.Drawing.Size(243, 39)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Hora de Salida"
         '
         'lbFaltas
         '
         Me.lbFaltas.AutoSize = True
-        Me.lbFaltas.Location = New System.Drawing.Point(134, 27)
+        Me.lbFaltas.Location = New System.Drawing.Point(179, 33)
+        Me.lbFaltas.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbFaltas.Name = "lbFaltas"
-        Me.lbFaltas.Size = New System.Drawing.Size(22, 22)
+        Me.lbFaltas.Size = New System.Drawing.Size(27, 26)
         Me.lbFaltas.TabIndex = 10
         Me.lbFaltas.Text = "X"
         '
         'lbAusencias
         '
         Me.lbAusencias.AutoSize = True
-        Me.lbAusencias.Location = New System.Drawing.Point(134, 67)
+        Me.lbAusencias.Location = New System.Drawing.Point(179, 82)
+        Me.lbAusencias.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbAusencias.Name = "lbAusencias"
-        Me.lbAusencias.Size = New System.Drawing.Size(22, 22)
+        Me.lbAusencias.Size = New System.Drawing.Size(27, 26)
         Me.lbAusencias.TabIndex = 9
         Me.lbAusencias.Text = "X"
         '
         'lbPermisos
         '
         Me.lbPermisos.AutoSize = True
-        Me.lbPermisos.Location = New System.Drawing.Point(134, 212)
+        Me.lbPermisos.Location = New System.Drawing.Point(179, 261)
+        Me.lbPermisos.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbPermisos.Name = "lbPermisos"
-        Me.lbPermisos.Size = New System.Drawing.Size(22, 22)
+        Me.lbPermisos.Size = New System.Drawing.Size(27, 26)
         Me.lbPermisos.TabIndex = 8
         Me.lbPermisos.Text = "X"
         '
         'lbAtrasos
         '
         Me.lbAtrasos.AutoSize = True
-        Me.lbAtrasos.Location = New System.Drawing.Point(134, 114)
+        Me.lbAtrasos.Location = New System.Drawing.Point(179, 140)
+        Me.lbAtrasos.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbAtrasos.Name = "lbAtrasos"
-        Me.lbAtrasos.Size = New System.Drawing.Size(22, 22)
+        Me.lbAtrasos.Size = New System.Drawing.Size(27, 26)
         Me.lbAtrasos.TabIndex = 7
         Me.lbAtrasos.Text = "X"
         '
         'lbHorasExtra
         '
         Me.lbHorasExtra.AutoSize = True
-        Me.lbHorasExtra.Location = New System.Drawing.Point(134, 162)
+        Me.lbHorasExtra.Location = New System.Drawing.Point(179, 199)
+        Me.lbHorasExtra.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbHorasExtra.Name = "lbHorasExtra"
-        Me.lbHorasExtra.Size = New System.Drawing.Size(72, 22)
+        Me.lbHorasExtra.Size = New System.Drawing.Size(87, 26)
         Me.lbHorasExtra.TabIndex = 6
         Me.lbHorasExtra.Text = "X horas"
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(10, 265)
+        Me.Label13.Location = New System.Drawing.Point(13, 326)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(97, 22)
+        Me.Label13.Size = New System.Drawing.Size(118, 26)
         Me.Label13.TabIndex = 5
         Me.Label13.Text = "Asistencia:"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(10, 212)
+        Me.Label12.Location = New System.Drawing.Point(13, 261)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(89, 22)
+        Me.Label12.Size = New System.Drawing.Size(110, 26)
         Me.Label12.TabIndex = 4
         Me.Label12.Text = "Permisos:"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(10, 162)
+        Me.Label11.Location = New System.Drawing.Point(13, 199)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(108, 22)
+        Me.Label11.Size = New System.Drawing.Size(130, 26)
         Me.Label11.TabIndex = 3
         Me.Label11.Text = "Horas extra:"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(10, 114)
+        Me.Label10.Location = New System.Drawing.Point(13, 140)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(76, 22)
+        Me.Label10.Size = New System.Drawing.Size(92, 26)
         Me.Label10.TabIndex = 2
         Me.Label10.Text = "Atrasos:"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(10, 67)
+        Me.Label9.Location = New System.Drawing.Point(13, 82)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(98, 22)
+        Me.Label9.Size = New System.Drawing.Size(119, 26)
         Me.Label9.TabIndex = 1
         Me.Label9.Text = "Ausencias:"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(10, 27)
+        Me.Label7.Location = New System.Drawing.Point(13, 33)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(64, 22)
+        Me.Label7.Size = New System.Drawing.Size(77, 26)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "Faltas:"
         '
@@ -263,9 +283,10 @@ Partial Class RAsistencia1Depart
         '
         Me.btnAtras.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
         Me.btnAtras.BackgroundImage = CType(resources.GetObject("btnAtras.BackgroundImage"), System.Drawing.Image)
-        Me.btnAtras.Location = New System.Drawing.Point(13, 2)
+        Me.btnAtras.Location = New System.Drawing.Point(17, 2)
+        Me.btnAtras.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAtras.Name = "btnAtras"
-        Me.btnAtras.Size = New System.Drawing.Size(120, 40)
+        Me.btnAtras.Size = New System.Drawing.Size(160, 49)
         Me.btnAtras.TabIndex = 13
         Me.btnAtras.UseVisualStyleBackColor = False
         '
@@ -275,9 +296,10 @@ Partial Class RAsistencia1Depart
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.ForeColor = System.Drawing.SystemColors.Control
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(13, 48)
+        Me.ComboBox1.Location = New System.Drawing.Point(17, 59)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(270, 33)
+        Me.ComboBox1.Size = New System.Drawing.Size(359, 39)
         Me.ComboBox1.TabIndex = 14
         Me.ComboBox1.Text = "Selecionar Departamento"
         '
@@ -287,22 +309,24 @@ Partial Class RAsistencia1Depart
         Me.Label16.BackColor = System.Drawing.Color.Transparent
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label16.Location = New System.Drawing.Point(141, 8)
+        Me.Label16.Location = New System.Drawing.Point(188, 10)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(444, 31)
+        Me.Label16.Size = New System.Drawing.Size(555, 39)
         Me.Label16.TabIndex = 15
         Me.Label16.Text = "Reporte Asistencia 1 Departamento"
         '
         'RAsistencia1Depart
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(1350, 729)
+        Me.ClientSize = New System.Drawing.Size(1800, 897)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.btnAtras)
         Me.Controls.Add(Me.GroupBox2)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.Name = "RAsistencia1Depart"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

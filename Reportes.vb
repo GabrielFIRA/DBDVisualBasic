@@ -64,4 +64,15 @@
             win.Show()
         End If
     End Sub
+
+
+
+    Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
+
+        Dim win = New Usuario()
+        win.Show()
+        Me.Dispose()
+    End Sub
+
+
 End Class

@@ -73,6 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Editar.Designer.vb">
+      <DependentUpon>Editar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Elimnar.Designer.vb">
+      <DependentUpon>Elimnar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Elimnar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EntradaSalidaEmp.Designer.vb">
       <DependentUpon>EntradaSalidaEmp.vb</DependentUpon>
     </Compile>
@@ -84,6 +96,24 @@
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar Usuario.Designer.vb">
+      <DependentUpon>Agregar Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscar.Designer.vb">
+      <DependentUpon>Buscar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario.Designer.vb">
+      <DependentUpon>Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
@@ -163,11 +193,26 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Buscar.resx">
+      <DependentUpon>Buscar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar.resx">
+      <DependentUpon>Editar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elimnar.resx">
+      <DependentUpon>Elimnar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EntradaSalidaEmp.resx">
       <DependentUpon>EntradaSalidaEmp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar Usuario.resx">
+      <DependentUpon>Agregar Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario.resx">
+      <DependentUpon>Usuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
