@@ -65,14 +65,9 @@
         End If
     End Sub
 
+    Private Sub EmpresaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmpresaToolStripMenuItem.Click
+        Dim frmp As New frmPantallaEmpresa
+        frmp.Show()
 
-
-    Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
-
-        Dim win = New Usuario()
-        win.Show()
-        Me.Dispose()
     End Sub
-
-
 End Class

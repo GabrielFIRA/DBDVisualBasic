@@ -73,18 +73,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Editar.Designer.vb">
-      <DependentUpon>Editar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Editar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Elimnar.Designer.vb">
-      <DependentUpon>Elimnar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Elimnar.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="EntradaSalidaEmp.Designer.vb">
       <DependentUpon>EntradaSalidaEmp.vb</DependentUpon>
     </Compile>
@@ -98,22 +86,64 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Agregar Usuario.Designer.vb">
-      <DependentUpon>Agregar Usuario.vb</DependentUpon>
+    <Compile Include="frmCargos.Designer.vb">
+      <DependentUpon>frmCargos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Agregar Usuario.vb">
+    <Compile Include="frmCargos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Buscar.Designer.vb">
-      <DependentUpon>Buscar.vb</DependentUpon>
+    <Compile Include="frmCrearDepartamento.Designer.vb">
+      <DependentUpon>frmCrearDepartamento.vb</DependentUpon>
     </Compile>
-    <Compile Include="Buscar.vb">
+    <Compile Include="frmCrearDepartamento.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuario.Designer.vb">
-      <DependentUpon>Usuario.vb</DependentUpon>
+    <Compile Include="frmDepartamentos.Designer.vb">
+      <DependentUpon>frmDepartamentos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Usuario.vb">
+    <Compile Include="frmDepartamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarDepartamento.Designer.vb">
+      <DependentUpon>frmEliminarDepartamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarDepartamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpresaEmpresa.Designer.vb">
+      <DependentUpon>frmEmpresaEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpresaEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarDepartamentos.Designer.vb">
+      <DependentUpon>frmModificarDepartamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarDepartamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarEmpresa.Designer.vb">
+      <DependentUpon>frmModificarEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarDepartamentos.Designer.vb">
+      <DependentUpon>frmMostrarDepartamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMostrarDepartamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarEmpresa.Designer.vb">
+      <DependentUpon>frmMostrarEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMostrarEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPantallaEmpresa.Designer.vb">
+      <DependentUpon>frmPantallaEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPantallaEmpresa.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
@@ -193,26 +223,41 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Buscar.resx">
-      <DependentUpon>Buscar.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editar.resx">
-      <DependentUpon>Editar.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Elimnar.resx">
-      <DependentUpon>Elimnar.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EntradaSalidaEmp.resx">
       <DependentUpon>EntradaSalidaEmp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Agregar Usuario.resx">
-      <DependentUpon>Agregar Usuario.vb</DependentUpon>
+    <EmbeddedResource Include="frmCargos.resx">
+      <DependentUpon>frmCargos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usuario.resx">
-      <DependentUpon>Usuario.vb</DependentUpon>
+    <EmbeddedResource Include="frmCrearDepartamento.resx">
+      <DependentUpon>frmCrearDepartamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartamentos.resx">
+      <DependentUpon>frmDepartamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarDepartamento.resx">
+      <DependentUpon>frmEliminarDepartamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpresaEmpresa.resx">
+      <DependentUpon>frmEmpresaEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarDepartamentos.resx">
+      <DependentUpon>frmModificarDepartamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarEmpresa.resx">
+      <DependentUpon>frmModificarEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarDepartamentos.resx">
+      <DependentUpon>frmMostrarDepartamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarEmpresa.resx">
+      <DependentUpon>frmMostrarEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPantallaEmpresa.resx">
+      <DependentUpon>frmPantallaEmpresa.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -262,6 +307,30 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Grey2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Enterprise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Ajustes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Mostrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Crear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8-check-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8-eliminar-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

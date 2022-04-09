@@ -46,12 +46,11 @@ Partial Class Reportes
         Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
         Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.Left
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 20.0!)
-        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalirToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.EmpleadosToolStripMenuItem, Me.UsuariosToolStripMenuItem, Me.EmpresaToolStripMenuItem})
         Me.MenuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(203, 897)
+        Me.MenuStrip1.Size = New System.Drawing.Size(166, 729)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -61,35 +60,35 @@ Partial Class Reportes
         Me.SalirToolStripMenuItem.Image = CType(resources.GetObject("SalirToolStripMenuItem.Image"), System.Drawing.Image)
         Me.SalirToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(190, 44)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(153, 44)
         '
         'ReportesToolStripMenuItem
         '
         Me.ReportesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
         Me.ReportesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(190, 50)
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(153, 41)
         Me.ReportesToolStripMenuItem.Text = "Reportes"
         '
         'EmpleadosToolStripMenuItem
         '
         Me.EmpleadosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(190, 50)
+        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(153, 41)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
         '
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(190, 50)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(153, 41)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'EmpresaToolStripMenuItem
         '
         Me.EmpresaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(190, 50)
+        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(153, 41)
         Me.EmpresaToolStripMenuItem.Text = "Empresa"
         '
         'ComboBox1
@@ -99,10 +98,9 @@ Partial Class Reportes
         Me.ComboBox1.ForeColor = System.Drawing.SystemColors.Control
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Individual", "Departamento"})
-        Me.ComboBox1.Location = New System.Drawing.Point(875, 15)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBox1.Location = New System.Drawing.Point(656, 12)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(345, 56)
+        Me.ComboBox1.Size = New System.Drawing.Size(260, 46)
         Me.ComboBox1.TabIndex = 1
         Me.ComboBox1.Text = "Seleccionar..."
         '
@@ -115,10 +113,9 @@ Partial Class Reportes
         Me.btnGeneral.FlatAppearance.BorderSize = 4
         Me.btnGeneral.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnGeneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGeneral.Location = New System.Drawing.Point(303, 185)
-        Me.btnGeneral.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnGeneral.Location = New System.Drawing.Point(227, 150)
         Me.btnGeneral.Name = "btnGeneral"
-        Me.btnGeneral.Size = New System.Drawing.Size(284, 262)
+        Me.btnGeneral.Size = New System.Drawing.Size(213, 213)
         Me.btnGeneral.TabIndex = 2
         Me.btnGeneral.UseVisualStyleBackColor = False
         '
@@ -131,10 +128,9 @@ Partial Class Reportes
         Me.btnHorasTrabajadas.FlatAppearance.BorderSize = 4
         Me.btnHorasTrabajadas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnHorasTrabajadas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHorasTrabajadas.Location = New System.Drawing.Point(671, 185)
-        Me.btnHorasTrabajadas.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnHorasTrabajadas.Location = New System.Drawing.Point(503, 150)
         Me.btnHorasTrabajadas.Name = "btnHorasTrabajadas"
-        Me.btnHorasTrabajadas.Size = New System.Drawing.Size(284, 262)
+        Me.btnHorasTrabajadas.Size = New System.Drawing.Size(213, 213)
         Me.btnHorasTrabajadas.TabIndex = 3
         Me.btnHorasTrabajadas.UseVisualStyleBackColor = False
         '
@@ -147,10 +143,9 @@ Partial Class Reportes
         Me.btnAsistencia1.FlatAppearance.BorderSize = 4
         Me.btnAsistencia1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnAsistencia1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAsistencia1.Location = New System.Drawing.Point(1052, 185)
-        Me.btnAsistencia1.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAsistencia1.Location = New System.Drawing.Point(789, 150)
         Me.btnAsistencia1.Name = "btnAsistencia1"
-        Me.btnAsistencia1.Size = New System.Drawing.Size(284, 262)
+        Me.btnAsistencia1.Size = New System.Drawing.Size(213, 213)
         Me.btnAsistencia1.TabIndex = 4
         Me.btnAsistencia1.UseVisualStyleBackColor = False
         '
@@ -163,10 +158,9 @@ Partial Class Reportes
         Me.btnAsistencia2.FlatAppearance.BorderSize = 4
         Me.btnAsistencia2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnAsistencia2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAsistencia2.Location = New System.Drawing.Point(1433, 185)
-        Me.btnAsistencia2.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAsistencia2.Location = New System.Drawing.Point(1075, 150)
         Me.btnAsistencia2.Name = "btnAsistencia2"
-        Me.btnAsistencia2.Size = New System.Drawing.Size(284, 262)
+        Me.btnAsistencia2.Size = New System.Drawing.Size(213, 213)
         Me.btnAsistencia2.TabIndex = 5
         Me.btnAsistencia2.UseVisualStyleBackColor = False
         '
@@ -176,10 +170,9 @@ Partial Class Reportes
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label1.Location = New System.Drawing.Point(365, 484)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(274, 393)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(138, 39)
+        Me.Label1.Size = New System.Drawing.Size(110, 31)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "General"
         '
@@ -189,10 +182,9 @@ Partial Class Reportes
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label2.Location = New System.Drawing.Point(663, 484)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(497, 393)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(288, 39)
+        Me.Label2.Size = New System.Drawing.Size(230, 31)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Horas Trabajadas"
         '
@@ -202,10 +194,9 @@ Partial Class Reportes
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label3.Location = New System.Drawing.Point(1081, 484)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(811, 393)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(201, 39)
+        Me.Label3.Size = New System.Drawing.Size(161, 31)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Asistencia 1"
         '
@@ -215,19 +206,18 @@ Partial Class Reportes
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label4.Location = New System.Drawing.Point(1468, 484)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(1101, 393)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(201, 39)
+        Me.Label4.Size = New System.Drawing.Size(161, 31)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Asistencia 2"
         '
         'Reportes
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(1800, 897)
+        Me.ClientSize = New System.Drawing.Size(1350, 729)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -239,7 +229,6 @@ Partial Class Reportes
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "Reportes"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
