@@ -22,27 +22,17 @@ Biomess_0.1
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
-<member name="P:Biomess_0._1.My.Resources.Resources.Ajustes">
+<member name="P:Biomess_0._1.My.Resources.Resources.btnAtras_BackgroundImage">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Biomess_0._1.My.Resources.Resources.Crear">
+<member name="P:Biomess_0._1.My.Resources.Resources.GroupBox1_BackgroundImage">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Biomess_0._1.My.Resources.Resources.delete">
-<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Biomess_0._1.My.Resources.Resources.Enterprise">
-<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Biomess_0._1.My.Resources.Resources.Grey2">
+<member name="P:Biomess_0._1.My.Resources.Resources.icons8_agregar_usuario_masculino_100">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -52,12 +42,47 @@ Biomess_0.1
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Biomess_0._1.My.Resources.Resources.icons8_editar_usuaria_100">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Biomess_0._1.My.Resources.Resources.icons8_eliminar_100">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Biomess_0._1.My.Resources.Resources.Mostrar">
+<member name="P:Biomess_0._1.My.Resources.Resources.icons8_hurry_100">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Biomess_0._1.My.Resources.Resources.icons8_lista_de_ingredientes_100">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Biomess_0._1.My.Resources.Resources.icons8_maletín_médico_100">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Biomess_0._1.My.Resources.Resources.icons8_retire_hombre_usuario_100">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Biomess_0._1.My.Resources.Resources.icons8_símbolo_nulo_100">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Biomess_0._1.My.Resources.Resources.icons8_símbolo_nulo_1001">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Biomess_0._1.My.Resources.Resources.icons8_tomar_el_sol_100">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
