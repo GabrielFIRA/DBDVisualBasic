@@ -22,6 +22,7 @@ Partial Class Empleados
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Empleados))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.AtrasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -54,7 +55,7 @@ Partial Class Empleados
         '
         'AtrasToolStripMenuItem
         '
-        Me.AtrasToolStripMenuItem.Image = Global.Biomess_0._1.My.Resources.Resources.btnAtras_BackgroundImage
+        Me.AtrasToolStripMenuItem.Image = CType(resources.GetObject("AtrasToolStripMenuItem.Image"), System.Drawing.Image)
         Me.AtrasToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.AtrasToolStripMenuItem.Name = "AtrasToolStripMenuItem"
         Me.AtrasToolStripMenuItem.Size = New System.Drawing.Size(153, 44)
@@ -105,7 +106,7 @@ Partial Class Empleados
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.icons8_agregar_usuario_masculino_100
+        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -118,7 +119,7 @@ Partial Class Empleados
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.icons8_lista_de_ingredientes_100
+        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button3.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -131,7 +132,7 @@ Partial Class Empleados
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.Transparent
-        Me.Button4.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.icons8_retire_hombre_usuario_100
+        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button4.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -144,7 +145,7 @@ Partial Class Empleados
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.Color.Transparent
-        Me.Button5.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.icons8_editar_usuaria_100
+        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
         Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button5.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -219,7 +220,7 @@ Partial Class Empleados
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.GroupBox1_BackgroundImage
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1350, 729)
         Me.Controls.Add(Me.LinkLabel4)
         Me.Controls.Add(Me.LinkLabel3)
