@@ -22,7 +22,6 @@ Partial Class EAgregarEmpleado
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EAgregarEmpleado))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -64,7 +63,7 @@ Partial Class EAgregarEmpleado
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
+        Me.Button2.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.btnAtras_BackgroundImage
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -268,7 +267,7 @@ Partial Class EAgregarEmpleado
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.icons8_check_100
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -296,7 +295,7 @@ Partial Class EAgregarEmpleado
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
+        Me.Button3.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.icons8_eliminar_100
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button3.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -310,7 +309,7 @@ Partial Class EAgregarEmpleado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.GroupBox1_BackgroundImage
         Me.ClientSize = New System.Drawing.Size(1350, 729)
         Me.Controls.Add(Me.LinkLabel2)
         Me.Controls.Add(Me.Button3)

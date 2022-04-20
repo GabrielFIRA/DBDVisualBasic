@@ -40,9 +40,10 @@ Partial Class frmCrearDepartamento
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label4.Location = New System.Drawing.Point(213, 356)
+        Me.Label4.Location = New System.Drawing.Point(303, 484)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(78, 24)
+        Me.Label4.Size = New System.Drawing.Size(99, 29)
         Me.Label4.TabIndex = 24
         Me.Label4.Text = "Agregar"
         '
@@ -52,9 +53,10 @@ Partial Class frmCrearDepartamento
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label3.Location = New System.Drawing.Point(514, 356)
+        Me.Label3.Location = New System.Drawing.Point(713, 484)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(78, 24)
+        Me.Label3.Size = New System.Drawing.Size(101, 29)
         Me.Label3.TabIndex = 23
         Me.Label3.Text = "Eliminar"
         '
@@ -62,11 +64,12 @@ Partial Class frmCrearDepartamento
         '
         Me.btnEliminar.AutoSize = True
         Me.btnEliminar.BackColor = System.Drawing.Color.Transparent
+        Me.btnEliminar.BackgroundImage = CType(resources.GetObject("btnEliminar.BackgroundImage"), System.Drawing.Image)
         Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEliminar.Image = Global.Biomess_0._1.My.Resources.Resources.icons8_eliminar_100
-        Me.btnEliminar.Location = New System.Drawing.Point(501, 233)
+        Me.btnEliminar.Location = New System.Drawing.Point(668, 287)
+        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(108, 108)
+        Me.btnEliminar.Size = New System.Drawing.Size(194, 180)
         Me.btnEliminar.TabIndex = 22
         Me.btnEliminar.UseVisualStyleBackColor = False
         '
@@ -74,11 +77,12 @@ Partial Class frmCrearDepartamento
         '
         Me.btnAgregar.AutoSize = True
         Me.btnAgregar.BackColor = System.Drawing.Color.Transparent
+        Me.btnAgregar.BackgroundImage = CType(resources.GetObject("btnAgregar.BackgroundImage"), System.Drawing.Image)
         Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAgregar.Image = Global.Biomess_0._1.My.Resources.Resources.icons8_check_100
-        Me.btnAgregar.Location = New System.Drawing.Point(198, 233)
+        Me.btnAgregar.Location = New System.Drawing.Point(264, 287)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(108, 108)
+        Me.btnAgregar.Size = New System.Drawing.Size(199, 180)
         Me.btnAgregar.TabIndex = 21
         Me.btnAgregar.UseVisualStyleBackColor = False
         '
@@ -86,24 +90,27 @@ Partial Class frmCrearDepartamento
         '
         Me.btnAtras.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
         Me.btnAtras.BackgroundImage = CType(resources.GetObject("btnAtras.BackgroundImage"), System.Drawing.Image)
-        Me.btnAtras.Location = New System.Drawing.Point(12, 12)
+        Me.btnAtras.Location = New System.Drawing.Point(16, 15)
+        Me.btnAtras.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAtras.Name = "btnAtras"
-        Me.btnAtras.Size = New System.Drawing.Size(120, 40)
+        Me.btnAtras.Size = New System.Drawing.Size(160, 49)
         Me.btnAtras.TabIndex = 20
         Me.btnAtras.UseVisualStyleBackColor = False
         '
         'tbConfirmarNombre
         '
-        Me.tbConfirmarNombre.Location = New System.Drawing.Point(346, 166)
+        Me.tbConfirmarNombre.Location = New System.Drawing.Point(461, 204)
+        Me.tbConfirmarNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbConfirmarNombre.Name = "tbConfirmarNombre"
-        Me.tbConfirmarNombre.Size = New System.Drawing.Size(281, 20)
+        Me.tbConfirmarNombre.Size = New System.Drawing.Size(373, 22)
         Me.tbConfirmarNombre.TabIndex = 19
         '
         'tbNuevoNombre
         '
-        Me.tbNuevoNombre.Location = New System.Drawing.Point(346, 122)
+        Me.tbNuevoNombre.Location = New System.Drawing.Point(461, 150)
+        Me.tbNuevoNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbNuevoNombre.Name = "tbNuevoNombre"
-        Me.tbNuevoNombre.Size = New System.Drawing.Size(281, 20)
+        Me.tbNuevoNombre.Size = New System.Drawing.Size(373, 22)
         Me.tbNuevoNombre.TabIndex = 18
         '
         'Label2
@@ -112,9 +119,10 @@ Partial Class frmCrearDepartamento
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(194, 119)
+        Me.Label2.Location = New System.Drawing.Point(259, 146)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(145, 24)
+        Me.Label2.Size = New System.Drawing.Size(183, 29)
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Nuevo Nombre:"
         '
@@ -124,18 +132,19 @@ Partial Class frmCrearDepartamento
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(112, 161)
+        Me.Label1.Location = New System.Drawing.Point(149, 198)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(231, 24)
+        Me.Label1.Size = New System.Drawing.Size(294, 29)
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "Confirmar Nuevo Nombre:"
         '
         'frmCrearDepartamento
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.Grey2
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnEliminar)
@@ -145,6 +154,7 @@ Partial Class frmCrearDepartamento
         Me.Controls.Add(Me.tbNuevoNombre)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmCrearDepartamento"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Crear Departamento"

@@ -36,9 +36,10 @@ Partial Class frmEmpresaEmpresa
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(138, 259)
+        Me.Label1.Location = New System.Drawing.Point(203, 319)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(219, 24)
+        Me.Label1.Size = New System.Drawing.Size(283, 29)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Modificar Datos Empresa"
         '
@@ -48,9 +49,10 @@ Partial Class frmEmpresaEmpresa
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(445, 259)
+        Me.Label2.Location = New System.Drawing.Point(615, 319)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(205, 24)
+        Me.Label2.Size = New System.Drawing.Size(265, 29)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Mostrar Datos Empresa"
         '
@@ -58,11 +60,12 @@ Partial Class frmEmpresaEmpresa
         '
         Me.btnModificarDatos.AutoSize = True
         Me.btnModificarDatos.BackColor = System.Drawing.Color.Transparent
+        Me.btnModificarDatos.BackgroundImage = CType(resources.GetObject("btnModificarDatos.BackgroundImage"), System.Drawing.Image)
         Me.btnModificarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModificarDatos.Image = Global.Biomess_0._1.My.Resources.Resources.Ajustes
-        Me.btnModificarDatos.Location = New System.Drawing.Point(176, 91)
+        Me.btnModificarDatos.Location = New System.Drawing.Point(235, 112)
+        Me.btnModificarDatos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnModificarDatos.Name = "btnModificarDatos"
-        Me.btnModificarDatos.Size = New System.Drawing.Size(136, 136)
+        Me.btnModificarDatos.Size = New System.Drawing.Size(210, 184)
         Me.btnModificarDatos.TabIndex = 6
         Me.btnModificarDatos.UseVisualStyleBackColor = False
         '
@@ -70,11 +73,12 @@ Partial Class frmEmpresaEmpresa
         '
         Me.btnMostrarDatosEmpresa.AutoSize = True
         Me.btnMostrarDatosEmpresa.BackColor = System.Drawing.Color.Transparent
+        Me.btnMostrarDatosEmpresa.BackgroundImage = CType(resources.GetObject("btnMostrarDatosEmpresa.BackgroundImage"), System.Drawing.Image)
         Me.btnMostrarDatosEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMostrarDatosEmpresa.Image = Global.Biomess_0._1.My.Resources.Resources.Mostrar
-        Me.btnMostrarDatosEmpresa.Location = New System.Drawing.Point(479, 91)
+        Me.btnMostrarDatosEmpresa.Location = New System.Drawing.Point(639, 112)
+        Me.btnMostrarDatosEmpresa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnMostrarDatosEmpresa.Name = "btnMostrarDatosEmpresa"
-        Me.btnMostrarDatosEmpresa.Size = New System.Drawing.Size(136, 136)
+        Me.btnMostrarDatosEmpresa.Size = New System.Drawing.Size(205, 184)
         Me.btnMostrarDatosEmpresa.TabIndex = 7
         Me.btnMostrarDatosEmpresa.UseVisualStyleBackColor = False
         '
@@ -82,23 +86,25 @@ Partial Class frmEmpresaEmpresa
         '
         Me.btnAtras.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
         Me.btnAtras.BackgroundImage = CType(resources.GetObject("btnAtras.BackgroundImage"), System.Drawing.Image)
-        Me.btnAtras.Location = New System.Drawing.Point(12, 12)
+        Me.btnAtras.Location = New System.Drawing.Point(16, 15)
+        Me.btnAtras.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAtras.Name = "btnAtras"
-        Me.btnAtras.Size = New System.Drawing.Size(120, 40)
+        Me.btnAtras.Size = New System.Drawing.Size(160, 49)
         Me.btnAtras.TabIndex = 10
         Me.btnAtras.UseVisualStyleBackColor = False
         '
         'frmEmpresaEmpresa
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.Grey2
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.btnAtras)
         Me.Controls.Add(Me.btnMostrarDatosEmpresa)
         Me.Controls.Add(Me.btnModificarDatos)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmEmpresaEmpresa"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Empresa"

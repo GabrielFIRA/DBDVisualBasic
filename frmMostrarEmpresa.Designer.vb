@@ -30,19 +30,21 @@ Partial Class frmMostrarEmpresa
         '
         Me.btnAtras.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
         Me.btnAtras.BackgroundImage = CType(resources.GetObject("btnAtras.BackgroundImage"), System.Drawing.Image)
-        Me.btnAtras.Location = New System.Drawing.Point(12, 12)
+        Me.btnAtras.Location = New System.Drawing.Point(16, 15)
+        Me.btnAtras.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAtras.Name = "btnAtras"
-        Me.btnAtras.Size = New System.Drawing.Size(120, 40)
+        Me.btnAtras.Size = New System.Drawing.Size(160, 49)
         Me.btnAtras.TabIndex = 12
         Me.btnAtras.UseVisualStyleBackColor = False
         '
         'frmMostrarEmpresa
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.Grey2
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.btnAtras)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmMostrarEmpresa"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Mostrar Empresa"

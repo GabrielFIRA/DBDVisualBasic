@@ -35,11 +35,12 @@ Partial Class frmPantallaEmpresa
         'btnEmpresa
         '
         Me.btnEmpresa.BackColor = System.Drawing.Color.Transparent
-        Me.btnEmpresa.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.Enterprise
+        Me.btnEmpresa.BackgroundImage = CType(resources.GetObject("btnEmpresa.BackgroundImage"), System.Drawing.Image)
         Me.btnEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEmpresa.Location = New System.Drawing.Point(104, 106)
+        Me.btnEmpresa.Location = New System.Drawing.Point(166, 83)
+        Me.btnEmpresa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnEmpresa.Name = "btnEmpresa"
-        Me.btnEmpresa.Size = New System.Drawing.Size(134, 134)
+        Me.btnEmpresa.Size = New System.Drawing.Size(227, 222)
         Me.btnEmpresa.TabIndex = 0
         Me.btnEmpresa.UseVisualStyleBackColor = False
         '
@@ -49,9 +50,10 @@ Partial Class frmPantallaEmpresa
         Me.btnDepartamentos.BackColor = System.Drawing.Color.Transparent
         Me.btnDepartamentos.BackgroundImage = CType(resources.GetObject("btnDepartamentos.BackgroundImage"), System.Drawing.Image)
         Me.btnDepartamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDepartamentos.Location = New System.Drawing.Point(343, 106)
+        Me.btnDepartamentos.Location = New System.Drawing.Point(457, 130)
+        Me.btnDepartamentos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnDepartamentos.Name = "btnDepartamentos"
-        Me.btnDepartamentos.Size = New System.Drawing.Size(134, 134)
+        Me.btnDepartamentos.Size = New System.Drawing.Size(259, 135)
         Me.btnDepartamentos.TabIndex = 1
         Me.btnDepartamentos.UseVisualStyleBackColor = False
         '
@@ -61,9 +63,10 @@ Partial Class frmPantallaEmpresa
         Me.btnCargos.BackColor = System.Drawing.Color.Transparent
         Me.btnCargos.BackgroundImage = CType(resources.GetObject("btnCargos.BackgroundImage"), System.Drawing.Image)
         Me.btnCargos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCargos.Location = New System.Drawing.Point(576, 106)
+        Me.btnCargos.Location = New System.Drawing.Point(768, 130)
+        Me.btnCargos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCargos.Name = "btnCargos"
-        Me.btnCargos.Size = New System.Drawing.Size(134, 134)
+        Me.btnCargos.Size = New System.Drawing.Size(126, 129)
         Me.btnCargos.TabIndex = 2
         Me.btnCargos.UseVisualStyleBackColor = False
         '
@@ -73,9 +76,10 @@ Partial Class frmPantallaEmpresa
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(120, 266)
+        Me.Label1.Location = New System.Drawing.Point(215, 323)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(86, 24)
+        Me.Label1.Size = New System.Drawing.Size(110, 29)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Empresa"
         '
@@ -85,9 +89,10 @@ Partial Class frmPantallaEmpresa
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(339, 266)
+        Me.Label2.Location = New System.Drawing.Point(499, 291)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(137, 24)
+        Me.Label2.Size = New System.Drawing.Size(177, 29)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Departamentos"
         '
@@ -97,9 +102,10 @@ Partial Class frmPantallaEmpresa
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label3.Location = New System.Drawing.Point(602, 266)
+        Me.Label3.Location = New System.Drawing.Point(791, 278)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(70, 24)
+        Me.Label3.Size = New System.Drawing.Size(91, 29)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Cargos"
         '
@@ -107,18 +113,19 @@ Partial Class frmPantallaEmpresa
         '
         Me.btnAtras.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
         Me.btnAtras.BackgroundImage = CType(resources.GetObject("btnAtras.BackgroundImage"), System.Drawing.Image)
-        Me.btnAtras.Location = New System.Drawing.Point(12, 12)
+        Me.btnAtras.Location = New System.Drawing.Point(16, 15)
+        Me.btnAtras.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAtras.Name = "btnAtras"
-        Me.btnAtras.Size = New System.Drawing.Size(120, 40)
+        Me.btnAtras.Size = New System.Drawing.Size(160, 49)
         Me.btnAtras.TabIndex = 11
         Me.btnAtras.UseVisualStyleBackColor = False
         '
         'frmPantallaEmpresa
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.Grey2
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.btnAtras)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -126,6 +133,7 @@ Partial Class frmPantallaEmpresa
         Me.Controls.Add(Me.btnCargos)
         Me.Controls.Add(Me.btnDepartamentos)
         Me.Controls.Add(Me.btnEmpresa)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmPantallaEmpresa"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Empresa"
