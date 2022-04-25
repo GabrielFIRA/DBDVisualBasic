@@ -22,12 +22,7 @@ Partial Class Empleados
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.AtrasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Empleados))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -37,56 +32,14 @@ Partial Class Empleados
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 20.0!)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AtrasToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.EmpleadosToolStripMenuItem, Me.UsuariosToolStripMenuItem, Me.EmpresaToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(166, 729)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'AtrasToolStripMenuItem
-        '
-        Me.AtrasToolStripMenuItem.Image = Global.Biomess_0._1.My.Resources.Resources.btnAtras_BackgroundImage
-        Me.AtrasToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.AtrasToolStripMenuItem.Name = "AtrasToolStripMenuItem"
-        Me.AtrasToolStripMenuItem.Size = New System.Drawing.Size(153, 44)
-        '
-        'ReportesToolStripMenuItem
-        '
-        Me.ReportesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
-        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(153, 41)
-        Me.ReportesToolStripMenuItem.Text = "Reportes"
-        '
-        'EmpleadosToolStripMenuItem
-        '
-        Me.EmpleadosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.EmpleadosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
-        Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(153, 41)
-        Me.EmpleadosToolStripMenuItem.Text = "Empleados"
-        '
-        'UsuariosToolStripMenuItem
-        '
-        Me.UsuariosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
-        Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(153, 41)
-        Me.UsuariosToolStripMenuItem.Text = "Usuarios"
-        '
-        'EmpresaToolStripMenuItem
-        '
-        Me.EmpresaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
-        Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(153, 41)
-        Me.EmpresaToolStripMenuItem.Text = "Empresa"
         '
         'Label1
         '
@@ -105,7 +58,7 @@ Partial Class Empleados
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.icons8_agregar_usuario_masculino_100
+        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -118,7 +71,7 @@ Partial Class Empleados
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.icons8_lista_de_ingredientes_100
+        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button3.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -131,7 +84,7 @@ Partial Class Empleados
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.Transparent
-        Me.Button4.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.icons8_retire_hombre_usuario_100
+        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button4.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -144,7 +97,7 @@ Partial Class Empleados
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.Color.Transparent
-        Me.Button5.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.icons8_editar_usuaria_100
+        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
         Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button5.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -209,18 +162,72 @@ Partial Class Empleados
         Me.LinkLabel4.LinkColor = System.Drawing.SystemColors.Control
         Me.LinkLabel4.Location = New System.Drawing.Point(481, 616)
         Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(312, 39)
+        Me.LinkLabel4.Size = New System.Drawing.Size(296, 39)
         Me.LinkLabel4.TabIndex = 14
         Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Lista de empleados"
+        Me.LinkLabel4.Text = "Mostar empleados"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 20.0!)
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalirToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.EmpleadosToolStripMenuItem, Me.UsuariosToolStripMenuItem, Me.EmpresaToolStripMenuItem})
+        Me.MenuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(164, 729)
+        Me.MenuStrip1.TabIndex = 15
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'SalirToolStripMenuItem
+        '
+        Me.SalirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
+        Me.SalirToolStripMenuItem.Image = CType(resources.GetObject("SalirToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.SalirToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(155, 44)
+        '
+        'ReportesToolStripMenuItem
+        '
+        Me.ReportesToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
+        Me.ReportesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
+        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(155, 41)
+        Me.ReportesToolStripMenuItem.Text = "Reportes"
+        '
+        'EmpleadosToolStripMenuItem
+        '
+        Me.EmpleadosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.EmpleadosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
+        Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
+        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(155, 41)
+        Me.EmpleadosToolStripMenuItem.Text = "Empleados"
+        '
+        'UsuariosToolStripMenuItem
+        '
+        Me.UsuariosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
+        Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(155, 41)
+        Me.UsuariosToolStripMenuItem.Text = "Usuarios"
+        '
+        'EmpresaToolStripMenuItem
+        '
+        Me.EmpresaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
+        Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
+        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(155, 41)
+        Me.EmpresaToolStripMenuItem.Text = "Empresa"
         '
         'Empleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.BackgroundImage = Global.Biomess_0._1.My.Resources.Resources.GroupBox1_BackgroundImage
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1350, 729)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.LinkLabel4)
         Me.Controls.Add(Me.LinkLabel3)
         Me.Controls.Add(Me.LinkLabel2)
@@ -230,9 +237,7 @@ Partial Class Empleados
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.MenuStrip1)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Empleados"
         Me.Text = "Empleados"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -242,13 +247,6 @@ Partial Class Empleados
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents AtrasToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EmpleadosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UsuariosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EmpresaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label1 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
@@ -258,4 +256,10 @@ Partial Class Empleados
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents LinkLabel3 As LinkLabel
     Friend WithEvents LinkLabel4 As LinkLabel
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EmpleadosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UsuariosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EmpresaToolStripMenuItem As ToolStripMenuItem
 End Class

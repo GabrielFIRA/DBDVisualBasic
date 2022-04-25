@@ -24,6 +24,7 @@ Partial Class EliminarHorarios
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EliminarHorarios))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnSiguiente = New System.Windows.Forms.Button()
         Me.btnAnterior = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -37,7 +38,6 @@ Partial Class EliminarHorarios
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnAtras = New System.Windows.Forms.Button()
-        Me.btnEliminar = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -63,6 +63,18 @@ Partial Class EliminarHorarios
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1016, 790)
         Me.Panel1.TabIndex = 2
+        '
+        'btnEliminar
+        '
+        Me.btnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminar.ForeColor = System.Drawing.SystemColors.Control
+        Me.btnEliminar.Location = New System.Drawing.Point(264, 656)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(437, 42)
+        Me.btnEliminar.TabIndex = 37
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = False
         '
         'btnSiguiente
         '
@@ -218,18 +230,6 @@ Partial Class EliminarHorarios
         Me.btnAtras.Size = New System.Drawing.Size(120, 40)
         Me.btnAtras.TabIndex = 7
         Me.btnAtras.UseVisualStyleBackColor = False
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
-        Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnEliminar.Location = New System.Drawing.Point(264, 656)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(437, 42)
-        Me.btnEliminar.TabIndex = 37
-        Me.btnEliminar.Text = "Eliminar"
-        Me.btnEliminar.UseVisualStyleBackColor = False
         '
         'EliminarHorarios
         '

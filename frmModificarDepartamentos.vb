@@ -1,4 +1,7 @@
 ﻿Public Class frmModificarDepartamentos
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles Me.Closed
+        BiomessES.Close()
+    End Sub
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
 
     End Sub

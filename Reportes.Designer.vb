@@ -46,11 +46,13 @@ Partial Class Reportes
         Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
         Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.Left
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 20.0!)
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalirToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.EmpleadosToolStripMenuItem, Me.UsuariosToolStripMenuItem, Me.EmpresaToolStripMenuItem})
         Me.MenuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(166, 729)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(164, 609)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -60,35 +62,35 @@ Partial Class Reportes
         Me.SalirToolStripMenuItem.Image = CType(resources.GetObject("SalirToolStripMenuItem.Image"), System.Drawing.Image)
         Me.SalirToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(153, 44)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(155, 44)
         '
         'ReportesToolStripMenuItem
         '
         Me.ReportesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
         Me.ReportesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(153, 41)
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(155, 41)
         Me.ReportesToolStripMenuItem.Text = "Reportes"
         '
         'EmpleadosToolStripMenuItem
         '
         Me.EmpleadosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(153, 41)
+        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(155, 41)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
         '
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(153, 41)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(155, 41)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'EmpresaToolStripMenuItem
         '
         Me.EmpresaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(153, 41)
+        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(155, 41)
         Me.EmpresaToolStripMenuItem.Text = "Empresa"
         '
         'ComboBox1
@@ -217,7 +219,7 @@ Partial Class Reportes
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(1350, 729)
+        Me.ClientSize = New System.Drawing.Size(1028, 609)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)

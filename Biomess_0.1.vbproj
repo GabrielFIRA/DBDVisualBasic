@@ -109,6 +109,12 @@
     <Compile Include="Editar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EEliminarEmpleado.Designer.vb">
+      <DependentUpon>EEliminarEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EEliminarEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EliminarHorarios.Designer.vb">
       <DependentUpon>EliminarHorarios.vb</DependentUpon>
     </Compile>
@@ -137,6 +143,90 @@
       <DependentUpon>EModificarEmpleadoAusencia.vb</DependentUpon>
     </Compile>
     <Compile Include="EModificarEmpleadoAusencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EModificarEmpleadoCambiarFaltaAusencia.Designer.vb">
+      <DependentUpon>EModificarEmpleadoCambiarFaltaAusencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EModificarEmpleadoCambiarFaltaAusencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EModificarEmpleadoCrearVacaciones.Designer.vb">
+      <DependentUpon>EModificarEmpleadoCrearVacaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EModificarEmpleadoCrearVacaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EModificarEmpleadoEliminarAusencia.Designer.vb">
+      <DependentUpon>EModificarEmpleadoEliminarAusencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EModificarEmpleadoEliminarAusencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EModificarEmpleadoEliminarVacaciones.Designer.vb">
+      <DependentUpon>EModificarEmpleadoEliminarVacaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EModificarEmpleadoEliminarVacaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EModificarEmpleadoFaltas.Designer.vb">
+      <DependentUpon>EModificarEmpleadoFaltas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EModificarEmpleadoFaltas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EModificarEmpleadoModificarAusencia.Designer.vb">
+      <DependentUpon>EModificarEmpleadoModificarAusencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EModificarEmpleadoModificarAusencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EModificarEmpleadoModificarVacaciones.Designer.vb">
+      <DependentUpon>EModificarEmpleadoModificarVacaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EModificarEmpleadoModificarVacaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EModificarEmpleadoMostrarAtrasos.Designer.vb">
+      <DependentUpon>EModificarEmpleadoMostrarAtrasos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EModificarEmpleadoMostrarAtrasos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EModificarEmpleadoMostrarAusencias.Designer.vb">
+      <DependentUpon>EModificarEmpleadoMostrarAusencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EModificarEmpleadoMostrarAusencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EModificarEmpleadoMostrarFaltas.Designer.vb">
+      <DependentUpon>EModificarEmpleadoMostrarFaltas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EModificarEmpleadoMostrarFaltas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EModificarEmpleadoMostrarVacaciones.Designer.vb">
+      <DependentUpon>EModificarEmpleadoMostrarVacaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EModificarEmpleadoMostrarVacaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EModificarEmpleadoVacaciones.Designer.vb">
+      <DependentUpon>EModificarEmpleadoVacaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EModificarEmpleadoVacaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EModificarEmpleadoMostrarAsistencia.Designer.vb">
+      <DependentUpon>EModificarEmpleadoMostrarAsistencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EModificarEmpleadoMostrarAsistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMostrarEmpleados.Designer.vb">
+      <DependentUpon>EMostrarEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMostrarEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Empleados.Designer.vb">
@@ -355,6 +445,9 @@
     <EmbeddedResource Include="Editar.resx">
       <DependentUpon>Editar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EEliminarEmpleado.resx">
+      <DependentUpon>EEliminarEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EliminarHorarios.resx">
       <DependentUpon>EliminarHorarios.vb</DependentUpon>
     </EmbeddedResource>
@@ -369,6 +462,48 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EModificarEmpleadoAusencia.resx">
       <DependentUpon>EModificarEmpleadoAusencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EModificarEmpleadoCambiarFaltaAusencia.resx">
+      <DependentUpon>EModificarEmpleadoCambiarFaltaAusencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EModificarEmpleadoCrearVacaciones.resx">
+      <DependentUpon>EModificarEmpleadoCrearVacaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EModificarEmpleadoEliminarAusencia.resx">
+      <DependentUpon>EModificarEmpleadoEliminarAusencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EModificarEmpleadoEliminarVacaciones.resx">
+      <DependentUpon>EModificarEmpleadoEliminarVacaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EModificarEmpleadoFaltas.resx">
+      <DependentUpon>EModificarEmpleadoFaltas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EModificarEmpleadoModificarAusencia.resx">
+      <DependentUpon>EModificarEmpleadoModificarAusencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EModificarEmpleadoModificarVacaciones.resx">
+      <DependentUpon>EModificarEmpleadoModificarVacaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EModificarEmpleadoMostrarAtrasos.resx">
+      <DependentUpon>EModificarEmpleadoMostrarAtrasos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EModificarEmpleadoMostrarAusencias.resx">
+      <DependentUpon>EModificarEmpleadoMostrarAusencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EModificarEmpleadoMostrarFaltas.resx">
+      <DependentUpon>EModificarEmpleadoMostrarFaltas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EModificarEmpleadoMostrarVacaciones.resx">
+      <DependentUpon>EModificarEmpleadoMostrarVacaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EModificarEmpleadoVacaciones.resx">
+      <DependentUpon>EModificarEmpleadoVacaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EModificarEmpleadoMostrarAsistencia.resx">
+      <DependentUpon>EModificarEmpleadoMostrarAsistencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMostrarEmpleados.resx">
+      <DependentUpon>EMostrarEmpleados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados.resx">
       <DependentUpon>Empleados.vb</DependentUpon>
