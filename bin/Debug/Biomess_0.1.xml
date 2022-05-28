@@ -27,5 +27,1420 @@ Biomess_0.1
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="T:Biomess_0._1.biomessDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.AsistenciaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.AtrasosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.AusenciasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.CargoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.DepartamentoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.EmpleadoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.FaltasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.HorariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.OpcionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.OrganizacionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.PermisosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.RolDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.Rol_OpcionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.UsuarioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.VacacionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.AsistenciaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.AtrasosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.AusenciasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.CargoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.DepartamentoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.EmpleadoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.FaltasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.HorariosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.OpcionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.OrganizacionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.PermisosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.RolRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.Rol_OpcionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.UsuarioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.VacacionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.AsistenciaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.AtrasosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.AusenciasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.CargoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.DepartamentoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.EmpleadoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.FaltasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.HorariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.OpcionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.OrganizacionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.PermisosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.RolRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.Rol_OpcionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.UsuarioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet.VacacionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.CargoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.DepartamentoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.OrganizacionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.AsistenciaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.AtrasosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.AusenciasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.EmpleadoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.FaltasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.HorariosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.OpcionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.PermisosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.RolTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.Rol_OpcionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.UsuarioTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.VacacionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Biomess_0._1.biomessDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Biomess_0._1.biomessDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Biomess_0._1.biomessDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSetTableAdapters.TableAdapterManager.UpdateAll(Biomess_0._1.biomessDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.AsistenciaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.AtrasosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.AusenciasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.CargoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.DepartamentoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.EmpleadoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.FaltasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.HorariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.OpcionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.OrganizacionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.PermisosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.RolDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.Rol_OpcionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.UsuarioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.VacacionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.asistenciasViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.atrasosViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.ausenciasViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.empleadoViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.faltasViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.horariosViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.permisosViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.vacacionesViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.userRolViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.user_rol_OrgViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.user_Rol_OrgnViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.AsistenciaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.AtrasosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.AusenciasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.CargoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.DepartamentoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.EmpleadoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.FaltasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.HorariosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.OpcionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.OrganizacionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.PermisosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.RolRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.Rol_OpcionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.UsuarioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.VacacionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.asistenciasViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.atrasosViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.ausenciasViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.empleadoViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.faltasViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.horariosViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.permisosViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.vacacionesViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.userRolViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.user_rol_OrgViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.user_Rol_OrgnViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.AsistenciaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.AtrasosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.AusenciasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.CargoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.DepartamentoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.EmpleadoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.FaltasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.HorariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.OpcionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.OrganizacionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.PermisosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.RolRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.Rol_OpcionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.UsuarioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.VacacionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.asistenciasViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.atrasosViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.ausenciasViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.empleadoViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.faltasViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.horariosViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.permisosViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.vacacionesViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.userRolViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.user_rol_OrgViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2.user_Rol_OrgnViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.AsistenciaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.AtrasosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.AusenciasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.CargoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.DepartamentoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.EmpleadoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.FaltasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.HorariosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.OpcionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.OrganizacionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.PermisosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.RolTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.Rol_OpcionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.UsuarioTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.VacacionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.asistenciasViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.atrasosViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.ausenciasViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.empleadoViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.faltasViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.horariosViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.permisosViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.vacacionesViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.userRolViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.user_rol_OrgViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.user_Rol_OrgnViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(Biomess_0._1.biomessDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(Biomess_0._1.biomessDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(Biomess_0._1.biomessDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSet2TableAdapters.TableAdapterManager.UpdateAll(Biomess_0._1.biomessDataSet2)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.AsistenciaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.AtrasosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.AusenciasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.CargoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.DepartamentoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.EmpleadoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.FaltasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.HorariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.OpcionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.OrganizacionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.PermisosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.RolDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.Rol_OpcionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.UsuarioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.VacacionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.ausenciasViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.empleadoViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.atrasosViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.horariosViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.faltasViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.permisosViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.vacacionesViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.asistenciasViewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.AsistenciaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.AtrasosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.AusenciasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.CargoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.DepartamentoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.EmpleadoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.FaltasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.HorariosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.OpcionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.OrganizacionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.PermisosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.RolRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.Rol_OpcionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.UsuarioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.VacacionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.ausenciasViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.empleadoViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.atrasosViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.horariosViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.faltasViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.permisosViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.vacacionesViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.asistenciasViewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.AsistenciaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.AtrasosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.AusenciasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.CargoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.DepartamentoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.EmpleadoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.FaltasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.HorariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.OpcionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.OrganizacionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.PermisosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.RolRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.Rol_OpcionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.UsuarioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.VacacionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.ausenciasViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.empleadoViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.atrasosViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.horariosViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.faltasViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.permisosViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.vacacionesViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1.asistenciasViewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.AsistenciaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.AtrasosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.AusenciasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.CargoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.DepartamentoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.EmpleadoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.FaltasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.HorariosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.OpcionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.OrganizacionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.PermisosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.RolTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.Rol_OpcionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.UsuarioTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.VacacionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.ausenciasViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.empleadoViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.atrasosViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.horariosViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.faltasViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.permisosViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.vacacionesViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.asistenciasViewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Biomess_0._1.biomessDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Biomess_0._1.biomessDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Biomess_0._1.biomessDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Biomess_0._1.biomessDataSet1TableAdapters.TableAdapterManager.UpdateAll(Biomess_0._1.biomessDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Biomess_0._1.biomessDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 </members>
 </doc>

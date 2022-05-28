@@ -27,28 +27,30 @@
     End Sub
 
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
-        Dim win = New agregarUsuario()
-        win.Show()
-        Me.Dispose()
-    End Sub
-
-    Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
-        Dim win = New Elimnar()
-        win.Show()
-        Me.Dispose()
-    End Sub
-
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
-        Dim win = New Buscar()
-        win.Show()
-        Me.Dispose()
-    End Sub
-
-    Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
-        Dim win = New Editar()
+        Dim win = New frmAgregarUsuario()
         win.Show()
         Me.Dispose()
     End Sub
 
 
+
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs)
+        'Dim win = New Buscar()
+        'win.Show()
+        'Me.Dispose()
+    End Sub
+
+
+
+    Private Sub btnRol_Click(sender As Object, e As EventArgs) Handles btnRol.Click
+        Dim win = New frmRol()
+        win.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub btnOpc_Click(sender As Object, e As EventArgs) Handles btnOpc.Click
+        Dim win = New frmOpcion()
+        win.Show()
+        Me.Dispose()
+    End Sub
 End Class

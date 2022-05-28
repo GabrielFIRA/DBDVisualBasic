@@ -8,20 +8,21 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnEmpresa.Click
         Dim frmp As New frmEmpresaEmpresa
-        Me.Close()
+        Me.Dispose()
 
         frmp.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnDepartamentos.Click
         Dim frmp As New frmDepartamentos
-        Me.Close()
+        Me.Dispose()
+
 
         frmp.Show()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnCargos.Click
-        Dim frmp As New frmCargos
+        Dim frmp As New Cargos
 
         Me.Dispose()
         frmp.Show()

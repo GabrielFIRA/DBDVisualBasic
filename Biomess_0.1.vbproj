@@ -14,6 +14,21 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -73,160 +88,61 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Agregar Usuario.Designer.vb">
-      <DependentUpon>Agregar Usuario.vb</DependentUpon>
+    <Compile Include="biomessDataSet.vb">
+      <DependentUpon>biomessDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Agregar Usuario.vb">
+    <Compile Include="biomessDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>biomessDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EAsistencias.Designer.vb">
+      <DependentUpon>EAsistencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EAsistencias.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Buscar.Designer.vb">
-      <DependentUpon>Buscar.vb</DependentUpon>
+    <Compile Include="biomessDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>biomessDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Buscar.vb">
+    <Compile Include="biomessDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>biomessDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="biomessDataSet1.vb">
+      <DependentUpon>biomessDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EAtrasos.Designer.vb">
+      <DependentUpon>EAtrasos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EAtrasos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CraerHorarios.Designer.vb">
-      <DependentUpon>CraerHorarios.vb</DependentUpon>
+    <Compile Include="EAusencias.Designer.vb">
+      <DependentUpon>EAusencias.vb</DependentUpon>
     </Compile>
-    <Compile Include="CraerHorarios.vb">
+    <Compile Include="EAusencias.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CrearPermisosvb.Designer.vb">
-      <DependentUpon>CrearPermisosvb.vb</DependentUpon>
+    <Compile Include="EEmpleados.Designer.vb">
+      <DependentUpon>EEmpleados.vb</DependentUpon>
     </Compile>
-    <Compile Include="CrearPermisosvb.vb">
+    <Compile Include="EEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EAgregarEmpleado.Designer.vb">
-      <DependentUpon>EAgregarEmpleado.vb</DependentUpon>
+    <Compile Include="EFaltas.Designer.vb">
+      <DependentUpon>EFaltas.vb</DependentUpon>
     </Compile>
-    <Compile Include="EAgregarEmpleado.vb">
+    <Compile Include="EFaltas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Editar.Designer.vb">
-      <DependentUpon>Editar.vb</DependentUpon>
+    <Compile Include="EHorarios.Designer.vb">
+      <DependentUpon>EHorarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="Editar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EEliminarEmpleado.Designer.vb">
-      <DependentUpon>EEliminarEmpleado.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EEliminarEmpleado.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EliminarHorarios.Designer.vb">
-      <DependentUpon>EliminarHorarios.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EliminarHorarios.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EliminarPermisos.Designer.vb">
-      <DependentUpon>EliminarPermisos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EliminarPermisos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Elimnar.Designer.vb">
-      <DependentUpon>Elimnar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Elimnar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleado.Designer.vb">
-      <DependentUpon>EModificarEmpleado.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleado.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoAusencia.Designer.vb">
-      <DependentUpon>EModificarEmpleadoAusencia.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoAusencia.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoCambiarFaltaAusencia.Designer.vb">
-      <DependentUpon>EModificarEmpleadoCambiarFaltaAusencia.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoCambiarFaltaAusencia.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoCrearVacaciones.Designer.vb">
-      <DependentUpon>EModificarEmpleadoCrearVacaciones.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoCrearVacaciones.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoEliminarAusencia.Designer.vb">
-      <DependentUpon>EModificarEmpleadoEliminarAusencia.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoEliminarAusencia.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoEliminarVacaciones.Designer.vb">
-      <DependentUpon>EModificarEmpleadoEliminarVacaciones.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoEliminarVacaciones.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoFaltas.Designer.vb">
-      <DependentUpon>EModificarEmpleadoFaltas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoFaltas.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoModificarAusencia.Designer.vb">
-      <DependentUpon>EModificarEmpleadoModificarAusencia.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoModificarAusencia.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoModificarVacaciones.Designer.vb">
-      <DependentUpon>EModificarEmpleadoModificarVacaciones.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoModificarVacaciones.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoMostrarAtrasos.Designer.vb">
-      <DependentUpon>EModificarEmpleadoMostrarAtrasos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoMostrarAtrasos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoMostrarAusencias.Designer.vb">
-      <DependentUpon>EModificarEmpleadoMostrarAusencias.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoMostrarAusencias.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoMostrarFaltas.Designer.vb">
-      <DependentUpon>EModificarEmpleadoMostrarFaltas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoMostrarFaltas.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoMostrarVacaciones.Designer.vb">
-      <DependentUpon>EModificarEmpleadoMostrarVacaciones.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoMostrarVacaciones.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoVacaciones.Designer.vb">
-      <DependentUpon>EModificarEmpleadoVacaciones.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoVacaciones.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EModificarEmpleadoMostrarAsistencia.Designer.vb">
-      <DependentUpon>EModificarEmpleadoMostrarAsistencia.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EModificarEmpleadoMostrarAsistencia.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EMostrarEmpleados.Designer.vb">
-      <DependentUpon>EMostrarEmpleados.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EMostrarEmpleados.vb">
+    <Compile Include="EHorarios.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Empleados.Designer.vb">
@@ -241,6 +157,18 @@
     <Compile Include="EntradaSalidaEmp.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EPermisos.Designer.vb">
+      <DependentUpon>EPermisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EPermisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EVacaciones.Designer.vb">
+      <DependentUpon>EVacaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EVacaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -248,10 +176,22 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmAgregarUsuario.Designer.vb">
+      <DependentUpon>frmAgregarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmCargos.Designer.vb">
       <DependentUpon>frmCargos.vb</DependentUpon>
     </Compile>
     <Compile Include="frmCargos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrearCargos.Designer.vb">
+      <DependentUpon>frmCrearCargos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrearCargos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCrearDepartamento.Designer.vb">
@@ -266,6 +206,12 @@
     <Compile Include="frmDepartamentos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmEliminarCargo.Designer.vb">
+      <DependentUpon>frmEliminarCargo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarCargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmEliminarDepartamento.Designer.vb">
       <DependentUpon>frmEliminarDepartamento.vb</DependentUpon>
     </Compile>
@@ -276,6 +222,12 @@
       <DependentUpon>frmEmpresaEmpresa.vb</DependentUpon>
     </Compile>
     <Compile Include="frmEmpresaEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarCargo.Designer.vb">
+      <DependentUpon>frmModificarCargo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarCargo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmModificarDepartamentos.Designer.vb">
@@ -290,6 +242,12 @@
     <Compile Include="frmModificarEmpresa.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmMostrarCargos.Designer.vb">
+      <DependentUpon>frmMostrarCargos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMostrarCargos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMostrarDepartamentos.Designer.vb">
       <DependentUpon>frmMostrarDepartamentos.vb</DependentUpon>
     </Compile>
@@ -302,52 +260,28 @@
     <Compile Include="frmMostrarEmpresa.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmOpcion.Designer.vb">
+      <DependentUpon>frmOpcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpcion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPantallaEmpresa.Designer.vb">
       <DependentUpon>frmPantallaEmpresa.vb</DependentUpon>
     </Compile>
     <Compile Include="frmPantallaEmpresa.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmRol.Designer.vb">
+      <DependentUpon>frmRol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRol.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
     <Compile Include="Login.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuHorarios.Designer.vb">
-      <DependentUpon>MenuHorarios.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MenuHorarios.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuPermisos.Designer.vb">
-      <DependentUpon>MenuPermisos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MenuPermisos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModificarHorarios.Designer.vb">
-      <DependentUpon>ModificarHorarios.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ModificarHorarios.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModificarPermisos.Designer.vb">
-      <DependentUpon>ModificarPermisos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ModificarPermisos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MostrarHorarios.Designer.vb">
-      <DependentUpon>MostrarHorarios.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MostrarHorarios.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MostrarPermisos.Designer.vb">
-      <DependentUpon>MostrarPermisos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MostrarPermisos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -427,83 +361,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Agregar Usuario.resx">
-      <DependentUpon>Agregar Usuario.vb</DependentUpon>
+    <EmbeddedResource Include="EAsistencias.resx">
+      <DependentUpon>EAsistencias.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Buscar.resx">
-      <DependentUpon>Buscar.vb</DependentUpon>
+    <EmbeddedResource Include="EAtrasos.resx">
+      <DependentUpon>EAtrasos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CraerHorarios.resx">
-      <DependentUpon>CraerHorarios.vb</DependentUpon>
+    <EmbeddedResource Include="EAusencias.resx">
+      <DependentUpon>EAusencias.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CrearPermisosvb.resx">
-      <DependentUpon>CrearPermisosvb.vb</DependentUpon>
+    <EmbeddedResource Include="EEmpleados.resx">
+      <DependentUpon>EEmpleados.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EAgregarEmpleado.resx">
-      <DependentUpon>EAgregarEmpleado.vb</DependentUpon>
+    <EmbeddedResource Include="EFaltas.resx">
+      <DependentUpon>EFaltas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Editar.resx">
-      <DependentUpon>Editar.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EEliminarEmpleado.resx">
-      <DependentUpon>EEliminarEmpleado.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EliminarHorarios.resx">
-      <DependentUpon>EliminarHorarios.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EliminarPermisos.resx">
-      <DependentUpon>EliminarPermisos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Elimnar.resx">
-      <DependentUpon>Elimnar.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleado.resx">
-      <DependentUpon>EModificarEmpleado.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoAusencia.resx">
-      <DependentUpon>EModificarEmpleadoAusencia.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoCambiarFaltaAusencia.resx">
-      <DependentUpon>EModificarEmpleadoCambiarFaltaAusencia.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoCrearVacaciones.resx">
-      <DependentUpon>EModificarEmpleadoCrearVacaciones.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoEliminarAusencia.resx">
-      <DependentUpon>EModificarEmpleadoEliminarAusencia.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoEliminarVacaciones.resx">
-      <DependentUpon>EModificarEmpleadoEliminarVacaciones.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoFaltas.resx">
-      <DependentUpon>EModificarEmpleadoFaltas.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoModificarAusencia.resx">
-      <DependentUpon>EModificarEmpleadoModificarAusencia.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoModificarVacaciones.resx">
-      <DependentUpon>EModificarEmpleadoModificarVacaciones.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoMostrarAtrasos.resx">
-      <DependentUpon>EModificarEmpleadoMostrarAtrasos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoMostrarAusencias.resx">
-      <DependentUpon>EModificarEmpleadoMostrarAusencias.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoMostrarFaltas.resx">
-      <DependentUpon>EModificarEmpleadoMostrarFaltas.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoMostrarVacaciones.resx">
-      <DependentUpon>EModificarEmpleadoMostrarVacaciones.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoVacaciones.resx">
-      <DependentUpon>EModificarEmpleadoVacaciones.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EModificarEmpleadoMostrarAsistencia.resx">
-      <DependentUpon>EModificarEmpleadoMostrarAsistencia.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EMostrarEmpleados.resx">
-      <DependentUpon>EMostrarEmpleados.vb</DependentUpon>
+    <EmbeddedResource Include="EHorarios.resx">
+      <DependentUpon>EHorarios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados.resx">
       <DependentUpon>Empleados.vb</DependentUpon>
@@ -511,11 +385,23 @@
     <EmbeddedResource Include="EntradaSalidaEmp.resx">
       <DependentUpon>EntradaSalidaEmp.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EPermisos.resx">
+      <DependentUpon>EPermisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EVacaciones.resx">
+      <DependentUpon>EVacaciones.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarUsuario.resx">
+      <DependentUpon>frmAgregarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCargos.resx">
       <DependentUpon>frmCargos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrearCargos.resx">
+      <DependentUpon>frmCrearCargos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCrearDepartamento.resx">
       <DependentUpon>frmCrearDepartamento.vb</DependentUpon>
@@ -523,11 +409,17 @@
     <EmbeddedResource Include="frmDepartamentos.resx">
       <DependentUpon>frmDepartamentos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarCargo.resx">
+      <DependentUpon>frmEliminarCargo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEliminarDepartamento.resx">
       <DependentUpon>frmEliminarDepartamento.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmpresaEmpresa.resx">
       <DependentUpon>frmEmpresaEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarCargo.resx">
+      <DependentUpon>frmModificarCargo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModificarDepartamentos.resx">
       <DependentUpon>frmModificarDepartamentos.vb</DependentUpon>
@@ -535,35 +427,26 @@
     <EmbeddedResource Include="frmModificarEmpresa.resx">
       <DependentUpon>frmModificarEmpresa.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarCargos.resx">
+      <DependentUpon>frmMostrarCargos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMostrarDepartamentos.resx">
       <DependentUpon>frmMostrarDepartamentos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMostrarEmpresa.resx">
       <DependentUpon>frmMostrarEmpresa.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmOpcion.resx">
+      <DependentUpon>frmOpcion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPantallaEmpresa.resx">
       <DependentUpon>frmPantallaEmpresa.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRol.resx">
+      <DependentUpon>frmRol.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuHorarios.resx">
-      <DependentUpon>MenuHorarios.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuPermisos.resx">
-      <DependentUpon>MenuPermisos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModificarHorarios.resx">
-      <DependentUpon>ModificarHorarios.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModificarPermisos.resx">
-      <DependentUpon>ModificarPermisos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MostrarHorarios.resx">
-      <DependentUpon>MostrarHorarios.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MostrarPermisos.resx">
-      <DependentUpon>MostrarPermisos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -603,6 +486,39 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="biomessDataSet.xsc">
+      <DependentUpon>biomessDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="biomessDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>biomessDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="biomessDataSet.xss">
+      <DependentUpon>biomessDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="biomessDataSet1.xsc">
+      <DependentUpon>biomessDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="biomessDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>biomessDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="biomessDataSet1.xss">
+      <DependentUpon>biomessDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="biomessDataSet2.xsc">
+      <DependentUpon>biomessDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="biomessDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>biomessDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="biomessDataSet2.xss">
+      <DependentUpon>biomessDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -616,6 +532,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\menos..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DESKTOP-UU63VP7.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DESKTOP-UU63VP7_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DESKTOP-UU63VP7.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

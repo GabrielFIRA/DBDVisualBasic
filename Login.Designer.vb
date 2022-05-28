@@ -22,6 +22,7 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnAcceder = New System.Windows.Forms.Button()
@@ -31,7 +32,12 @@ Partial Class Login
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnAtras = New System.Windows.Forms.Button()
         Me.Label0 = New System.Windows.Forms.Label()
+        Me.BiomessDataSet2 = New Biomess_0._1.biomessDataSet2()
+        Me.UsuarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.UsuarioTableAdapter = New Biomess_0._1.biomessDataSet2TableAdapters.UsuarioTableAdapter()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.BiomessDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UsuarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -77,6 +83,8 @@ Partial Class Login
         'cbnombreUsu
         '
         Me.cbnombreUsu.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.cbnombreUsu.DataSource = Me.UsuarioBindingSource
+        Me.cbnombreUsu.DisplayMember = "username"
         Me.cbnombreUsu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbnombreUsu.ForeColor = System.Drawing.SystemColors.Control
         Me.cbnombreUsu.FormattingEnabled = True
@@ -85,7 +93,6 @@ Partial Class Login
         Me.cbnombreUsu.Name = "cbnombreUsu"
         Me.cbnombreUsu.Size = New System.Drawing.Size(420, 32)
         Me.cbnombreUsu.TabIndex = 2
-        Me.cbnombreUsu.Text = "Seleccionar..."
         '
         'Label2
         '
@@ -133,6 +140,20 @@ Partial Class Login
         Me.Label0.TabIndex = 4
         Me.Label0.Text = "Login"
         '
+        'BiomessDataSet2
+        '
+        Me.BiomessDataSet2.DataSetName = "biomessDataSet2"
+        Me.BiomessDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'UsuarioBindingSource
+        '
+        Me.UsuarioBindingSource.DataMember = "Usuario"
+        Me.UsuarioBindingSource.DataSource = Me.BiomessDataSet2
+        '
+        'UsuarioTableAdapter
+        '
+        Me.UsuarioTableAdapter.ClearBeforeFill = True
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -148,6 +169,8 @@ Partial Class Login
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.BiomessDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UsuarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -161,4 +184,7 @@ Partial Class Login
     Friend WithEvents Label1 As Label
     Friend WithEvents btnAtras As Button
     Friend WithEvents Label0 As Label
+    Friend WithEvents BiomessDataSet2 As biomessDataSet2
+    Friend WithEvents UsuarioBindingSource As BindingSource
+    Friend WithEvents UsuarioTableAdapter As biomessDataSet2TableAdapters.UsuarioTableAdapter
 End Class

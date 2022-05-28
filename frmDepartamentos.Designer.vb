@@ -39,11 +39,11 @@ Partial Class frmDepartamentos
         Me.btnMostrarDepartamentos.AutoSize = True
         Me.btnMostrarDepartamentos.BackColor = System.Drawing.Color.Transparent
         Me.btnMostrarDepartamentos.BackgroundImage = CType(resources.GetObject("btnMostrarDepartamentos.BackgroundImage"), System.Drawing.Image)
+        Me.btnMostrarDepartamentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnMostrarDepartamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMostrarDepartamentos.Location = New System.Drawing.Point(560, 308)
-        Me.btnMostrarDepartamentos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnMostrarDepartamentos.Location = New System.Drawing.Point(420, 250)
         Me.btnMostrarDepartamentos.Name = "btnMostrarDepartamentos"
-        Me.btnMostrarDepartamentos.Size = New System.Drawing.Size(181, 167)
+        Me.btnMostrarDepartamentos.Size = New System.Drawing.Size(136, 136)
         Me.btnMostrarDepartamentos.TabIndex = 7
         Me.btnMostrarDepartamentos.UseVisualStyleBackColor = False
         '
@@ -52,11 +52,11 @@ Partial Class frmDepartamentos
         Me.btnModificarDepartamento.AutoSize = True
         Me.btnModificarDepartamento.BackColor = System.Drawing.Color.Transparent
         Me.btnModificarDepartamento.BackgroundImage = CType(resources.GetObject("btnModificarDepartamento.BackgroundImage"), System.Drawing.Image)
+        Me.btnModificarDepartamento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnModificarDepartamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModificarDepartamento.Location = New System.Drawing.Point(16, 309)
-        Me.btnModificarDepartamento.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnModificarDepartamento.Location = New System.Drawing.Point(12, 251)
         Me.btnModificarDepartamento.Name = "btnModificarDepartamento"
-        Me.btnModificarDepartamento.Size = New System.Drawing.Size(181, 167)
+        Me.btnModificarDepartamento.Size = New System.Drawing.Size(136, 136)
         Me.btnModificarDepartamento.TabIndex = 8
         Me.btnModificarDepartamento.UseVisualStyleBackColor = False
         '
@@ -65,11 +65,11 @@ Partial Class frmDepartamentos
         Me.btnCrearDepartamento.AutoSize = True
         Me.btnCrearDepartamento.BackColor = System.Drawing.Color.Transparent
         Me.btnCrearDepartamento.BackgroundImage = CType(resources.GetObject("btnCrearDepartamento.BackgroundImage"), System.Drawing.Image)
+        Me.btnCrearDepartamento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnCrearDepartamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCrearDepartamento.Location = New System.Drawing.Point(16, 92)
-        Me.btnCrearDepartamento.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCrearDepartamento.Location = New System.Drawing.Point(12, 75)
         Me.btnCrearDepartamento.Name = "btnCrearDepartamento"
-        Me.btnCrearDepartamento.Size = New System.Drawing.Size(181, 167)
+        Me.btnCrearDepartamento.Size = New System.Drawing.Size(136, 136)
         Me.btnCrearDepartamento.TabIndex = 9
         Me.btnCrearDepartamento.UseVisualStyleBackColor = False
         '
@@ -78,11 +78,11 @@ Partial Class frmDepartamentos
         Me.btnEliminarDepartamentos.AutoSize = True
         Me.btnEliminarDepartamentos.BackColor = System.Drawing.Color.Transparent
         Me.btnEliminarDepartamentos.BackgroundImage = CType(resources.GetObject("btnEliminarDepartamentos.BackgroundImage"), System.Drawing.Image)
+        Me.btnEliminarDepartamentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnEliminarDepartamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEliminarDepartamentos.Location = New System.Drawing.Point(560, 92)
-        Me.btnEliminarDepartamentos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnEliminarDepartamentos.Location = New System.Drawing.Point(420, 75)
         Me.btnEliminarDepartamentos.Name = "btnEliminarDepartamentos"
-        Me.btnEliminarDepartamentos.Size = New System.Drawing.Size(181, 167)
+        Me.btnEliminarDepartamentos.Size = New System.Drawing.Size(136, 136)
         Me.btnEliminarDepartamentos.TabIndex = 10
         Me.btnEliminarDepartamentos.UseVisualStyleBackColor = False
         '
@@ -92,10 +92,9 @@ Partial Class frmDepartamentos
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(205, 159)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(154, 129)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(307, 29)
+        Me.Label1.Size = New System.Drawing.Size(240, 24)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "Crear Nuevo Departamento"
         '
@@ -105,10 +104,9 @@ Partial Class frmDepartamentos
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(205, 374)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(154, 304)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(282, 29)
+        Me.Label2.Size = New System.Drawing.Size(218, 24)
         Me.Label2.TabIndex = 12
         Me.Label2.Text = "Modificar Departamentos"
         '
@@ -118,10 +116,9 @@ Partial Class frmDepartamentos
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label3.Location = New System.Drawing.Point(759, 159)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(569, 129)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(271, 29)
+        Me.Label3.Size = New System.Drawing.Size(210, 24)
         Me.Label3.TabIndex = 13
         Me.Label3.Text = "Eliminar Departamentos"
         '
@@ -131,10 +128,9 @@ Partial Class frmDepartamentos
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label4.Location = New System.Drawing.Point(749, 363)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(562, 295)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(264, 29)
+        Me.Label4.Size = New System.Drawing.Size(204, 24)
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "Mostrar Departamentos"
         '
@@ -142,19 +138,18 @@ Partial Class frmDepartamentos
         '
         Me.btnAtras.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
         Me.btnAtras.BackgroundImage = CType(resources.GetObject("btnAtras.BackgroundImage"), System.Drawing.Image)
-        Me.btnAtras.Location = New System.Drawing.Point(16, 15)
-        Me.btnAtras.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAtras.Location = New System.Drawing.Point(12, 12)
         Me.btnAtras.Name = "btnAtras"
-        Me.btnAtras.Size = New System.Drawing.Size(160, 49)
+        Me.btnAtras.Size = New System.Drawing.Size(120, 40)
         Me.btnAtras.TabIndex = 15
         Me.btnAtras.UseVisualStyleBackColor = False
         '
         'frmDepartamentos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.btnAtras)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -164,7 +159,6 @@ Partial Class frmDepartamentos
         Me.Controls.Add(Me.btnCrearDepartamento)
         Me.Controls.Add(Me.btnModificarDepartamento)
         Me.Controls.Add(Me.btnMostrarDepartamentos)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmDepartamentos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Departamento"

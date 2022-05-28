@@ -61,9 +61,9 @@ Partial Class frmEmpresaEmpresa
         Me.btnModificarDatos.BackgroundImage = CType(resources.GetObject("btnModificarDatos.BackgroundImage"), System.Drawing.Image)
         Me.btnModificarDatos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnModificarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModificarDatos.Location = New System.Drawing.Point(176, 91)
+        Me.btnModificarDatos.Location = New System.Drawing.Point(178, 91)
         Me.btnModificarDatos.Name = "btnModificarDatos"
-        Me.btnModificarDatos.Size = New System.Drawing.Size(158, 150)
+        Me.btnModificarDatos.Size = New System.Drawing.Size(154, 150)
         Me.btnModificarDatos.TabIndex = 6
         Me.btnModificarDatos.UseVisualStyleBackColor = False
         '

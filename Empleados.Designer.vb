@@ -24,20 +24,29 @@ Partial Class Empleados
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Empleados))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
+        Me.btnEmpleados = New System.Windows.Forms.Button()
+        Me.lklEmpleados = New System.Windows.Forms.LinkLabel()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel7 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel8 = New System.Windows.Forms.LinkLabel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.lklAusencias = New System.Windows.Forms.LinkLabel()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnAusencias = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,124 +57,40 @@ Partial Class Empleados
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.Label1.ForeColor = System.Drawing.SystemColors.Control
         Me.Label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Label1.Location = New System.Drawing.Point(670, 37)
+        Me.Label1.Location = New System.Drawing.Point(670, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(188, 39)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Empleados"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Button2
+        'btnEmpleados
         '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button2.Location = New System.Drawing.Point(278, 116)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(110, 110)
-        Me.Button2.TabIndex = 3
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnEmpleados.BackColor = System.Drawing.Color.Transparent
+        Me.btnEmpleados.BackgroundImage = CType(resources.GetObject("btnEmpleados.BackgroundImage"), System.Drawing.Image)
+        Me.btnEmpleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnEmpleados.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnEmpleados.Location = New System.Drawing.Point(227, 54)
+        Me.btnEmpleados.Name = "btnEmpleados"
+        Me.btnEmpleados.Size = New System.Drawing.Size(110, 110)
+        Me.btnEmpleados.TabIndex = 3
+        Me.btnEmpleados.UseVisualStyleBackColor = False
         '
-        'Button3
+        'lklEmpleados
         '
-        Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button3.Location = New System.Drawing.Point(278, 587)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(110, 110)
-        Me.Button3.TabIndex = 5
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.Transparent
-        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button4.Location = New System.Drawing.Point(278, 426)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(110, 110)
-        Me.Button4.TabIndex = 7
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.Transparent
-        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button5.Location = New System.Drawing.Point(278, 271)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(110, 110)
-        Me.Button5.TabIndex = 8
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.LinkLabel1.ForeColor = System.Drawing.SystemColors.Control
-        Me.LinkLabel1.LinkColor = System.Drawing.SystemColors.Control
-        Me.LinkLabel1.Location = New System.Drawing.Point(481, 145)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(297, 39)
-        Me.LinkLabel1.TabIndex = 11
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Agregar empleado"
-        '
-        'LinkLabel2
-        '
-        Me.LinkLabel2.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.LinkLabel2.ForeColor = System.Drawing.SystemColors.Control
-        Me.LinkLabel2.LinkColor = System.Drawing.SystemColors.Control
-        Me.LinkLabel2.Location = New System.Drawing.Point(481, 300)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(314, 39)
-        Me.LinkLabel2.TabIndex = 12
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "Modificar empleado"
-        '
-        'LinkLabel3
-        '
-        Me.LinkLabel3.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.LinkLabel3.ForeColor = System.Drawing.SystemColors.Control
-        Me.LinkLabel3.LinkColor = System.Drawing.SystemColors.Control
-        Me.LinkLabel3.Location = New System.Drawing.Point(481, 455)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(300, 39)
-        Me.LinkLabel3.TabIndex = 13
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "Eliminar empleado"
-        '
-        'LinkLabel4
-        '
-        Me.LinkLabel4.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.LinkLabel4.AutoSize = True
-        Me.LinkLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.LinkLabel4.ForeColor = System.Drawing.SystemColors.Control
-        Me.LinkLabel4.LinkColor = System.Drawing.SystemColors.Control
-        Me.LinkLabel4.Location = New System.Drawing.Point(481, 616)
-        Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(296, 39)
-        Me.LinkLabel4.TabIndex = 14
-        Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Mostar empleados"
+        Me.lklEmpleados.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.lklEmpleados.AutoSize = True
+        Me.lklEmpleados.BackColor = System.Drawing.Color.Transparent
+        Me.lklEmpleados.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.lklEmpleados.ForeColor = System.Drawing.SystemColors.Control
+        Me.lklEmpleados.LinkColor = System.Drawing.SystemColors.Control
+        Me.lklEmpleados.Location = New System.Drawing.Point(377, 83)
+        Me.lklEmpleados.Name = "lklEmpleados"
+        Me.lklEmpleados.Size = New System.Drawing.Size(188, 39)
+        Me.lklEmpleados.TabIndex = 11
+        Me.lklEmpleados.TabStop = True
+        Me.lklEmpleados.Text = "Empleados"
         '
         'MenuStrip1
         '
@@ -220,6 +145,216 @@ Partial Class Empleados
         Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(155, 41)
         Me.EmpresaToolStripMenuItem.Text = "Empresa"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.Label2.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label2.Location = New System.Drawing.Point(554, 167)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(409, 39)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Caracterisiticas empleado"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'LinkLabel6
+        '
+        Me.LinkLabel6.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.LinkLabel6.AutoSize = True
+        Me.LinkLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.LinkLabel6.ForeColor = System.Drawing.SystemColors.Control
+        Me.LinkLabel6.LinkColor = System.Drawing.SystemColors.Control
+        Me.LinkLabel6.Location = New System.Drawing.Point(1081, 514)
+        Me.LinkLabel6.Name = "LinkLabel6"
+        Me.LinkLabel6.Size = New System.Drawing.Size(173, 39)
+        Me.LinkLabel6.TabIndex = 43
+        Me.LinkLabel6.TabStop = True
+        Me.LinkLabel6.Text = "Asistencia"
+        '
+        'LinkLabel7
+        '
+        Me.LinkLabel7.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.LinkLabel7.AutoSize = True
+        Me.LinkLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.LinkLabel7.ForeColor = System.Drawing.SystemColors.Control
+        Me.LinkLabel7.LinkColor = System.Drawing.SystemColors.Control
+        Me.LinkLabel7.Location = New System.Drawing.Point(1081, 385)
+        Me.LinkLabel7.Name = "LinkLabel7"
+        Me.LinkLabel7.Size = New System.Drawing.Size(159, 39)
+        Me.LinkLabel7.TabIndex = 42
+        Me.LinkLabel7.TabStop = True
+        Me.LinkLabel7.Text = "Permisos"
+        '
+        'LinkLabel8
+        '
+        Me.LinkLabel8.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.LinkLabel8.AutoSize = True
+        Me.LinkLabel8.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.LinkLabel8.ForeColor = System.Drawing.SystemColors.Control
+        Me.LinkLabel8.LinkColor = System.Drawing.SystemColors.Control
+        Me.LinkLabel8.Location = New System.Drawing.Point(1081, 259)
+        Me.LinkLabel8.Name = "LinkLabel8"
+        Me.LinkLabel8.Size = New System.Drawing.Size(194, 39)
+        Me.LinkLabel8.TabIndex = 41
+        Me.LinkLabel8.TabStop = True
+        Me.LinkLabel8.Text = "Vacaciones"
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button1.Location = New System.Drawing.Point(878, 356)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(110, 110)
+        Me.Button1.TabIndex = 40
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.Transparent
+        Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
+        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button6.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button6.Location = New System.Drawing.Point(878, 485)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(110, 110)
+        Me.Button6.TabIndex = 39
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.Transparent
+        Me.Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), System.Drawing.Image)
+        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button8.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button8.Location = New System.Drawing.Point(878, 230)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(110, 110)
+        Me.Button8.TabIndex = 38
+        Me.Button8.UseVisualStyleBackColor = False
+        '
+        'LinkLabel4
+        '
+        Me.LinkLabel4.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.LinkLabel4.ForeColor = System.Drawing.SystemColors.Control
+        Me.LinkLabel4.LinkColor = System.Drawing.SystemColors.Control
+        Me.LinkLabel4.Location = New System.Drawing.Point(430, 635)
+        Me.LinkLabel4.Name = "LinkLabel4"
+        Me.LinkLabel4.Size = New System.Drawing.Size(146, 39)
+        Me.LinkLabel4.TabIndex = 37
+        Me.LinkLabel4.TabStop = True
+        Me.LinkLabel4.Text = "Horarios"
+        '
+        'LinkLabel3
+        '
+        Me.LinkLabel3.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.LinkLabel3.ForeColor = System.Drawing.SystemColors.Control
+        Me.LinkLabel3.LinkColor = System.Drawing.SystemColors.Control
+        Me.LinkLabel3.Location = New System.Drawing.Point(430, 514)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(110, 39)
+        Me.LinkLabel3.TabIndex = 36
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "Faltas"
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.LinkLabel2.ForeColor = System.Drawing.SystemColors.Control
+        Me.LinkLabel2.LinkColor = System.Drawing.SystemColors.Control
+        Me.LinkLabel2.Location = New System.Drawing.Point(430, 385)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(132, 39)
+        Me.LinkLabel2.TabIndex = 35
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "Atrasos"
+        '
+        'lklAusencias
+        '
+        Me.lklAusencias.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.lklAusencias.AutoSize = True
+        Me.lklAusencias.BackColor = System.Drawing.Color.Transparent
+        Me.lklAusencias.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.lklAusencias.ForeColor = System.Drawing.SystemColors.Control
+        Me.lklAusencias.LinkColor = System.Drawing.SystemColors.Control
+        Me.lklAusencias.Location = New System.Drawing.Point(430, 259)
+        Me.lklAusencias.Name = "lklAusencias"
+        Me.lklAusencias.Size = New System.Drawing.Size(175, 39)
+        Me.lklAusencias.TabIndex = 34
+        Me.lklAusencias.TabStop = True
+        Me.lklAusencias.Text = "Ausencias"
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.Transparent
+        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button5.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button5.Location = New System.Drawing.Point(227, 356)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(110, 110)
+        Me.Button5.TabIndex = 33
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.Transparent
+        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button4.Location = New System.Drawing.Point(227, 485)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(110, 110)
+        Me.Button4.TabIndex = 32
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.Transparent
+        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button3.Location = New System.Drawing.Point(227, 606)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(110, 110)
+        Me.Button3.TabIndex = 31
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'btnAusencias
+        '
+        Me.btnAusencias.BackColor = System.Drawing.Color.Transparent
+        Me.btnAusencias.BackgroundImage = CType(resources.GetObject("btnAusencias.BackgroundImage"), System.Drawing.Image)
+        Me.btnAusencias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnAusencias.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnAusencias.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnAusencias.Location = New System.Drawing.Point(227, 230)
+        Me.btnAusencias.Name = "btnAusencias"
+        Me.btnAusencias.Size = New System.Drawing.Size(110, 110)
+        Me.btnAusencias.TabIndex = 30
+        Me.btnAusencias.UseVisualStyleBackColor = False
+        '
         'Empleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -227,15 +362,24 @@ Partial Class Empleados
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1350, 729)
-        Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.LinkLabel6)
+        Me.Controls.Add(Me.LinkLabel7)
+        Me.Controls.Add(Me.LinkLabel8)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.LinkLabel4)
         Me.Controls.Add(Me.LinkLabel3)
         Me.Controls.Add(Me.LinkLabel2)
-        Me.Controls.Add(Me.LinkLabel1)
+        Me.Controls.Add(Me.lklAusencias)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnAusencias)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.lklEmpleados)
+        Me.Controls.Add(Me.btnEmpleados)
         Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "Empleados"
@@ -248,18 +392,27 @@ Partial Class Empleados
 
     End Sub
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents LinkLabel2 As LinkLabel
-    Friend WithEvents LinkLabel3 As LinkLabel
-    Friend WithEvents LinkLabel4 As LinkLabel
+    Friend WithEvents btnEmpleados As Button
+    Friend WithEvents lklEmpleados As LinkLabel
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EmpleadosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UsuariosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EmpresaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label2 As Label
+    Friend WithEvents LinkLabel6 As LinkLabel
+    Friend WithEvents LinkLabel7 As LinkLabel
+    Friend WithEvents LinkLabel8 As LinkLabel
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents LinkLabel4 As LinkLabel
+    Friend WithEvents LinkLabel3 As LinkLabel
+    Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents lklAusencias As LinkLabel
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents btnAusencias As Button
 End Class

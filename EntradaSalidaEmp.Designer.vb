@@ -22,6 +22,7 @@ Partial Class EntradaSalida
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EntradaSalida))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnRegistrar = New System.Windows.Forms.Button()
@@ -31,7 +32,12 @@ Partial Class EntradaSalida
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbEoS = New System.Windows.Forms.Label()
         Me.btnAtras = New System.Windows.Forms.Button()
+        Me.BiomessDataSet2 = New Biomess_0._1.biomessDataSet2()
+        Me.EmpleadoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.EmpleadoTableAdapter = New Biomess_0._1.biomessDataSet2TableAdapters.EmpleadoTableAdapter()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.BiomessDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmpleadoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -76,6 +82,8 @@ Partial Class EntradaSalida
         'cbNombreEmp
         '
         Me.cbNombreEmp.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.cbNombreEmp.DataSource = Me.EmpleadoBindingSource
+        Me.cbNombreEmp.DisplayMember = "nombreCompleto"
         Me.cbNombreEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cbNombreEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbNombreEmp.ForeColor = System.Drawing.SystemColors.Control
@@ -85,7 +93,6 @@ Partial Class EntradaSalida
         Me.cbNombreEmp.Name = "cbNombreEmp"
         Me.cbNombreEmp.Size = New System.Drawing.Size(420, 32)
         Me.cbNombreEmp.TabIndex = 2
-        Me.cbNombreEmp.Text = "Seleccionar..."
         '
         'Label2
         '
@@ -133,6 +140,20 @@ Partial Class EntradaSalida
         Me.btnAtras.TabIndex = 2
         Me.btnAtras.UseVisualStyleBackColor = False
         '
+        'BiomessDataSet2
+        '
+        Me.BiomessDataSet2.DataSetName = "biomessDataSet2"
+        Me.BiomessDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'EmpleadoBindingSource
+        '
+        Me.EmpleadoBindingSource.DataMember = "Empleado"
+        Me.EmpleadoBindingSource.DataSource = Me.BiomessDataSet2
+        '
+        'EmpleadoTableAdapter
+        '
+        Me.EmpleadoTableAdapter.ClearBeforeFill = True
+        '
         'EntradaSalida
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -148,6 +169,8 @@ Partial Class EntradaSalida
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.BiomessDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmpleadoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -161,4 +184,7 @@ Partial Class EntradaSalida
     Friend WithEvents btnRegistrar As Button
     Friend WithEvents tbPIN As TextBox
     Friend WithEvents cbNombreEmp As ComboBox
+    Friend WithEvents BiomessDataSet2 As biomessDataSet2
+    Friend WithEvents EmpleadoBindingSource As BindingSource
+    Friend WithEvents EmpleadoTableAdapter As biomessDataSet2TableAdapters.EmpleadoTableAdapter
 End Class

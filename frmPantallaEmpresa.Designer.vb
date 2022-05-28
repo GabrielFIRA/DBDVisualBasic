@@ -42,10 +42,11 @@ Partial Class frmPantallaEmpresa
         '
         Me.btnEmpresa.BackColor = System.Drawing.Color.Transparent
         Me.btnEmpresa.BackgroundImage = CType(resources.GetObject("btnEmpresa.BackgroundImage"), System.Drawing.Image)
+        Me.btnEmpresa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEmpresa.Location = New System.Drawing.Point(388, 228)
+        Me.btnEmpresa.Location = New System.Drawing.Point(411, 261)
         Me.btnEmpresa.Name = "btnEmpresa"
-        Me.btnEmpresa.Size = New System.Drawing.Size(170, 180)
+        Me.btnEmpresa.Size = New System.Drawing.Size(150, 150)
         Me.btnEmpresa.TabIndex = 0
         Me.btnEmpresa.UseVisualStyleBackColor = False
         '
@@ -54,10 +55,11 @@ Partial Class frmPantallaEmpresa
         Me.btnDepartamentos.AutoSize = True
         Me.btnDepartamentos.BackColor = System.Drawing.Color.Transparent
         Me.btnDepartamentos.BackgroundImage = CType(resources.GetObject("btnDepartamentos.BackgroundImage"), System.Drawing.Image)
+        Me.btnDepartamentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnDepartamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDepartamentos.Location = New System.Drawing.Point(607, 267)
+        Me.btnDepartamentos.Location = New System.Drawing.Point(625, 261)
         Me.btnDepartamentos.Name = "btnDepartamentos"
-        Me.btnDepartamentos.Size = New System.Drawing.Size(194, 110)
+        Me.btnDepartamentos.Size = New System.Drawing.Size(150, 150)
         Me.btnDepartamentos.TabIndex = 1
         Me.btnDepartamentos.UseVisualStyleBackColor = False
         '
@@ -66,10 +68,11 @@ Partial Class frmPantallaEmpresa
         Me.btnCargos.AutoSize = True
         Me.btnCargos.BackColor = System.Drawing.Color.Transparent
         Me.btnCargos.BackgroundImage = CType(resources.GetObject("btnCargos.BackgroundImage"), System.Drawing.Image)
+        Me.btnCargos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnCargos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCargos.Location = New System.Drawing.Point(840, 267)
+        Me.btnCargos.Location = New System.Drawing.Point(827, 261)
         Me.btnCargos.Name = "btnCargos"
-        Me.btnCargos.Size = New System.Drawing.Size(94, 105)
+        Me.btnCargos.Size = New System.Drawing.Size(150, 150)
         Me.btnCargos.TabIndex = 2
         Me.btnCargos.UseVisualStyleBackColor = False
         '
@@ -79,7 +82,7 @@ Partial Class frmPantallaEmpresa
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(425, 423)
+        Me.Label1.Location = New System.Drawing.Point(445, 423)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(86, 24)
         Me.Label1.TabIndex = 3
@@ -91,7 +94,7 @@ Partial Class frmPantallaEmpresa
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(638, 397)
+        Me.Label2.Location = New System.Drawing.Point(638, 423)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(137, 24)
         Me.Label2.TabIndex = 4
@@ -103,7 +106,7 @@ Partial Class frmPantallaEmpresa
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label3.Location = New System.Drawing.Point(857, 387)
+        Me.Label3.Location = New System.Drawing.Point(861, 423)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(70, 24)
         Me.Label3.TabIndex = 5
