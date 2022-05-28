@@ -78,11 +78,11 @@ Partial Class frmOpcion
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(64, 17)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(85, 21)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(1223, 695)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(1631, 855)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Rol"
@@ -93,12 +93,11 @@ Partial Class frmOpcion
         Me.dgvRol.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvRol.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDOpcionDataGridViewTextBoxColumn, Me.NombreOpcionDataGridViewTextBoxColumn, Me.DescOpcionDataGridViewTextBoxColumn, Me.EstadoDataGridViewTextBoxColumn})
         Me.dgvRol.DataSource = Me.OpcionesBindingSource
-        Me.dgvRol.Location = New System.Drawing.Point(230, 447)
-        Me.dgvRol.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dgvRol.Location = New System.Drawing.Point(306, 550)
         Me.dgvRol.Name = "dgvRol"
         Me.dgvRol.RowHeadersWidth = 51
         Me.dgvRol.RowTemplate.Height = 24
-        Me.dgvRol.Size = New System.Drawing.Size(790, 224)
+        Me.dgvRol.Size = New System.Drawing.Size(1053, 276)
         Me.dgvRol.TabIndex = 42
         '
         'IDOpcionDataGridViewTextBoxColumn
@@ -150,19 +149,17 @@ Partial Class frmOpcion
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(241, 392)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label13.Location = New System.Drawing.Point(321, 482)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(80, 26)
+        Me.Label13.Size = New System.Drawing.Size(103, 32)
         Me.Label13.TabIndex = 41
         Me.Label13.Text = "Buscar"
         '
         'txbBuscarO
         '
-        Me.txbBuscarO.Location = New System.Drawing.Point(338, 387)
-        Me.txbBuscarO.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbBuscarO.Location = New System.Drawing.Point(450, 476)
         Me.txbBuscarO.Name = "txbBuscarO"
-        Me.txbBuscarO.Size = New System.Drawing.Size(649, 32)
+        Me.txbBuscarO.Size = New System.Drawing.Size(864, 38)
         Me.txbBuscarO.TabIndex = 40
         '
         'Label12
@@ -170,10 +167,9 @@ Partial Class frmOpcion
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(869, 277)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label12.Location = New System.Drawing.Point(1159, 341)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(83, 48)
+        Me.Label12.Size = New System.Drawing.Size(107, 58)
         Me.Label12.TabIndex = 39
         Me.Label12.Text = "Eliminar " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Rol"
         '
@@ -182,10 +178,9 @@ Partial Class frmOpcion
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(691, 277)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Location = New System.Drawing.Point(921, 341)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(58, 48)
+        Me.Label11.Size = New System.Drawing.Size(76, 58)
         Me.Label11.TabIndex = 38
         Me.Label11.Text = "Editar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Rol"
         '
@@ -198,9 +193,10 @@ Partial Class frmOpcion
         Me.btnEliminarO.FlatAppearance.BorderSize = 4
         Me.btnEliminarO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnEliminarO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEliminarO.Location = New System.Drawing.Point(873, 223)
+        Me.btnEliminarO.Location = New System.Drawing.Point(1164, 274)
+        Me.btnEliminarO.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEliminarO.Name = "btnEliminarO"
-        Me.btnEliminarO.Size = New System.Drawing.Size(74, 51)
+        Me.btnEliminarO.Size = New System.Drawing.Size(98, 63)
         Me.btnEliminarO.TabIndex = 37
         Me.btnEliminarO.UseVisualStyleBackColor = False
         '
@@ -213,9 +209,10 @@ Partial Class frmOpcion
         Me.btnEditarO.FlatAppearance.BorderSize = 4
         Me.btnEditarO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnEditarO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEditarO.Location = New System.Drawing.Point(682, 223)
+        Me.btnEditarO.Location = New System.Drawing.Point(910, 274)
+        Me.btnEditarO.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEditarO.Name = "btnEditarO"
-        Me.btnEditarO.Size = New System.Drawing.Size(74, 51)
+        Me.btnEditarO.Size = New System.Drawing.Size(98, 63)
         Me.btnEditarO.TabIndex = 36
         Me.btnEditarO.UseVisualStyleBackColor = False
         '
@@ -223,10 +220,9 @@ Partial Class frmOpcion
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Location = New System.Drawing.Point(272, 286)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Location = New System.Drawing.Point(363, 352)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(75, 26)
+        Me.Label10.Size = New System.Drawing.Size(97, 32)
         Me.Label10.TabIndex = 20
         Me.Label10.Text = "Nuevo"
         '
@@ -239,9 +235,10 @@ Partial Class frmOpcion
         Me.btnNuevoO.FlatAppearance.BorderSize = 4
         Me.btnNuevoO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnNuevoO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNuevoO.Location = New System.Drawing.Point(272, 223)
+        Me.btnNuevoO.Location = New System.Drawing.Point(362, 274)
+        Me.btnNuevoO.Margin = New System.Windows.Forms.Padding(4)
         Me.btnNuevoO.Name = "btnNuevoO"
-        Me.btnNuevoO.Size = New System.Drawing.Size(74, 51)
+        Me.btnNuevoO.Size = New System.Drawing.Size(98, 63)
         Me.btnNuevoO.TabIndex = 19
         Me.btnNuevoO.UseVisualStyleBackColor = False
         '
@@ -254,9 +251,10 @@ Partial Class frmOpcion
         Me.btnAtras.FlatAppearance.BorderSize = 4
         Me.btnAtras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAtras.Location = New System.Drawing.Point(22, 611)
+        Me.btnAtras.Location = New System.Drawing.Point(29, 752)
+        Me.btnAtras.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAtras.Name = "btnAtras"
-        Me.btnAtras.Size = New System.Drawing.Size(56, 60)
+        Me.btnAtras.Size = New System.Drawing.Size(75, 74)
         Me.btnAtras.TabIndex = 18
         Me.btnAtras.UseVisualStyleBackColor = False
         '
@@ -265,10 +263,9 @@ Partial Class frmOpcion
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(459, 277)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(612, 341)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(83, 48)
+        Me.Label8.Size = New System.Drawing.Size(105, 58)
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "Agregar " & Global.Microsoft.VisualBasic.ChrW(13) & "Rol"
         '
@@ -281,35 +278,36 @@ Partial Class frmOpcion
         Me.btnAgregarO.FlatAppearance.BorderSize = 4
         Me.btnAgregarO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnAgregarO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAgregarO.Location = New System.Drawing.Point(463, 223)
+        Me.btnAgregarO.Location = New System.Drawing.Point(617, 274)
+        Me.btnAgregarO.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAgregarO.Name = "btnAgregarO"
-        Me.btnAgregarO.Size = New System.Drawing.Size(74, 51)
+        Me.btnAgregarO.Size = New System.Drawing.Size(98, 63)
         Me.btnAgregarO.TabIndex = 14
         Me.btnAgregarO.UseVisualStyleBackColor = False
         '
         'txbDescOpc
         '
-        Me.txbDescOpc.Location = New System.Drawing.Point(770, 59)
-        Me.txbDescOpc.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbDescOpc.Location = New System.Drawing.Point(1026, 73)
+        Me.txbDescOpc.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txbDescOpc.Name = "txbDescOpc"
-        Me.txbDescOpc.Size = New System.Drawing.Size(407, 32)
+        Me.txbDescOpc.Size = New System.Drawing.Size(541, 38)
         Me.txbDescOpc.TabIndex = 11
         '
         'txbOpcion
         '
-        Me.txbOpcion.Location = New System.Drawing.Point(120, 111)
-        Me.txbOpcion.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbOpcion.Location = New System.Drawing.Point(160, 137)
+        Me.txbOpcion.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txbOpcion.Name = "txbOpcion"
-        Me.txbOpcion.Size = New System.Drawing.Size(407, 32)
+        Me.txbOpcion.Size = New System.Drawing.Size(541, 38)
         Me.txbOpcion.TabIndex = 8
         '
         'txbIDO
         '
-        Me.txbIDO.Location = New System.Drawing.Point(120, 64)
-        Me.txbIDO.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbIDO.Location = New System.Drawing.Point(160, 79)
+        Me.txbIDO.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txbIDO.Name = "txbIDO"
         Me.txbIDO.ReadOnly = True
-        Me.txbIDO.Size = New System.Drawing.Size(407, 32)
+        Me.txbIDO.Size = New System.Drawing.Size(541, 38)
         Me.txbIDO.TabIndex = 7
         '
         'Label5
@@ -317,10 +315,9 @@ Partial Class frmOpcion
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(659, 62)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(879, 76)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(110, 24)
+        Me.Label5.Size = New System.Drawing.Size(141, 29)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Descripcion"
         '
@@ -329,10 +326,9 @@ Partial Class frmOpcion
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(51, 116)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(68, 143)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(72, 24)
+        Me.Label2.Size = New System.Drawing.Size(91, 29)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Opcion"
         '
@@ -341,10 +337,9 @@ Partial Class frmOpcion
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(51, 64)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(68, 79)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(27, 24)
+        Me.Label1.Size = New System.Drawing.Size(36, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ID"
         '
@@ -354,12 +349,11 @@ Partial Class frmOpcion
         '
         'frmOpcion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(1350, 729)
+        Me.ClientSize = New System.Drawing.Size(1800, 897)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmOpcion"
         Me.Text = "frmOpcion"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

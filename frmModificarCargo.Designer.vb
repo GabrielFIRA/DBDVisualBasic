@@ -46,19 +46,19 @@ Partial Class frmModificarCargo
         Me.EmpleadoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.EmpleadoTableAdapter = New Biomess_0._1.biomessDataSetTableAdapters.EmpleadoTableAdapter()
         Me.DepartamentoTableAdapter = New Biomess_0._1.biomessDataSetTableAdapters.DepartamentoTableAdapter()
+        Me.DepartamentoBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.RefCargo4BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.RefDepartamento3BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label7 = New System.Windows.Forms.Label()
         Me.cbNuevoDepar = New System.Windows.Forms.ComboBox()
-        Me.RefCargo4BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DepartamentoBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.RefDepartamento3BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.CargoBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BiomessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DepartamentoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BiomessDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CargoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmpleadoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RefCargo4BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DepartamentoBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RefCargo4BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RefDepartamento3BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -245,6 +245,21 @@ Partial Class frmModificarCargo
         '
         Me.DepartamentoTableAdapter.ClearBeforeFill = True
         '
+        'DepartamentoBindingSource1
+        '
+        Me.DepartamentoBindingSource1.DataMember = "Departamento"
+        Me.DepartamentoBindingSource1.DataSource = Me.BiomessDataSetBindingSource
+        '
+        'RefCargo4BindingSource
+        '
+        Me.RefCargo4BindingSource.DataMember = "RefCargo4"
+        Me.RefCargo4BindingSource.DataSource = Me.CargoBindingSource
+        '
+        'RefDepartamento3BindingSource
+        '
+        Me.RefDepartamento3BindingSource.DataMember = "RefDepartamento3"
+        Me.RefDepartamento3BindingSource.DataSource = Me.DepartamentoBindingSource1
+        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -267,21 +282,6 @@ Partial Class frmModificarCargo
         Me.cbNuevoDepar.Size = New System.Drawing.Size(147, 21)
         Me.cbNuevoDepar.TabIndex = 52
         Me.cbNuevoDepar.ValueMember = "ID_Departamento"
-        '
-        'RefCargo4BindingSource
-        '
-        Me.RefCargo4BindingSource.DataMember = "RefCargo4"
-        Me.RefCargo4BindingSource.DataSource = Me.CargoBindingSource
-        '
-        'DepartamentoBindingSource1
-        '
-        Me.DepartamentoBindingSource1.DataMember = "Departamento"
-        Me.DepartamentoBindingSource1.DataSource = Me.BiomessDataSetBindingSource
-        '
-        'RefDepartamento3BindingSource
-        '
-        Me.RefDepartamento3BindingSource.DataMember = "RefDepartamento3"
-        Me.RefDepartamento3BindingSource.DataSource = Me.DepartamentoBindingSource1
         '
         'frmModificarCargo
         '
@@ -313,8 +313,8 @@ Partial Class frmModificarCargo
         CType(Me.BiomessDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CargoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmpleadoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RefCargo4BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DepartamentoBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RefCargo4BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RefDepartamento3BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -343,9 +343,9 @@ Partial Class frmModificarCargo
     Friend WithEvents DepartamentoBindingSource As BindingSource
     Friend WithEvents DepartamentoTableAdapter As biomessDataSetTableAdapters.DepartamentoTableAdapter
     Friend WithEvents CargoBindingSource1 As BindingSource
-    Friend WithEvents Label7 As Label
-    Friend WithEvents cbNuevoDepar As ComboBox
     Friend WithEvents RefCargo4BindingSource As BindingSource
     Friend WithEvents DepartamentoBindingSource1 As BindingSource
     Friend WithEvents RefDepartamento3BindingSource As BindingSource
+    Friend WithEvents Label7 As Label
+    Friend WithEvents cbNuevoDepar As ComboBox
 End Class

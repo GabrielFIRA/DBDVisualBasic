@@ -11,20 +11,7 @@ Public Class frmModificarDepartamentos
     End Sub
 
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
-        Dim _connection As Global.System.Data.SqlClient.SqlConnection
-        Dim lector As SqlDataReader
-
         Try
-            _connection = New Global.System.Data.SqlClient.SqlConnection
-            _connection.ConnectionString = "Dsata Source=(local);Initial Catalog=biomess;Persist Security Info=True;User ID=sa;Password=Temporal2022+"
-            _connection.Open()
-            Dim sqlCommandSelect As SqlCommand = New SqlCommand("Select * from dbo.Organizacion", _connection)
-            Dim ID_OrgTemp As Integer = 0
-            lector = sqlCommandSelect.ExecuteReader()
-            While (lector.Read())
-                ID_OrgTemp = lector.GetInt32(0)
-            End While
-
             If Me.tbNombreActual.Text.Equals("") Then
                 MessageBox.Show("Debe escribir el nombre actual del departamento", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Me.tbNombreActual.Focus()
@@ -49,7 +36,7 @@ Public Class frmModificarDepartamentos
 
             Else
                 Dim tblDepartamento As New biomessDataSetTableAdapters.DepartamentoTableAdapter
-                tblDepartamento.UpdateQuery(ID_Organizacion:=ID_OrgTemp,
+                tblDepartamento.UpdateQuery(ID_Organizacion:=9,
                                             nombreDepart:=Me.tbNuevoNombre.Text,
                                             estado:=2,
                                             Original_nombreDepart:=Me.tbNombreActual.Text)
@@ -63,11 +50,9 @@ Public Class frmModificarDepartamentos
         Catch ex As Exception
             MsgBox("Error al modificar el Departamento: ", ex.Message())
             MsgBox("Error al modificar el Departamento: ", ex.StackTrace())
-        Finally
-            _connection.Close()
-            lector.Close()
         End Try
     End Sub
+
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
         limpiarCampos()
