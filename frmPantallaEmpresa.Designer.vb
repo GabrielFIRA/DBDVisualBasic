@@ -35,6 +35,8 @@ Partial Class frmPantallaEmpresa
         Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.btnReportes = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,7 +46,7 @@ Partial Class frmPantallaEmpresa
         Me.btnEmpresa.BackgroundImage = CType(resources.GetObject("btnEmpresa.BackgroundImage"), System.Drawing.Image)
         Me.btnEmpresa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEmpresa.Location = New System.Drawing.Point(411, 261)
+        Me.btnEmpresa.Location = New System.Drawing.Point(193, 34)
         Me.btnEmpresa.Name = "btnEmpresa"
         Me.btnEmpresa.Size = New System.Drawing.Size(150, 150)
         Me.btnEmpresa.TabIndex = 0
@@ -57,7 +59,7 @@ Partial Class frmPantallaEmpresa
         Me.btnDepartamentos.BackgroundImage = CType(resources.GetObject("btnDepartamentos.BackgroundImage"), System.Drawing.Image)
         Me.btnDepartamentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnDepartamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDepartamentos.Location = New System.Drawing.Point(625, 261)
+        Me.btnDepartamentos.Location = New System.Drawing.Point(407, 34)
         Me.btnDepartamentos.Name = "btnDepartamentos"
         Me.btnDepartamentos.Size = New System.Drawing.Size(150, 150)
         Me.btnDepartamentos.TabIndex = 1
@@ -70,7 +72,7 @@ Partial Class frmPantallaEmpresa
         Me.btnCargos.BackgroundImage = CType(resources.GetObject("btnCargos.BackgroundImage"), System.Drawing.Image)
         Me.btnCargos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnCargos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCargos.Location = New System.Drawing.Point(827, 261)
+        Me.btnCargos.Location = New System.Drawing.Point(609, 34)
         Me.btnCargos.Name = "btnCargos"
         Me.btnCargos.Size = New System.Drawing.Size(150, 150)
         Me.btnCargos.TabIndex = 2
@@ -82,7 +84,7 @@ Partial Class frmPantallaEmpresa
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(445, 423)
+        Me.Label1.Location = New System.Drawing.Point(227, 196)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(86, 24)
         Me.Label1.TabIndex = 3
@@ -94,7 +96,7 @@ Partial Class frmPantallaEmpresa
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(638, 423)
+        Me.Label2.Location = New System.Drawing.Point(420, 196)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(137, 24)
         Me.Label2.TabIndex = 4
@@ -106,7 +108,7 @@ Partial Class frmPantallaEmpresa
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label3.Location = New System.Drawing.Point(861, 423)
+        Me.Label3.Location = New System.Drawing.Point(643, 196)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(70, 24)
         Me.Label3.TabIndex = 5
@@ -165,6 +167,31 @@ Partial Class frmPantallaEmpresa
         Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(155, 41)
         Me.EmpresaToolStripMenuItem.Text = "Empresa"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label4.Location = New System.Drawing.Point(816, 196)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(86, 24)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Reportes"
+        '
+        'btnReportes
+        '
+        Me.btnReportes.AutoSize = True
+        Me.btnReportes.BackColor = System.Drawing.Color.Transparent
+        Me.btnReportes.BackgroundImage = CType(resources.GetObject("btnReportes.BackgroundImage"), System.Drawing.Image)
+        Me.btnReportes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReportes.Location = New System.Drawing.Point(784, 34)
+        Me.btnReportes.Name = "btnReportes"
+        Me.btnReportes.Size = New System.Drawing.Size(150, 150)
+        Me.btnReportes.TabIndex = 8
+        Me.btnReportes.UseVisualStyleBackColor = False
+        '
         'frmPantallaEmpresa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -172,6 +199,8 @@ Partial Class frmPantallaEmpresa
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1350, 729)
+        Me.Controls.Add(Me.btnReportes)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -202,4 +231,6 @@ Partial Class frmPantallaEmpresa
     Friend WithEvents EmpleadosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UsuariosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EmpresaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label4 As Label
+    Friend WithEvents btnReportes As Button
 End Class
