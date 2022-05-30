@@ -35,8 +35,11 @@ Public Class frmModificarDepartamentos
 
 
             Else
+                Dim rows() As DataRow = Me.OrganizacionTableAdapter.GetData.Select()
+                Dim id_orgTemp As Integer = rows(0).Item("ID_Organizacion")
+
                 Dim tblDepartamento As New biomessDataSetTableAdapters.DepartamentoTableAdapter
-                tblDepartamento.UpdateQuery(ID_Organizacion:=9,
+                tblDepartamento.UpdateQuery(ID_Organizacion:=id_orgTemp,
                                             nombreDepart:=Me.tbNuevoNombre.Text,
                                             estado:=2,
                                             Original_nombreDepart:=Me.tbNombreActual.Text)
@@ -65,6 +68,8 @@ Public Class frmModificarDepartamentos
     End Sub
 
     Private Sub frmModificarDepartamentos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'BiomessDataSet2.Organizacion' table. You can move, or remove it, as needed.
+        Me.OrganizacionTableAdapter.Fill(Me.BiomessDataSet2.Organizacion)
         'TODO: esta línea de código carga datos en la tabla 'BiomessDataSet.Departamento' Puede moverla o quitarla según sea necesario.
         Me.DepartamentoTableAdapter.Fill(Me.BiomessDataSet.Departamento)
         limpiarCampos()

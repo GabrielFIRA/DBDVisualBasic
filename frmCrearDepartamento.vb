@@ -33,8 +33,12 @@ Public Class frmCrearDepartamento
 
 
             Else
+
                 Dim tblDepartamento As New biomessDataSetTableAdapters.DepartamentoTableAdapter
-                tblDepartamento.InsertQuery(ID_Organizacion:=9,
+                Dim rows() As DataRow = Me.OrganizacionTableAdapter.GetData().Select()
+                Dim id_OrgTemp As Integer = rows(0).Item("ID_Organizacion")
+
+                tblDepartamento.InsertQuery(ID_Organizacion:=id_OrgTemp,
                                             nombreDepart:=Me.tbNuevoNombre.Text,
                                             estado:=1)
                 MessageBox.Show("El registro se ha guardado correctamente", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -56,6 +60,8 @@ Public Class frmCrearDepartamento
     End Sub
 
     Private Sub frmCrearDepartamento_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'BiomessDataSet2.Organizacion' table. You can move, or remove it, as needed.
+        Me.OrganizacionTableAdapter.Fill(Me.BiomessDataSet2.Organizacion)
         'TODO: esta línea de código carga datos en la tabla 'BiomessDataSet.Departamento' Puede moverla o quitarla según sea necesario.
         Me.DepartamentoTableAdapter.Fill(Me.BiomessDataSet.Departamento)
         limpiarCampos()

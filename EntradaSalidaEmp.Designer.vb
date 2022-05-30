@@ -28,16 +28,19 @@ Partial Class EntradaSalida
         Me.btnRegistrar = New System.Windows.Forms.Button()
         Me.tbPIN = New System.Windows.Forms.TextBox()
         Me.cbNombreEmp = New System.Windows.Forms.ComboBox()
+        Me.EmpleadoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BiomessDataSet2 = New Biomess_0._1.biomessDataSet2()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbEoS = New System.Windows.Forms.Label()
         Me.btnAtras = New System.Windows.Forms.Button()
-        Me.BiomessDataSet2 = New Biomess_0._1.biomessDataSet2()
-        Me.EmpleadoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.EmpleadoTableAdapter = New Biomess_0._1.biomessDataSet2TableAdapters.EmpleadoTableAdapter()
+        Me.AsistenciaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.AsistenciaTableAdapter = New Biomess_0._1.biomessDataSet2TableAdapters.AsistenciaTableAdapter()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.BiomessDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmpleadoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BiomessDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AsistenciaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -94,6 +97,16 @@ Partial Class EntradaSalida
         Me.cbNombreEmp.Size = New System.Drawing.Size(420, 32)
         Me.cbNombreEmp.TabIndex = 2
         '
+        'EmpleadoBindingSource
+        '
+        Me.EmpleadoBindingSource.DataMember = "Empleado"
+        Me.EmpleadoBindingSource.DataSource = Me.BiomessDataSet2
+        '
+        'BiomessDataSet2
+        '
+        Me.BiomessDataSet2.DataSetName = "biomessDataSet2"
+        Me.BiomessDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -140,19 +153,18 @@ Partial Class EntradaSalida
         Me.btnAtras.TabIndex = 2
         Me.btnAtras.UseVisualStyleBackColor = False
         '
-        'BiomessDataSet2
-        '
-        Me.BiomessDataSet2.DataSetName = "biomessDataSet2"
-        Me.BiomessDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'EmpleadoBindingSource
-        '
-        Me.EmpleadoBindingSource.DataMember = "Empleado"
-        Me.EmpleadoBindingSource.DataSource = Me.BiomessDataSet2
-        '
         'EmpleadoTableAdapter
         '
         Me.EmpleadoTableAdapter.ClearBeforeFill = True
+        '
+        'AsistenciaBindingSource
+        '
+        Me.AsistenciaBindingSource.DataMember = "Asistencia"
+        Me.AsistenciaBindingSource.DataSource = Me.BiomessDataSet2
+        '
+        'AsistenciaTableAdapter
+        '
+        Me.AsistenciaTableAdapter.ClearBeforeFill = True
         '
         'EntradaSalida
         '
@@ -169,8 +181,9 @@ Partial Class EntradaSalida
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.BiomessDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmpleadoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BiomessDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AsistenciaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -187,4 +200,6 @@ Partial Class EntradaSalida
     Friend WithEvents BiomessDataSet2 As biomessDataSet2
     Friend WithEvents EmpleadoBindingSource As BindingSource
     Friend WithEvents EmpleadoTableAdapter As biomessDataSet2TableAdapters.EmpleadoTableAdapter
+    Friend WithEvents AsistenciaBindingSource As BindingSource
+    Friend WithEvents AsistenciaTableAdapter As biomessDataSet2TableAdapters.AsistenciaTableAdapter
 End Class

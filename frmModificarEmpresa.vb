@@ -36,10 +36,13 @@ Public Class frmModificarEmpresa
 
             Else
                 Dim tblOrganizacion As New biomessDataSetTableAdapters.OrganizacionTableAdapter
+                Dim rows() As DataRow = Me.OrganizacionTableAdapter.GetData().Select()
+                Dim id_OrgTemp As Integer = rows(0).Item("ID_Organizacion")
+
                 tblOrganizacion.UpdateQuery(nombreOrg:=Me.tbNuevoNombre.Text,
                                             estado:=2,
-                                            Original_ID_Organizacion:=9,
-                                            ID_Organizacion:=9)
+                                            Original_ID_Organizacion:=id_OrgTemp,
+                                            ID_Organizacion:=id_OrgTemp)
                 'En ID_ORGANIZACION pongan deberia ser 1 pero en fin pongan el id actual del unico nombre que hay'
                 MessageBox.Show("El registro se ha guardado correctamente", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.OrganizacionTableAdapter.Fill(Me.BiomessDataSet.Organizacion)
@@ -54,7 +57,6 @@ Public Class frmModificarEmpresa
         End Try
     End Sub
 
-    End Sub
 
     Private Sub limpiarCampos()
         Me.tbNuevoNombre.Text = ""

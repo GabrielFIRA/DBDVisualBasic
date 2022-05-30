@@ -30,17 +30,22 @@ Partial Class frmModificarDepartamentos
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.tbConfirmarNombre = New System.Windows.Forms.TextBox()
         Me.tbNuevoNombre = New System.Windows.Forms.TextBox()
+        Me.DepartamentoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BiomessDataSet = New Biomess_0._1.biomessDataSet()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.tbNombreActual = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btnAtras = New System.Windows.Forms.Button()
-        Me.BiomessDataSet = New Biomess_0._1.biomessDataSet()
-        Me.DepartamentoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DepartamentoTableAdapter = New Biomess_0._1.biomessDataSetTableAdapters.DepartamentoTableAdapter()
         Me.TableAdapterManager = New Biomess_0._1.biomessDataSetTableAdapters.TableAdapterManager()
-        CType(Me.BiomessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BiomessDataSet2 = New Biomess_0._1.biomessDataSet2()
+        Me.OrganizacionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.OrganizacionTableAdapter = New Biomess_0._1.biomessDataSet2TableAdapters.OrganizacionTableAdapter()
         CType(Me.DepartamentoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BiomessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BiomessDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.OrganizacionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label4
@@ -108,6 +113,16 @@ Partial Class frmModificarDepartamentos
         Me.tbNuevoNombre.Size = New System.Drawing.Size(281, 20)
         Me.tbNuevoNombre.TabIndex = 27
         '
+        'DepartamentoBindingSource
+        '
+        Me.DepartamentoBindingSource.DataMember = "Departamento"
+        Me.DepartamentoBindingSource.DataSource = Me.BiomessDataSet
+        '
+        'BiomessDataSet
+        '
+        Me.BiomessDataSet.DataSetName = "biomessDataSet"
+        Me.BiomessDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -161,16 +176,6 @@ Partial Class frmModificarDepartamentos
         Me.btnAtras.TabIndex = 35
         Me.btnAtras.UseVisualStyleBackColor = False
         '
-        'BiomessDataSet
-        '
-        Me.BiomessDataSet.DataSetName = "biomessDataSet"
-        Me.BiomessDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'DepartamentoBindingSource
-        '
-        Me.DepartamentoBindingSource.DataMember = "Departamento"
-        Me.DepartamentoBindingSource.DataSource = Me.BiomessDataSet
-        '
         'DepartamentoTableAdapter
         '
         Me.DepartamentoTableAdapter.ClearBeforeFill = True
@@ -195,6 +200,20 @@ Partial Class frmModificarDepartamentos
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.VacacionesTableAdapter = Nothing
         '
+        'BiomessDataSet2
+        '
+        Me.BiomessDataSet2.DataSetName = "biomessDataSet2"
+        Me.BiomessDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'OrganizacionBindingSource
+        '
+        Me.OrganizacionBindingSource.DataMember = "Organizacion"
+        Me.OrganizacionBindingSource.DataSource = Me.BiomessDataSet2
+        '
+        'OrganizacionTableAdapter
+        '
+        Me.OrganizacionTableAdapter.ClearBeforeFill = True
+        '
         'frmModificarDepartamentos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -215,8 +234,10 @@ Partial Class frmModificarDepartamentos
         Me.Name = "frmModificarDepartamentos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Modificar Departamentos"
-        CType(Me.BiomessDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DepartamentoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BiomessDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BiomessDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OrganizacionBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -237,4 +258,7 @@ Partial Class frmModificarDepartamentos
     Friend WithEvents DepartamentoBindingSource As BindingSource
     Friend WithEvents DepartamentoTableAdapter As biomessDataSetTableAdapters.DepartamentoTableAdapter
     Friend WithEvents TableAdapterManager As biomessDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents BiomessDataSet2 As biomessDataSet2
+    Friend WithEvents OrganizacionBindingSource As BindingSource
+    Friend WithEvents OrganizacionTableAdapter As biomessDataSet2TableAdapters.OrganizacionTableAdapter
 End Class

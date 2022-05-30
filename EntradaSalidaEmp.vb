@@ -22,6 +22,8 @@ Public Class EntradaSalida
     End Sub
 
     Private Sub EntradaSalida_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'BiomessDataSet2.Asistencia' table. You can move, or remove it, as needed.
+        Me.AsistenciaTableAdapter.Fill(Me.BiomessDataSet2.Asistencia)
         'TODO: This line of code loads data into the 'BiomessDataSet2.Empleado' table. You can move, or remove it, as needed.
         Me.EmpleadoTableAdapter.Fill(Me.BiomessDataSet2.Empleado)
 
@@ -37,45 +39,33 @@ Public Class EntradaSalida
         Dim fechaActual As String = "" + HoraEntrada.Chars(6) + HoraEntrada.Chars(7) + HoraEntrada.Chars(8) + HoraEntrada.Chars(9) + "-" + HoraEntrada.Chars(3) + HoraEntrada.Chars(4) + "-" + HoraEntrada.Chars(0) + HoraEntrada.Chars(1)
         HoraEntrada = "" + HoraEntrada.Chars(11) + HoraEntrada.Chars(12) + HoraEntrada.Chars(13) + HoraEntrada.Chars(14) + HoraEntrada.Chars(15) + HoraEntrada.Chars(16) + HoraEntrada.Chars(17) + HoraEntrada.Chars(18)
 
-        Console.WriteLine(fechaActual)
+        Console.WriteLine("" + Me.AsistenciaTableAdapter.existeEntrada(row(0)).ToString)
+        Dim existe As Boolean
+        If Me.AsistenciaTableAdapter.existeEntrada(row(0)).ToString.Equals("") Then
+            existe = False
+        Else
+            existe = Me.AsistenciaTableAdapter.existeEntrada(row(0))  'Verificar si existe un registro de asistencia cuyo valor EoS sea = 1 para prevenir nuevos registros de entrada'
 
-        Dim _connection As Global.System.Data.SqlClient.SqlConnection
-        _connection = New Global.System.Data.SqlClient.SqlConnection
-        Dim commandInsert As SqlCommand
-        Dim commandUpdate As SqlCommand
-        Dim commandSelect As SqlCommand
-        Dim reader As SqlDataReader
-        Dim existe As Boolean   'Verificar si existe un registro de asistencia cuyo valor EoS sea = 1 para prevenir nuevos registros de entrada'
+        End If
 
         Try
-            _connection.ConnectionString = "Data Source=(local);Initial Catalog=biomess;Persist Security Info=True;User ID=sa;Password=Temporal2022+"
-            _connection.Open()
-            commandSelect = New SqlCommand("select * from Asistencia", _connection)
-            reader = commandSelect.ExecuteReader()
-
-            While (reader.Read())
-                Dim temp As Integer
-                Console.WriteLine("" + reader.GetBoolean(4).ToString)
-
-                temp = reader.GetInt32(4)
-                If temp = 1 Then
-                    existe = True
-                    Exit While
-                End If
-
-            End While
-
-            Console.WriteLine("" + existe)
-
+            Console.WriteLine("" + Entrada.ToString)
             If tbPIN.Text.Equals(itemName) Then
                 If Entrada = True And existe = False Then
-                    commandInsert = New SqlCommand("Insert into Asistencia(ID_Empleado, horaEntrada, EoS, estado, fecha, semana) Values(" + row(0).ToString + ", '" + HoraEntrada + "', " + 1 + ", '" + fechaActual + "', " + 1 + ")", _connection)
-                Else
+                    Dim tblAsistencia As New biomessDataSet2TableAdapters.AsistenciaTableAdapter
+                    tblAsistencia.nuevaAsistencia(row(0), HoraEntrada, Nothing, True, fechaActual, 1, 1)
+                    MessageBox.Show("Rergistro de Entrada guardado exitosamente", "Biomess", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ElseIf Entrada = True Then
                     MessageBox.Show("Aun no a marcado salida en otro registro de asistencia", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
 
-                If Entrada = False & existe = True Then
+                If Entrada = False And existe = True Then
                     'commandUpdate
+                    Dim tblAsistencia As New biomessDataSet2TableAdapters.AsistenciaTableAdapter
+                    tblAsistencia.guardarSalida(HoraEntrada, False, True, row(0))
+                    MessageBox.Show("Rergistro de Salida guardado exitosamente", "Biomess", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ElseIf Entrada = False Then
+                    MessageBox.Show("No existe ningun registro de entrada a guardar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
             Else
                 MessageBox.Show("CONTRASEÑA INCORRECTA", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -87,7 +77,6 @@ Public Class EntradaSalida
             MsgBox("Error al registrar el horario: ", ex.Message())
             MsgBox("Error al registrar el horario: ", ex.StackTrace())
         Finally
-            _connection.Close()
         End Try
 
     End Sub

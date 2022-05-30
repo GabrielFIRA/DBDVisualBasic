@@ -24,10 +24,12 @@ Partial Class EAsistencias
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EAsistencias))
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dgbAsistencias = New System.Windows.Forms.DataGridView()
-        Me.NombreCompletoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IDAsistenciaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreCompletoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FechaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SemanaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.HoraEntradaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -41,10 +43,25 @@ Partial Class EAsistencias
         Me.BiomessDataSet1 = New Biomess_0._1.biomessDataSet1()
         Me.AsistenciasViewBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnNormal = New System.Windows.Forms.Button()
+        Me.btnEdicion = New System.Windows.Forms.Button()
+        Me.tpHoraEntrada = New System.Windows.Forms.DateTimePicker()
+        Me.txtEntrada = New System.Windows.Forms.Label()
         Me.txbID = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.dpFecha = New System.Windows.Forms.DateTimePicker()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.cbTipo = New System.Windows.Forms.ComboBox()
+        Me.txtTipo = New System.Windows.Forms.Label()
+        Me.tpHoraSalida = New System.Windows.Forms.DateTimePicker()
+        Me.txtSalida = New System.Windows.Forms.Label()
+        Me.cbEmpleado = New System.Windows.Forms.ComboBox()
         Me.EmpleadoViewBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnEditar = New System.Windows.Forms.Button()
+        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.btnNuevo = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.EmpleadoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Atras = New System.Windows.Forms.Button()
         Me.EmpleadoTableAdapter = New Biomess_0._1.biomessDataSet1TableAdapters.EmpleadoTableAdapter()
@@ -55,21 +72,6 @@ Partial Class EAsistencias
         Me.AsistenciasViewTableAdapter = New Biomess_0._1.biomessDataSet1TableAdapters.asistenciasViewTableAdapter()
         Me.EmpleadoBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.EmpleadoViewTableAdapter = New Biomess_0._1.biomessDataSet1TableAdapters.empleadoViewTableAdapter()
-        Me.btnEdicion = New System.Windows.Forms.Button()
-        Me.btnNormal = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.dpFecha = New System.Windows.Forms.DateTimePicker()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnNuevo = New System.Windows.Forms.Button()
-        Me.btnAgregar = New System.Windows.Forms.Button()
-        Me.btnEditar = New System.Windows.Forms.Button()
-        Me.cbEmpleado = New System.Windows.Forms.ComboBox()
-        Me.txtSalida = New System.Windows.Forms.Label()
-        Me.tpHoraSalida = New System.Windows.Forms.DateTimePicker()
-        Me.txtTipo = New System.Windows.Forms.Label()
-        Me.cbTipo = New System.Windows.Forms.ComboBox()
-        Me.txtEntrada = New System.Windows.Forms.Label()
-        Me.tpHoraEntrada = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgbAsistencias, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AsistenciasViewBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -105,20 +107,29 @@ Partial Class EAsistencias
         Me.dgbAsistencias.AutoGenerateColumns = False
         Me.dgbAsistencias.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.dgbAsistencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgbAsistencias.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NombreCompletoDataGridViewTextBoxColumn, Me.IDAsistenciaDataGridViewTextBoxColumn, Me.FechaDataGridViewTextBoxColumn, Me.SemanaDataGridViewTextBoxColumn, Me.HoraEntradaDataGridViewTextBoxColumn, Me.HoraSalidaDataGridViewTextBoxColumn, Me.EoSDataGridViewCheckBoxColumn})
+        Me.dgbAsistencias.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDAsistenciaDataGridViewTextBoxColumn, Me.NombreCompletoDataGridViewTextBoxColumn, Me.FechaDataGridViewTextBoxColumn, Me.SemanaDataGridViewTextBoxColumn, Me.HoraEntradaDataGridViewTextBoxColumn, Me.HoraSalidaDataGridViewTextBoxColumn, Me.EoSDataGridViewCheckBoxColumn})
         Me.dgbAsistencias.DataSource = Me.AsistenciasViewBindingSource2
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.WindowFrame
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgbAsistencias.DefaultCellStyle = DataGridViewCellStyle5
         Me.dgbAsistencias.Location = New System.Drawing.Point(6, 62)
         Me.dgbAsistencias.Name = "dgbAsistencias"
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Menu
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgbAsistencias.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.dgbAsistencias.RowHeadersWidth = 50
         Me.dgbAsistencias.Size = New System.Drawing.Size(1314, 321)
         Me.dgbAsistencias.TabIndex = 50
-        '
-        'NombreCompletoDataGridViewTextBoxColumn
-        '
-        Me.NombreCompletoDataGridViewTextBoxColumn.DataPropertyName = "nombreCompleto"
-        Me.NombreCompletoDataGridViewTextBoxColumn.HeaderText = "Nombre Completo"
-        Me.NombreCompletoDataGridViewTextBoxColumn.Name = "NombreCompletoDataGridViewTextBoxColumn"
-        Me.NombreCompletoDataGridViewTextBoxColumn.Width = 370
         '
         'IDAsistenciaDataGridViewTextBoxColumn
         '
@@ -126,6 +137,13 @@ Partial Class EAsistencias
         Me.IDAsistenciaDataGridViewTextBoxColumn.HeaderText = "ID"
         Me.IDAsistenciaDataGridViewTextBoxColumn.Name = "IDAsistenciaDataGridViewTextBoxColumn"
         Me.IDAsistenciaDataGridViewTextBoxColumn.Width = 150
+        '
+        'NombreCompletoDataGridViewTextBoxColumn
+        '
+        Me.NombreCompletoDataGridViewTextBoxColumn.DataPropertyName = "nombreCompleto"
+        Me.NombreCompletoDataGridViewTextBoxColumn.HeaderText = "Nombre Completo"
+        Me.NombreCompletoDataGridViewTextBoxColumn.Name = "NombreCompletoDataGridViewTextBoxColumn"
+        Me.NombreCompletoDataGridViewTextBoxColumn.Width = 370
         '
         'FechaDataGridViewTextBoxColumn
         '
@@ -240,6 +258,52 @@ Partial Class EAsistencias
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Asistencias"
         '
+        'btnNormal
+        '
+        Me.btnNormal.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.btnNormal.Location = New System.Drawing.Point(31, 82)
+        Me.btnNormal.Name = "btnNormal"
+        Me.btnNormal.Size = New System.Drawing.Size(142, 34)
+        Me.btnNormal.TabIndex = 71
+        Me.btnNormal.Text = "Modo normal"
+        Me.btnNormal.UseVisualStyleBackColor = False
+        Me.btnNormal.Visible = False
+        '
+        'btnEdicion
+        '
+        Me.btnEdicion.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.btnEdicion.Location = New System.Drawing.Point(31, 42)
+        Me.btnEdicion.Name = "btnEdicion"
+        Me.btnEdicion.Size = New System.Drawing.Size(142, 34)
+        Me.btnEdicion.TabIndex = 70
+        Me.btnEdicion.Text = "Modo edición"
+        Me.btnEdicion.UseVisualStyleBackColor = False
+        '
+        'tpHoraEntrada
+        '
+        Me.tpHoraEntrada.CustomFormat = "HH:mm:ss"
+        Me.tpHoraEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.tpHoraEntrada.Location = New System.Drawing.Point(975, 102)
+        Me.tpHoraEntrada.Name = "tpHoraEntrada"
+        Me.tpHoraEntrada.ShowUpDown = True
+        Me.tpHoraEntrada.Size = New System.Drawing.Size(133, 30)
+        Me.tpHoraEntrada.TabIndex = 69
+        Me.tpHoraEntrada.Value = New Date(2022, 5, 10, 21, 5, 0, 0)
+        '
+        'txtEntrada
+        '
+        Me.txtEntrada.AutoSize = True
+        Me.txtEntrada.BackColor = System.Drawing.Color.Transparent
+        Me.txtEntrada.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.txtEntrada.ForeColor = System.Drawing.SystemColors.Control
+        Me.txtEntrada.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.txtEntrada.Location = New System.Drawing.Point(838, 110)
+        Me.txtEntrada.Name = "txtEntrada"
+        Me.txtEntrada.Size = New System.Drawing.Size(60, 25)
+        Me.txtEntrada.TabIndex = 68
+        Me.txtEntrada.Text = "Hora:"
+        Me.txtEntrada.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'txbID
         '
         Me.txbID.Location = New System.Drawing.Point(339, 60)
@@ -261,6 +325,89 @@ Partial Class EAsistencias
         Me.Label6.Text = "ID:"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
+        'dpFecha
+        '
+        Me.dpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dpFecha.Location = New System.Drawing.Point(975, 57)
+        Me.dpFecha.Name = "dpFecha"
+        Me.dpFecha.Size = New System.Drawing.Size(127, 30)
+        Me.dpFecha.TabIndex = 65
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.Label5.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label5.Location = New System.Drawing.Point(825, 60)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(73, 25)
+        Me.Label5.TabIndex = 64
+        Me.Label5.Text = "Fecha:"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'cbTipo
+        '
+        Me.cbTipo.FormattingEnabled = True
+        Me.cbTipo.Items.AddRange(New Object() {"Entrada", "Salida"})
+        Me.cbTipo.Location = New System.Drawing.Point(339, 148)
+        Me.cbTipo.Name = "cbTipo"
+        Me.cbTipo.Size = New System.Drawing.Size(183, 33)
+        Me.cbTipo.TabIndex = 63
+        '
+        'txtTipo
+        '
+        Me.txtTipo.AutoSize = True
+        Me.txtTipo.BackColor = System.Drawing.Color.Transparent
+        Me.txtTipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.txtTipo.ForeColor = System.Drawing.SystemColors.Control
+        Me.txtTipo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.txtTipo.Location = New System.Drawing.Point(276, 151)
+        Me.txtTipo.Name = "txtTipo"
+        Me.txtTipo.Size = New System.Drawing.Size(57, 25)
+        Me.txtTipo.TabIndex = 62
+        Me.txtTipo.Text = "Tipo:"
+        Me.txtTipo.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'tpHoraSalida
+        '
+        Me.tpHoraSalida.CustomFormat = "HH:mm:ss"
+        Me.tpHoraSalida.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.tpHoraSalida.Location = New System.Drawing.Point(975, 148)
+        Me.tpHoraSalida.Name = "tpHoraSalida"
+        Me.tpHoraSalida.ShowUpDown = True
+        Me.tpHoraSalida.Size = New System.Drawing.Size(133, 30)
+        Me.tpHoraSalida.TabIndex = 61
+        Me.tpHoraSalida.Value = New Date(2022, 5, 10, 21, 5, 0, 0)
+        Me.tpHoraSalida.Visible = False
+        '
+        'txtSalida
+        '
+        Me.txtSalida.AutoSize = True
+        Me.txtSalida.BackColor = System.Drawing.Color.Transparent
+        Me.txtSalida.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.txtSalida.ForeColor = System.Drawing.SystemColors.Control
+        Me.txtSalida.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.txtSalida.Location = New System.Drawing.Point(838, 151)
+        Me.txtSalida.Name = "txtSalida"
+        Me.txtSalida.Size = New System.Drawing.Size(120, 25)
+        Me.txtSalida.TabIndex = 60
+        Me.txtSalida.Text = "Hora Salida:"
+        Me.txtSalida.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.txtSalida.Visible = False
+        '
+        'cbEmpleado
+        '
+        Me.cbEmpleado.DataSource = Me.EmpleadoViewBindingSource
+        Me.cbEmpleado.DisplayMember = "nombreCompleto"
+        Me.cbEmpleado.FormattingEnabled = True
+        Me.cbEmpleado.Location = New System.Drawing.Point(339, 102)
+        Me.cbEmpleado.Name = "cbEmpleado"
+        Me.cbEmpleado.Size = New System.Drawing.Size(311, 33)
+        Me.cbEmpleado.TabIndex = 57
+        Me.cbEmpleado.ValueMember = "ID_Empleado"
+        '
         'EmpleadoViewBindingSource
         '
         Me.EmpleadoViewBindingSource.DataMember = "empleadoView"
@@ -269,12 +416,57 @@ Partial Class EAsistencias
         'btnEliminar
         '
         Me.btnEliminar.BackColor = System.Drawing.Color.DarkSlateBlue
-        Me.btnEliminar.Location = New System.Drawing.Point(1108, 212)
+        Me.btnEliminar.Location = New System.Drawing.Point(1001, 212)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(101, 34)
         Me.btnEliminar.TabIndex = 52
         Me.btnEliminar.Text = "Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = False
+        '
+        'btnEditar
+        '
+        Me.btnEditar.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.btnEditar.Location = New System.Drawing.Point(1108, 212)
+        Me.btnEditar.Name = "btnEditar"
+        Me.btnEditar.Size = New System.Drawing.Size(101, 34)
+        Me.btnEditar.TabIndex = 51
+        Me.btnEditar.Text = "Editar"
+        Me.btnEditar.UseVisualStyleBackColor = False
+        Me.btnEditar.Visible = False
+        '
+        'btnAgregar
+        '
+        Me.btnAgregar.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.btnAgregar.Location = New System.Drawing.Point(894, 212)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(101, 34)
+        Me.btnAgregar.TabIndex = 50
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.UseVisualStyleBackColor = False
+        '
+        'btnNuevo
+        '
+        Me.btnNuevo.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.btnNuevo.Location = New System.Drawing.Point(787, 212)
+        Me.btnNuevo.Name = "btnNuevo"
+        Me.btnNuevo.Size = New System.Drawing.Size(101, 34)
+        Me.btnNuevo.TabIndex = 49
+        Me.btnNuevo.Text = "Nuevo"
+        Me.btnNuevo.UseVisualStyleBackColor = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.Label2.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label2.Location = New System.Drawing.Point(227, 106)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(106, 25)
+        Me.Label2.TabIndex = 33
+        Me.Label2.Text = "Empleado:"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'EmpleadoBindingSource
         '
@@ -329,178 +521,6 @@ Partial Class EAsistencias
         '
         Me.EmpleadoViewTableAdapter.ClearBeforeFill = True
         '
-        'btnEdicion
-        '
-        Me.btnEdicion.BackColor = System.Drawing.Color.DarkSlateBlue
-        Me.btnEdicion.Location = New System.Drawing.Point(31, 42)
-        Me.btnEdicion.Name = "btnEdicion"
-        Me.btnEdicion.Size = New System.Drawing.Size(142, 34)
-        Me.btnEdicion.TabIndex = 70
-        Me.btnEdicion.Text = "Modo edición"
-        Me.btnEdicion.UseVisualStyleBackColor = False
-        '
-        'btnNormal
-        '
-        Me.btnNormal.BackColor = System.Drawing.Color.DarkSlateBlue
-        Me.btnNormal.Location = New System.Drawing.Point(31, 82)
-        Me.btnNormal.Name = "btnNormal"
-        Me.btnNormal.Size = New System.Drawing.Size(142, 34)
-        Me.btnNormal.TabIndex = 71
-        Me.btnNormal.Text = "Modo normal"
-        Me.btnNormal.UseVisualStyleBackColor = False
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label5.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Label5.Location = New System.Drawing.Point(825, 60)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(73, 25)
-        Me.Label5.TabIndex = 64
-        Me.Label5.Text = "Fecha:"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'dpFecha
-        '
-        Me.dpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dpFecha.Location = New System.Drawing.Point(975, 57)
-        Me.dpFecha.Name = "dpFecha"
-        Me.dpFecha.Size = New System.Drawing.Size(127, 30)
-        Me.dpFecha.TabIndex = 65
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Label2.Location = New System.Drawing.Point(227, 106)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 25)
-        Me.Label2.TabIndex = 33
-        Me.Label2.Text = "Empleado:"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'btnNuevo
-        '
-        Me.btnNuevo.BackColor = System.Drawing.Color.DarkSlateBlue
-        Me.btnNuevo.Location = New System.Drawing.Point(787, 212)
-        Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(101, 34)
-        Me.btnNuevo.TabIndex = 49
-        Me.btnNuevo.Text = "Nuevo"
-        Me.btnNuevo.UseVisualStyleBackColor = False
-        '
-        'btnAgregar
-        '
-        Me.btnAgregar.BackColor = System.Drawing.Color.DarkSlateBlue
-        Me.btnAgregar.Location = New System.Drawing.Point(894, 212)
-        Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(101, 34)
-        Me.btnAgregar.TabIndex = 50
-        Me.btnAgregar.Text = "Agregar"
-        Me.btnAgregar.UseVisualStyleBackColor = False
-        '
-        'btnEditar
-        '
-        Me.btnEditar.BackColor = System.Drawing.Color.DarkSlateBlue
-        Me.btnEditar.Location = New System.Drawing.Point(1001, 212)
-        Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(101, 34)
-        Me.btnEditar.TabIndex = 51
-        Me.btnEditar.Text = "Editar"
-        Me.btnEditar.UseVisualStyleBackColor = False
-        '
-        'cbEmpleado
-        '
-        Me.cbEmpleado.DataSource = Me.EmpleadoViewBindingSource
-        Me.cbEmpleado.DisplayMember = "nombreCompleto"
-        Me.cbEmpleado.FormattingEnabled = True
-        Me.cbEmpleado.Location = New System.Drawing.Point(339, 102)
-        Me.cbEmpleado.Name = "cbEmpleado"
-        Me.cbEmpleado.Size = New System.Drawing.Size(311, 33)
-        Me.cbEmpleado.TabIndex = 57
-        Me.cbEmpleado.ValueMember = "ID_Empleado"
-        '
-        'txtSalida
-        '
-        Me.txtSalida.AutoSize = True
-        Me.txtSalida.BackColor = System.Drawing.Color.Transparent
-        Me.txtSalida.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.txtSalida.ForeColor = System.Drawing.SystemColors.Control
-        Me.txtSalida.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.txtSalida.Location = New System.Drawing.Point(838, 151)
-        Me.txtSalida.Name = "txtSalida"
-        Me.txtSalida.Size = New System.Drawing.Size(120, 25)
-        Me.txtSalida.TabIndex = 60
-        Me.txtSalida.Text = "Hora Salida:"
-        Me.txtSalida.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.txtSalida.Visible = False
-        '
-        'tpHoraSalida
-        '
-        Me.tpHoraSalida.CustomFormat = "HH:mm:ss"
-        Me.tpHoraSalida.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.tpHoraSalida.Location = New System.Drawing.Point(975, 148)
-        Me.tpHoraSalida.Name = "tpHoraSalida"
-        Me.tpHoraSalida.ShowUpDown = True
-        Me.tpHoraSalida.Size = New System.Drawing.Size(133, 30)
-        Me.tpHoraSalida.TabIndex = 61
-        Me.tpHoraSalida.Value = New Date(2022, 5, 10, 21, 5, 0, 0)
-        Me.tpHoraSalida.Visible = False
-        '
-        'txtTipo
-        '
-        Me.txtTipo.AutoSize = True
-        Me.txtTipo.BackColor = System.Drawing.Color.Transparent
-        Me.txtTipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.txtTipo.ForeColor = System.Drawing.SystemColors.Control
-        Me.txtTipo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.txtTipo.Location = New System.Drawing.Point(276, 151)
-        Me.txtTipo.Name = "txtTipo"
-        Me.txtTipo.Size = New System.Drawing.Size(57, 25)
-        Me.txtTipo.TabIndex = 62
-        Me.txtTipo.Text = "Tipo:"
-        Me.txtTipo.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'cbTipo
-        '
-        Me.cbTipo.FormattingEnabled = True
-        Me.cbTipo.Items.AddRange(New Object() {"Entrada", "Salida"})
-        Me.cbTipo.Location = New System.Drawing.Point(339, 148)
-        Me.cbTipo.Name = "cbTipo"
-        Me.cbTipo.Size = New System.Drawing.Size(183, 33)
-        Me.cbTipo.TabIndex = 63
-        '
-        'txtEntrada
-        '
-        Me.txtEntrada.AutoSize = True
-        Me.txtEntrada.BackColor = System.Drawing.Color.Transparent
-        Me.txtEntrada.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.txtEntrada.ForeColor = System.Drawing.SystemColors.Control
-        Me.txtEntrada.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.txtEntrada.Location = New System.Drawing.Point(838, 110)
-        Me.txtEntrada.Name = "txtEntrada"
-        Me.txtEntrada.Size = New System.Drawing.Size(60, 25)
-        Me.txtEntrada.TabIndex = 68
-        Me.txtEntrada.Text = "Hora:"
-        Me.txtEntrada.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'tpHoraEntrada
-        '
-        Me.tpHoraEntrada.CustomFormat = "HH:mm:ss"
-        Me.tpHoraEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.tpHoraEntrada.Location = New System.Drawing.Point(975, 102)
-        Me.tpHoraEntrada.Name = "tpHoraEntrada"
-        Me.tpHoraEntrada.ShowUpDown = True
-        Me.tpHoraEntrada.Size = New System.Drawing.Size(133, 30)
-        Me.tpHoraEntrada.TabIndex = 69
-        Me.tpHoraEntrada.Value = New Date(2022, 5, 10, 21, 5, 0, 0)
-        '
         'EAsistencias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -544,19 +564,12 @@ Partial Class EAsistencias
     Friend WithEvents EmpleadoTableAdapter As biomessDataSet1TableAdapters.EmpleadoTableAdapter
     Friend WithEvents AsistenciaBindingSource As BindingSource
     Friend WithEvents AsistenciaTableAdapter As biomessDataSet1TableAdapters.AsistenciaTableAdapter
-    Friend WithEvents NombreCompletoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents txbID As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents AsistenciasViewBindingSource1 As BindingSource
     Friend WithEvents BiomessDataSet11 As biomessDataSet1
     Friend WithEvents AusenciasViewBindingSource As BindingSource
     Friend WithEvents AusenciasViewTableAdapter As biomessDataSet1TableAdapters.ausenciasViewTableAdapter
-    Friend WithEvents IDAsistenciaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents FechaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SemanaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents HoraEntradaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents HoraSalidaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents EoSDataGridViewCheckBoxColumn As DataGridViewCheckBoxColumn
     Friend WithEvents AsistenciasViewBindingSource2 As BindingSource
     Friend WithEvents AsistenciasViewTableAdapter As biomessDataSet1TableAdapters.asistenciasViewTableAdapter
     Friend WithEvents EmpleadoBindingSource1 As BindingSource
@@ -577,4 +590,11 @@ Partial Class EAsistencias
     Friend WithEvents btnAgregar As Button
     Friend WithEvents btnNuevo As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents IDAsistenciaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents NombreCompletoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents FechaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents SemanaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents HoraEntradaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents HoraSalidaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents EoSDataGridViewCheckBoxColumn As DataGridViewCheckBoxColumn
 End Class
