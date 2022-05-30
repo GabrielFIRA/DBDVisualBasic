@@ -296,18 +296,6 @@
     <Compile Include="frmRol.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRolOpc.Designer.vb">
-      <DependentUpon>frmRolOpc.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmRolOpc.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRptRol.Designer.vb">
-      <DependentUpon>frmRptRol.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmRptRol.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -381,6 +369,18 @@
       <DependentUpon>RHorasTrabajadasIndv.vb</DependentUpon>
     </Compile>
     <Compile Include="RHorasTrabajadasIndv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptAsistencia.Designer.vb">
+      <DependentUpon>RptAsistencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RptAsistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptEmpleado.Designer.vb">
+      <DependentUpon>RptEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RptEmpleado.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Usuario.Designer.vb">
@@ -475,12 +475,6 @@
     <EmbeddedResource Include="frmRol.resx">
       <DependentUpon>frmRol.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRolOpc.resx">
-      <DependentUpon>frmRolOpc.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRptRol.resx">
-      <DependentUpon>frmRptRol.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -517,7 +511,14 @@
     <EmbeddedResource Include="RHorasTrabajadasIndv.resx">
       <DependentUpon>RHorasTrabajadasIndv.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="rptRol.rdlc" />
+    <EmbeddedResource Include="RptAsistencia.rdlc" />
+    <EmbeddedResource Include="RptAsistencia.resx">
+      <DependentUpon>RptAsistencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEmpleado.rdlc" />
+    <EmbeddedResource Include="RptEmpleado.resx">
+      <DependentUpon>RptEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usuario.resx">
       <DependentUpon>Usuario.vb</DependentUpon>
     </EmbeddedResource>

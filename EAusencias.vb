@@ -98,8 +98,7 @@ Public Class EAusencias
             MsgBox("Error al eliminar la ausencia: ", ex.StackTrace())
         End Try
     End Sub
-
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles Me.Closed
+        BiomessES.Close()
     End Sub
 End Class

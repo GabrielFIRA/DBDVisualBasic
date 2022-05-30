@@ -24,8 +24,8 @@ Partial Class EAsistencias
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EAsistencias))
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dgbAsistencias = New System.Windows.Forms.DataGridView()
         Me.IDAsistenciaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -43,6 +43,7 @@ Partial Class EAsistencias
         Me.BiomessDataSet1 = New Biomess_0._1.biomessDataSet1()
         Me.AsistenciasViewBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnReportes = New System.Windows.Forms.Button()
         Me.btnNormal = New System.Windows.Forms.Button()
         Me.btnEdicion = New System.Windows.Forms.Button()
         Me.tpHoraEntrada = New System.Windows.Forms.DateTimePicker()
@@ -109,24 +110,24 @@ Partial Class EAsistencias
         Me.dgbAsistencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgbAsistencias.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDAsistenciaDataGridViewTextBoxColumn, Me.NombreCompletoDataGridViewTextBoxColumn, Me.FechaDataGridViewTextBoxColumn, Me.SemanaDataGridViewTextBoxColumn, Me.HoraEntradaDataGridViewTextBoxColumn, Me.HoraSalidaDataGridViewTextBoxColumn, Me.EoSDataGridViewCheckBoxColumn})
         Me.dgbAsistencias.DataSource = Me.AsistenciasViewBindingSource2
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.WindowFrame
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgbAsistencias.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.WindowFrame
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgbAsistencias.DefaultCellStyle = DataGridViewCellStyle1
         Me.dgbAsistencias.Location = New System.Drawing.Point(6, 62)
         Me.dgbAsistencias.Name = "dgbAsistencias"
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Menu
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgbAsistencias.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Menu
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgbAsistencias.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgbAsistencias.RowHeadersWidth = 50
         Me.dgbAsistencias.Size = New System.Drawing.Size(1314, 321)
         Me.dgbAsistencias.TabIndex = 50
@@ -231,6 +232,7 @@ Partial Class EAsistencias
         'GroupBox1
         '
         Me.GroupBox1.BackgroundImage = CType(resources.GetObject("GroupBox1.BackgroundImage"), System.Drawing.Image)
+        Me.GroupBox1.Controls.Add(Me.btnReportes)
         Me.GroupBox1.Controls.Add(Me.btnNormal)
         Me.GroupBox1.Controls.Add(Me.btnEdicion)
         Me.GroupBox1.Controls.Add(Me.tpHoraEntrada)
@@ -258,6 +260,17 @@ Partial Class EAsistencias
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Asistencias"
         '
+        'btnReportes
+        '
+        Me.btnReportes.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(142, Byte), Integer))
+        Me.btnReportes.BackgroundImage = CType(resources.GetObject("btnReportes.BackgroundImage"), System.Drawing.Image)
+        Me.btnReportes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnReportes.Location = New System.Drawing.Point(1160, 56)
+        Me.btnReportes.Name = "btnReportes"
+        Me.btnReportes.Size = New System.Drawing.Size(130, 124)
+        Me.btnReportes.TabIndex = 72
+        Me.btnReportes.UseVisualStyleBackColor = False
+        '
         'btnNormal
         '
         Me.btnNormal.BackColor = System.Drawing.Color.DarkSlateBlue
@@ -281,12 +294,12 @@ Partial Class EAsistencias
         '
         'tpHoraEntrada
         '
-        Me.tpHoraEntrada.CustomFormat = "HH:mm:ss"
-        Me.tpHoraEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.tpHoraEntrada.CustomFormat = ""
+        Me.tpHoraEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Time
         Me.tpHoraEntrada.Location = New System.Drawing.Point(975, 102)
         Me.tpHoraEntrada.Name = "tpHoraEntrada"
         Me.tpHoraEntrada.ShowUpDown = True
-        Me.tpHoraEntrada.Size = New System.Drawing.Size(133, 30)
+        Me.tpHoraEntrada.Size = New System.Drawing.Size(142, 30)
         Me.tpHoraEntrada.TabIndex = 69
         Me.tpHoraEntrada.Value = New Date(2022, 5, 10, 21, 5, 0, 0)
         '
@@ -372,12 +385,12 @@ Partial Class EAsistencias
         '
         'tpHoraSalida
         '
-        Me.tpHoraSalida.CustomFormat = "HH:mm:ss"
-        Me.tpHoraSalida.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.tpHoraSalida.CustomFormat = ""
+        Me.tpHoraSalida.Format = System.Windows.Forms.DateTimePickerFormat.Time
         Me.tpHoraSalida.Location = New System.Drawing.Point(975, 148)
         Me.tpHoraSalida.Name = "tpHoraSalida"
         Me.tpHoraSalida.ShowUpDown = True
-        Me.tpHoraSalida.Size = New System.Drawing.Size(133, 30)
+        Me.tpHoraSalida.Size = New System.Drawing.Size(142, 30)
         Me.tpHoraSalida.TabIndex = 61
         Me.tpHoraSalida.Value = New Date(2022, 5, 10, 21, 5, 0, 0)
         Me.tpHoraSalida.Visible = False
@@ -597,4 +610,5 @@ Partial Class EAsistencias
     Friend WithEvents HoraEntradaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents HoraSalidaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents EoSDataGridViewCheckBoxColumn As DataGridViewCheckBoxColumn
+    Friend WithEvents btnReportes As Button
 End Class
