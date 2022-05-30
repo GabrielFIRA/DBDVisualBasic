@@ -296,10 +296,16 @@
     <Compile Include="frmRol.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRptDepartamentos.Designer.vb">
-      <DependentUpon>frmRptDepartamentos.vb</DependentUpon>
+    <Compile Include="frmRolOpc.Designer.vb">
+      <DependentUpon>frmRolOpc.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmRptDepartamentos.vb">
+    <Compile Include="frmRolOpc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptRol.Designer.vb">
+      <DependentUpon>frmRptRol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptRol.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
@@ -469,8 +475,11 @@
     <EmbeddedResource Include="frmRol.resx">
       <DependentUpon>frmRol.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRptDepartamentos.resx">
-      <DependentUpon>frmRptDepartamentos.vb</DependentUpon>
+    <EmbeddedResource Include="frmRolOpc.resx">
+      <DependentUpon>frmRolOpc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptRol.resx">
+      <DependentUpon>frmRptRol.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -508,7 +517,7 @@
     <EmbeddedResource Include="RHorasTrabajadasIndv.resx">
       <DependentUpon>RHorasTrabajadasIndv.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="rptDepartamentos.rdlc" />
+    <EmbeddedResource Include="rptRol.rdlc" />
     <EmbeddedResource Include="Usuario.resx">
       <DependentUpon>Usuario.vb</DependentUpon>
     </EmbeddedResource>
