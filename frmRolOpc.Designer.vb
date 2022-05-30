@@ -87,11 +87,11 @@ Partial Class frmRolOpc
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(86, 26)
+        Me.GroupBox1.Location = New System.Drawing.Point(97, 32)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(1631, 855)
+        Me.GroupBox1.Size = New System.Drawing.Size(1835, 1069)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Rol"
@@ -101,9 +101,10 @@ Partial Class frmRolOpc
         Me.cbxOpc.DataSource = Me.OpcionesBindingSource
         Me.cbxOpc.DisplayMember = "nombreOpcion"
         Me.cbxOpc.FormattingEnabled = True
-        Me.cbxOpc.Location = New System.Drawing.Point(1003, 70)
+        Me.cbxOpc.Location = New System.Drawing.Point(1128, 88)
+        Me.cbxOpc.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cbxOpc.Name = "cbxOpc"
-        Me.cbxOpc.Size = New System.Drawing.Size(522, 45)
+        Me.cbxOpc.Size = New System.Drawing.Size(587, 45)
         Me.cbxOpc.TabIndex = 44
         Me.cbxOpc.ValueMember = "ID_Opcion"
         '
@@ -122,9 +123,10 @@ Partial Class frmRolOpc
         Me.cbxRol.DataSource = Me.RolBindingSource
         Me.cbxRol.DisplayMember = "nombreRol"
         Me.cbxRol.FormattingEnabled = True
-        Me.cbxRol.Location = New System.Drawing.Point(160, 143)
+        Me.cbxRol.Location = New System.Drawing.Point(180, 179)
+        Me.cbxRol.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cbxRol.Name = "cbxRol"
-        Me.cbxRol.Size = New System.Drawing.Size(541, 45)
+        Me.cbxRol.Size = New System.Drawing.Size(608, 45)
         Me.cbxRol.TabIndex = 43
         Me.cbxRol.ValueMember = "ID_Rol"
         '
@@ -139,11 +141,12 @@ Partial Class frmRolOpc
         Me.dgvRolOpc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvRolOpc.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDRolOpcionesDataGridViewTextBoxColumn, Me.IDRolDataGridViewTextBoxColumn, Me.IDOpcionDataGridViewTextBoxColumn, Me.NombreRolDataGridViewTextBoxColumn, Me.NombreOpcionDataGridViewTextBoxColumn})
         Me.dgvRolOpc.DataSource = Me.RolopcViewBindingSource
-        Me.dgvRolOpc.Location = New System.Drawing.Point(197, 536)
+        Me.dgvRolOpc.Location = New System.Drawing.Point(222, 670)
+        Me.dgvRolOpc.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dgvRolOpc.Name = "dgvRolOpc"
         Me.dgvRolOpc.RowHeadersWidth = 62
         Me.dgvRolOpc.RowTemplate.Height = 24
-        Me.dgvRolOpc.Size = New System.Drawing.Size(1236, 266)
+        Me.dgvRolOpc.Size = New System.Drawing.Size(1390, 332)
         Me.dgvRolOpc.TabIndex = 42
         '
         'IDRolOpcionesDataGridViewTextBoxColumn
@@ -203,7 +206,7 @@ Partial Class frmRolOpc
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(321, 482)
+        Me.Label13.Location = New System.Drawing.Point(361, 602)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(120, 38)
         Me.Label13.TabIndex = 41
@@ -211,10 +214,10 @@ Partial Class frmRolOpc
         '
         'txbBuscarRO
         '
-        Me.txbBuscarRO.Location = New System.Drawing.Point(451, 476)
+        Me.txbBuscarRO.Location = New System.Drawing.Point(507, 595)
         Me.txbBuscarRO.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txbBuscarRO.Name = "txbBuscarRO"
-        Me.txbBuscarRO.Size = New System.Drawing.Size(864, 44)
+        Me.txbBuscarRO.Size = New System.Drawing.Size(972, 44)
         Me.txbBuscarRO.TabIndex = 40
         '
         'Label12
@@ -222,7 +225,7 @@ Partial Class frmRolOpc
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(1159, 341)
+        Me.Label12.Location = New System.Drawing.Point(1304, 426)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(126, 64)
         Me.Label12.TabIndex = 39
@@ -233,7 +236,7 @@ Partial Class frmRolOpc
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(921, 341)
+        Me.Label11.Location = New System.Drawing.Point(1036, 426)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(90, 64)
         Me.Label11.TabIndex = 38
@@ -248,10 +251,10 @@ Partial Class frmRolOpc
         Me.btnEliminarRO.FlatAppearance.BorderSize = 4
         Me.btnEliminarRO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnEliminarRO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEliminarRO.Location = New System.Drawing.Point(1164, 274)
-        Me.btnEliminarRO.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnEliminarRO.Location = New System.Drawing.Point(1310, 342)
+        Me.btnEliminarRO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnEliminarRO.Name = "btnEliminarRO"
-        Me.btnEliminarRO.Size = New System.Drawing.Size(99, 63)
+        Me.btnEliminarRO.Size = New System.Drawing.Size(111, 79)
         Me.btnEliminarRO.TabIndex = 37
         Me.btnEliminarRO.UseVisualStyleBackColor = False
         '
@@ -264,10 +267,10 @@ Partial Class frmRolOpc
         Me.btnEditarRO.FlatAppearance.BorderSize = 4
         Me.btnEditarRO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnEditarRO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEditarRO.Location = New System.Drawing.Point(909, 274)
-        Me.btnEditarRO.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnEditarRO.Location = New System.Drawing.Point(1023, 342)
+        Me.btnEditarRO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnEditarRO.Name = "btnEditarRO"
-        Me.btnEditarRO.Size = New System.Drawing.Size(99, 63)
+        Me.btnEditarRO.Size = New System.Drawing.Size(111, 79)
         Me.btnEditarRO.TabIndex = 36
         Me.btnEditarRO.UseVisualStyleBackColor = False
         '
@@ -275,7 +278,7 @@ Partial Class frmRolOpc
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Location = New System.Drawing.Point(363, 352)
+        Me.Label10.Location = New System.Drawing.Point(408, 440)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(112, 38)
         Me.Label10.TabIndex = 20
@@ -290,10 +293,10 @@ Partial Class frmRolOpc
         Me.btnNuevoRO.FlatAppearance.BorderSize = 4
         Me.btnNuevoRO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnNuevoRO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNuevoRO.Location = New System.Drawing.Point(363, 274)
-        Me.btnNuevoRO.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnNuevoRO.Location = New System.Drawing.Point(408, 342)
+        Me.btnNuevoRO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnNuevoRO.Name = "btnNuevoRO"
-        Me.btnNuevoRO.Size = New System.Drawing.Size(99, 63)
+        Me.btnNuevoRO.Size = New System.Drawing.Size(111, 79)
         Me.btnNuevoRO.TabIndex = 19
         Me.btnNuevoRO.UseVisualStyleBackColor = False
         '
@@ -306,10 +309,10 @@ Partial Class frmRolOpc
         Me.btnAtras.FlatAppearance.BorderSize = 4
         Me.btnAtras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAtras.Location = New System.Drawing.Point(29, 752)
-        Me.btnAtras.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAtras.Location = New System.Drawing.Point(33, 940)
+        Me.btnAtras.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnAtras.Name = "btnAtras"
-        Me.btnAtras.Size = New System.Drawing.Size(75, 74)
+        Me.btnAtras.Size = New System.Drawing.Size(84, 92)
         Me.btnAtras.TabIndex = 18
         Me.btnAtras.UseVisualStyleBackColor = False
         '
@@ -318,7 +321,7 @@ Partial Class frmRolOpc
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(612, 341)
+        Me.Label8.Location = New System.Drawing.Point(688, 426)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(123, 64)
         Me.Label8.TabIndex = 15
@@ -333,20 +336,20 @@ Partial Class frmRolOpc
         Me.btnAgregarRO.FlatAppearance.BorderSize = 4
         Me.btnAgregarRO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnAgregarRO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAgregarRO.Location = New System.Drawing.Point(617, 274)
-        Me.btnAgregarRO.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAgregarRO.Location = New System.Drawing.Point(694, 342)
+        Me.btnAgregarRO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnAgregarRO.Name = "btnAgregarRO"
-        Me.btnAgregarRO.Size = New System.Drawing.Size(99, 63)
+        Me.btnAgregarRO.Size = New System.Drawing.Size(111, 79)
         Me.btnAgregarRO.TabIndex = 14
         Me.btnAgregarRO.UseVisualStyleBackColor = False
         '
         'txbIDRO
         '
-        Me.txbIDRO.Location = New System.Drawing.Point(160, 79)
+        Me.txbIDRO.Location = New System.Drawing.Point(180, 99)
         Me.txbIDRO.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txbIDRO.Name = "txbIDRO"
         Me.txbIDRO.ReadOnly = True
-        Me.txbIDRO.Size = New System.Drawing.Size(541, 44)
+        Me.txbIDRO.Size = New System.Drawing.Size(608, 44)
         Me.txbIDRO.TabIndex = 7
         '
         'Label5
@@ -354,7 +357,7 @@ Partial Class frmRolOpc
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(879, 76)
+        Me.Label5.Location = New System.Drawing.Point(989, 95)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(106, 32)
         Me.Label5.TabIndex = 4
@@ -365,7 +368,7 @@ Partial Class frmRolOpc
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(68, 143)
+        Me.Label2.Location = New System.Drawing.Point(76, 179)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(58, 32)
         Me.Label2.TabIndex = 1
@@ -376,7 +379,7 @@ Partial Class frmRolOpc
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(68, 79)
+        Me.Label1.Location = New System.Drawing.Point(76, 99)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(42, 32)
         Me.Label1.TabIndex = 0
@@ -396,11 +399,12 @@ Partial Class frmRolOpc
         '
         'frmRolOpc
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(2168, 1098)
+        Me.ClientSize = New System.Drawing.Size(2439, 1266)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmRolOpc"
         Me.Text = "frmRolOpc"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

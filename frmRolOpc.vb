@@ -108,4 +108,10 @@ Public Class frmRolOpc
         Me.cbxRol.SelectedValue = dgvRolOpc.CurrentRow.Cells.Item(1).Value.ToString()
         Me.cbxOpc.SelectedValue = dgvRolOpc.CurrentRow.Cells.Item(2).Value.ToString()
     End Sub
+
+    Private Sub txbBuscarRO_TextChanged(sender As Object, e As EventArgs) Handles txbBuscarRO.TextChanged
+        Me.dgvRolOpc.DataSource = Me.RolopcViewTableAdapter.GetDataBy(txbBuscarRO.Text, txbBuscarRO.Text)
+
+
+    End Sub
 End Class

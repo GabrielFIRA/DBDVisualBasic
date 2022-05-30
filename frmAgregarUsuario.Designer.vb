@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmAgregarUsuario
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmAgregarUsuario
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAgregarUsuario))
@@ -148,10 +148,9 @@ Partial Class frmAgregarUsuario
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(51, 64)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(68, 79)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(27, 24)
+        Me.Label1.Size = New System.Drawing.Size(42, 32)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ID"
         '
@@ -160,10 +159,9 @@ Partial Class frmAgregarUsuario
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(51, 116)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(68, 143)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(175, 24)
+        Me.Label2.Size = New System.Drawing.Size(259, 32)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Nombre de Usuario"
         '
@@ -172,10 +170,9 @@ Partial Class frmAgregarUsuario
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(51, 168)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(68, 207)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(88, 24)
+        Me.Label3.Size = New System.Drawing.Size(129, 32)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Nombres"
         '
@@ -184,10 +181,9 @@ Partial Class frmAgregarUsuario
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(51, 216)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(68, 266)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(88, 24)
+        Me.Label4.Size = New System.Drawing.Size(133, 32)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Apellidos"
         '
@@ -196,10 +192,9 @@ Partial Class frmAgregarUsuario
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(659, 62)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(879, 76)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(57, 24)
+        Me.Label5.Size = New System.Drawing.Size(87, 32)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Email"
         '
@@ -208,69 +203,68 @@ Partial Class frmAgregarUsuario
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(659, 170)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(879, 209)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(106, 24)
+        Me.Label6.Size = New System.Drawing.Size(162, 32)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Contraseña"
         '
         'txbID
         '
-        Me.txbID.Location = New System.Drawing.Point(120, 64)
-        Me.txbID.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.txbID.Location = New System.Drawing.Point(160, 79)
+        Me.txbID.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.txbID.Name = "txbID"
         Me.txbID.ReadOnly = True
-        Me.txbID.Size = New System.Drawing.Size(407, 32)
+        Me.txbID.Size = New System.Drawing.Size(541, 44)
         Me.txbID.TabIndex = 7
         '
         'txbUserName
         '
-        Me.txbUserName.Location = New System.Drawing.Point(226, 111)
-        Me.txbUserName.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.txbUserName.Location = New System.Drawing.Point(301, 137)
+        Me.txbUserName.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.txbUserName.Name = "txbUserName"
-        Me.txbUserName.Size = New System.Drawing.Size(407, 32)
+        Me.txbUserName.Size = New System.Drawing.Size(541, 44)
         Me.txbUserName.TabIndex = 8
         '
         'txbNombres
         '
-        Me.txbNombres.Location = New System.Drawing.Point(140, 162)
-        Me.txbNombres.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.txbNombres.Location = New System.Drawing.Point(187, 199)
+        Me.txbNombres.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.txbNombres.Name = "txbNombres"
-        Me.txbNombres.Size = New System.Drawing.Size(407, 32)
+        Me.txbNombres.Size = New System.Drawing.Size(541, 44)
         Me.txbNombres.TabIndex = 9
         '
         'txbApellidos
         '
-        Me.txbApellidos.Location = New System.Drawing.Point(140, 211)
-        Me.txbApellidos.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.txbApellidos.Location = New System.Drawing.Point(187, 260)
+        Me.txbApellidos.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.txbApellidos.Name = "txbApellidos"
-        Me.txbApellidos.Size = New System.Drawing.Size(407, 32)
+        Me.txbApellidos.Size = New System.Drawing.Size(541, 44)
         Me.txbApellidos.TabIndex = 10
         '
         'txbEmail
         '
-        Me.txbEmail.Location = New System.Drawing.Point(719, 57)
-        Me.txbEmail.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.txbEmail.Location = New System.Drawing.Point(959, 70)
+        Me.txbEmail.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.txbEmail.Name = "txbEmail"
-        Me.txbEmail.Size = New System.Drawing.Size(407, 32)
+        Me.txbEmail.Size = New System.Drawing.Size(541, 44)
         Me.txbEmail.TabIndex = 11
         '
         'txbCEmail
         '
-        Me.txbCEmail.Location = New System.Drawing.Point(766, 111)
-        Me.txbCEmail.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.txbCEmail.Location = New System.Drawing.Point(1021, 137)
+        Me.txbCEmail.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.txbCEmail.Name = "txbCEmail"
-        Me.txbCEmail.Size = New System.Drawing.Size(407, 32)
+        Me.txbCEmail.Size = New System.Drawing.Size(541, 44)
         Me.txbCEmail.TabIndex = 12
         '
         'txbCContraseña
         '
-        Me.txbCContraseña.Location = New System.Drawing.Point(766, 209)
-        Me.txbCContraseña.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.txbCContraseña.Location = New System.Drawing.Point(1021, 257)
+        Me.txbCContraseña.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.txbCContraseña.Name = "txbCContraseña"
         Me.txbCContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txbCContraseña.Size = New System.Drawing.Size(407, 32)
+        Me.txbCContraseña.Size = New System.Drawing.Size(541, 44)
         Me.txbCContraseña.TabIndex = 13
         '
         'btnAgregar
@@ -282,9 +276,10 @@ Partial Class frmAgregarUsuario
         Me.btnAgregar.FlatAppearance.BorderSize = 4
         Me.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAgregar.Location = New System.Drawing.Point(120, 267)
+        Me.btnAgregar.Location = New System.Drawing.Point(160, 329)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(73, 51)
+        Me.btnAgregar.Size = New System.Drawing.Size(97, 63)
         Me.btnAgregar.TabIndex = 14
         Me.btnAgregar.UseVisualStyleBackColor = False
         '
@@ -293,10 +288,9 @@ Partial Class frmAgregarUsuario
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(116, 322)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(155, 396)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(83, 48)
+        Me.Label8.Size = New System.Drawing.Size(123, 64)
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "Agregar " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Usuario"
         '
@@ -304,30 +298,28 @@ Partial Class frmAgregarUsuario
         '
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(659, 209)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Location = New System.Drawing.Point(879, 257)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(102, 62)
+        Me.Label9.Size = New System.Drawing.Size(136, 76)
         Me.Label9.TabIndex = 16
         Me.Label9.Text = "Confirmar Contraseña"
         '
         'txbContraseña
         '
-        Me.txbContraseña.Location = New System.Drawing.Point(766, 162)
-        Me.txbContraseña.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.txbContraseña.Location = New System.Drawing.Point(1021, 199)
+        Me.txbContraseña.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.txbContraseña.Name = "txbContraseña"
         Me.txbContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txbContraseña.Size = New System.Drawing.Size(407, 32)
+        Me.txbContraseña.Size = New System.Drawing.Size(541, 44)
         Me.txbContraseña.TabIndex = 13
         '
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(659, 104)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(879, 128)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(102, 51)
+        Me.Label7.Size = New System.Drawing.Size(136, 63)
         Me.Label7.TabIndex = 17
         Me.Label7.Text = "Confirmar Email"
         '
@@ -340,9 +332,10 @@ Partial Class frmAgregarUsuario
         Me.btnAtras.FlatAppearance.BorderSize = 4
         Me.btnAtras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAtras.Location = New System.Drawing.Point(22, 611)
+        Me.btnAtras.Location = New System.Drawing.Point(29, 752)
+        Me.btnAtras.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAtras.Name = "btnAtras"
-        Me.btnAtras.Size = New System.Drawing.Size(56, 60)
+        Me.btnAtras.Size = New System.Drawing.Size(75, 74)
         Me.btnAtras.TabIndex = 18
         Me.btnAtras.UseVisualStyleBackColor = False
         '
@@ -355,9 +348,10 @@ Partial Class frmAgregarUsuario
         Me.btnNuevo.FlatAppearance.BorderSize = 4
         Me.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNuevo.Location = New System.Drawing.Point(32, 267)
+        Me.btnNuevo.Location = New System.Drawing.Point(43, 329)
+        Me.btnNuevo.Margin = New System.Windows.Forms.Padding(4)
         Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(73, 51)
+        Me.btnNuevo.Size = New System.Drawing.Size(97, 63)
         Me.btnNuevo.TabIndex = 19
         Me.btnNuevo.UseVisualStyleBackColor = False
         '
@@ -365,10 +359,9 @@ Partial Class frmAgregarUsuario
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Location = New System.Drawing.Point(33, 322)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Location = New System.Drawing.Point(44, 396)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(75, 26)
+        Me.Label10.Size = New System.Drawing.Size(112, 38)
         Me.Label10.TabIndex = 20
         Me.Label10.Text = "Nuevo"
         '
@@ -381,9 +374,10 @@ Partial Class frmAgregarUsuario
         Me.btnEditar.FlatAppearance.BorderSize = 4
         Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEditar.Location = New System.Drawing.Point(207, 267)
+        Me.btnEditar.Location = New System.Drawing.Point(276, 329)
+        Me.btnEditar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(73, 51)
+        Me.btnEditar.Size = New System.Drawing.Size(97, 63)
         Me.btnEditar.TabIndex = 36
         Me.btnEditar.UseVisualStyleBackColor = False
         '
@@ -396,9 +390,10 @@ Partial Class frmAgregarUsuario
         Me.btnEliminar.FlatAppearance.BorderSize = 4
         Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEliminar.Location = New System.Drawing.Point(293, 267)
+        Me.btnEliminar.Location = New System.Drawing.Point(391, 329)
+        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(73, 51)
+        Me.btnEliminar.Size = New System.Drawing.Size(97, 63)
         Me.btnEliminar.TabIndex = 37
         Me.btnEliminar.UseVisualStyleBackColor = False
         '
@@ -407,10 +402,9 @@ Partial Class frmAgregarUsuario
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(203, 324)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Location = New System.Drawing.Point(271, 399)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(74, 48)
+        Me.Label11.Size = New System.Drawing.Size(113, 64)
         Me.Label11.TabIndex = 38
         Me.Label11.Text = "Editar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Usuario"
         '
@@ -419,19 +413,18 @@ Partial Class frmAgregarUsuario
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(289, 324)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label12.Location = New System.Drawing.Point(385, 399)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(83, 48)
+        Me.Label12.Size = New System.Drawing.Size(126, 64)
         Me.Label12.TabIndex = 39
         Me.Label12.Text = "Eliminar " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Usuario"
         '
         'txbBuscar
         '
-        Me.txbBuscar.Location = New System.Drawing.Point(494, 338)
-        Me.txbBuscar.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txbBuscar.Location = New System.Drawing.Point(659, 416)
+        Me.txbBuscar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txbBuscar.Name = "txbBuscar"
-        Me.txbBuscar.Size = New System.Drawing.Size(649, 32)
+        Me.txbBuscar.Size = New System.Drawing.Size(864, 44)
         Me.txbBuscar.TabIndex = 40
         '
         'Label13
@@ -439,10 +432,9 @@ Partial Class frmAgregarUsuario
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(404, 341)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label13.Location = New System.Drawing.Point(539, 420)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(80, 26)
+        Me.Label13.Size = New System.Drawing.Size(120, 38)
         Me.Label13.TabIndex = 41
         Me.Label13.Text = "Buscar"
         '
@@ -451,10 +443,10 @@ Partial Class frmAgregarUsuario
         Me.cbxRol.DataSource = Me.RolBindingSource
         Me.cbxRol.DisplayMember = "nombreRol"
         Me.cbxRol.FormattingEnabled = True
-        Me.cbxRol.Location = New System.Drawing.Point(766, 267)
-        Me.cbxRol.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.cbxRol.Location = New System.Drawing.Point(1021, 329)
+        Me.cbxRol.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cbxRol.Name = "cbxRol"
-        Me.cbxRol.Size = New System.Drawing.Size(407, 34)
+        Me.cbxRol.Size = New System.Drawing.Size(541, 45)
         Me.cbxRol.TabIndex = 43
         Me.cbxRol.ValueMember = "ID_Rol"
         '
@@ -463,10 +455,9 @@ Partial Class frmAgregarUsuario
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(715, 270)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label14.Location = New System.Drawing.Point(953, 332)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(38, 24)
+        Me.Label14.Size = New System.Drawing.Size(58, 32)
         Me.Label14.TabIndex = 44
         Me.Label14.Text = "Rol"
         '
@@ -476,12 +467,12 @@ Partial Class frmAgregarUsuario
         Me.dvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dvUsuario.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDUsuarioDataGridViewTextBoxColumn, Me.UsernameDataGridViewTextBoxColumn, Me.NombresDataGridViewTextBoxColumn, Me.ApellidosDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.IDRolDataGridViewTextBoxColumn, Me.NombreRolDataGridViewTextBoxColumn, Me.NombreOrgDataGridViewTextBoxColumn})
         Me.dvUsuario.DataSource = Me.UserRolOrgnViewBindingSource
-        Me.dvUsuario.Location = New System.Drawing.Point(385, 399)
-        Me.dvUsuario.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.dvUsuario.Location = New System.Drawing.Point(513, 491)
+        Me.dvUsuario.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dvUsuario.Name = "dvUsuario"
         Me.dvUsuario.RowHeadersWidth = 51
         Me.dvUsuario.RowTemplate.Height = 24
-        Me.dvUsuario.Size = New System.Drawing.Size(777, 263)
+        Me.dvUsuario.Size = New System.Drawing.Size(1036, 324)
         Me.dvUsuario.TabIndex = 45
         '
         'IDUsuarioDataGridViewTextBoxColumn
@@ -584,23 +575,23 @@ Partial Class frmAgregarUsuario
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(42, 21)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.GroupBox1.Location = New System.Drawing.Point(56, 26)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 1, 3, 1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 1, 2, 1)
-        Me.GroupBox1.Size = New System.Drawing.Size(1267, 686)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 1, 3, 1)
+        Me.GroupBox1.Size = New System.Drawing.Size(1689, 844)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Usuario"
         '
         'frmAgregarUsuario
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(1350, 729)
+        Me.ClientSize = New System.Drawing.Size(1800, 897)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmAgregarUsuario"
         Me.Text = "frmAgregarUsuario"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
