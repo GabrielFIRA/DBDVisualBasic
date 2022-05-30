@@ -146,4 +146,10 @@ Public Class EAsistencias
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles Me.Closed
         BiomessES.Close()
     End Sub
+
+    Private Sub btnReportes_Click(sender As Object, e As EventArgs) Handles btnReportes.Click
+        Dim frm = New RptAsistencia(dgbAsistencias.CurrentRow.Cells.Item(1).Value.ToString())
+        frm.Show()
+        Me.Dispose()
+    End Sub
 End Class

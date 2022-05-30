@@ -21,21 +21,22 @@ Public Class EHorarios
     End Sub
 
     Private Sub limpiarCampos()
-        Me.cbEmpleado.SelectedIndex = -1
-        Me.cbTipoHora.SelectedIndex = -1
+        Me.txbID.Text = ""
+        Me.cbEmpleado.SelectedItem = -1
+        Me.cbTipoHora.SelectedItem = -1
     End Sub
 
-    Private Sub horas()
-        If Me.cbTipoHora.Text.Equals("Normal") Then
-            hora = 0
-        ElseIf Me.cbTipoHora.Text.Equals("Extra") Then
-            hora = 1
-        ElseIf Me.cbTipoHora.Text.Equals("Almuerzo") Then
-            hora = 2
-        ElseIf Me.cbTipoHora.Text.Equals("Suplementaria") Then
-            hora = 3
+    Public Function horas(tipo As String) As Integer
+        If tipo.Equals("Normal") Then
+            horas = 0
+        ElseIf tipo.Equals("Extra") Then
+            horas = 1
+        ElseIf tipo.Equals("Almuerzo") Then
+            horas = 2
+        ElseIf tipo.Equals("Suplementaria") Then
+            horas = 3
         End If
-    End Sub
+    End Function
 
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
         limpiarCampos()
@@ -43,14 +44,17 @@ Public Class EHorarios
 
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
         Try
-            horas()
             If Me.cbEmpleado.SelectedValue < 0 Then
                 MessageBox.Show("Debe seleccionar un empleado", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ElseIf Me.cbTipoHora.SelectedValue < 0 Then
                 MessageBox.Show("Debe seleccionar un tipo de hora", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
                 Dim tblHorarios As New biomessDataSet1TableAdapters.HorariosTableAdapter
-                tblHorarios.InsertQuery(Me.cbEmpleado.SelectedValue, Me.tpInicio.Value.ToShortTimeString, Me.tpFinal.Value.ToShortTimeString, hora, 1)
+                Dim HoraInicio As String = Me.tpInicio.Value
+                HoraInicio = "" + HoraInicio.Chars(11) + HoraInicio.Chars(12) + HoraInicio.Chars(13) + HoraInicio.Chars(14) + HoraInicio.Chars(15) + HoraInicio.Chars(16) + HoraInicio.Chars(17) + HoraInicio.Chars(18)
+                Dim HoraFinal As String = Me.tpFinal.Value
+                HoraFinal = "" + HoraFinal.Chars(11) + HoraFinal.Chars(12) + HoraFinal.Chars(13) + HoraFinal.Chars(14) + HoraFinal.Chars(15) + HoraFinal.Chars(16) + HoraFinal.Chars(17) + HoraFinal.Chars(18)
+                tblHorarios.InsertQuery(Me.cbEmpleado.SelectedValue, HoraInicio, HoraFinal, horas(Me.cbTipoHora.SelectedItem.Text), 1)
                 MessageBox.Show("El registro se ha guardado correctamente", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.HorariosTableAdapter.Fill(Me.BiomessDataSet1.Horarios)
                 limpiarCampos()
@@ -93,7 +97,7 @@ Public Class EHorarios
 
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
 
 
         Dim _connection As Global.System.Data.SqlClient.SqlConnection
@@ -124,11 +128,9 @@ Public Class EHorarios
         End Try
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
         Dim _connection As Global.System.Data.SqlClient.SqlConnection
         _connection = New Global.System.Data.SqlClient.SqlConnection
-
-        horas()
         Dim ID_Hora As Integer = dgbHorarios.CurrentRow.Cells.Item(0).Value
 
         Try

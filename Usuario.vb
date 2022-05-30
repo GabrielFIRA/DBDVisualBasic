@@ -34,6 +34,12 @@
 
 
 
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs)
+        'Dim win = New Buscar()
+        'win.Show()
+        'Me.Dispose()
+    End Sub
+
 
 
     Private Sub btnRol_Click(sender As Object, e As EventArgs) Handles btnRol.Click
@@ -44,18 +50,6 @@
 
     Private Sub btnOpc_Click(sender As Object, e As EventArgs) Handles btnOpc.Click
         Dim win = New frmOpcion()
-        win.Show()
-        Me.Dispose()
-    End Sub
-
-    Private Sub btnRolOpc_Click(sender As Object, e As EventArgs) Handles btnRolOpc.Click
-        Dim win = New frmRolOpc()
-        win.Show()
-        Me.Dispose()
-    End Sub
-
-    Private Sub btnReportes_Click(sender As Object, e As EventArgs) Handles btnReportes.Click
-        Dim win = New frmRptRol()
         win.Show()
         Me.Dispose()
     End Sub

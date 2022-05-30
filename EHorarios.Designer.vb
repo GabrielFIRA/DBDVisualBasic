@@ -33,7 +33,7 @@ Partial Class EHorarios
         Me.TipoHoraDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.HorariosViewBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BiomessDataSet11 = New Biomess_0._1.biomessDataSet1()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.txbBuscar = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.cbTipoHora = New System.Windows.Forms.ComboBox()
@@ -44,8 +44,8 @@ Partial Class EHorarios
         Me.cbEmpleado = New System.Windows.Forms.ComboBox()
         Me.EmpleadoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BiomessDataSet1 = New Biomess_0._1.biomessDataSet1()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -55,6 +55,8 @@ Partial Class EHorarios
         Me.HorariosTableAdapter = New Biomess_0._1.biomessDataSet1TableAdapters.HorariosTableAdapter()
         Me.EmpleadoTableAdapter = New Biomess_0._1.biomessDataSet1TableAdapters.EmpleadoTableAdapter()
         Me.HorariosViewTableAdapter = New Biomess_0._1.biomessDataSet1TableAdapters.horariosViewTableAdapter()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txbID = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgbHorarios, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HorariosViewBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,7 +71,7 @@ Partial Class EHorarios
         '
         Me.GroupBox2.BackgroundImage = CType(resources.GetObject("GroupBox2.BackgroundImage"), System.Drawing.Image)
         Me.GroupBox2.Controls.Add(Me.dgbHorarios)
-        Me.GroupBox2.Controls.Add(Me.TextBox7)
+        Me.GroupBox2.Controls.Add(Me.txbBuscar)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ControlLight
@@ -87,10 +89,10 @@ Partial Class EHorarios
         Me.dgbHorarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgbHorarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDHorariosDataGridViewTextBoxColumn, Me.NombreCompletoDataGridViewTextBoxColumn, Me.HoraEntradaDataGridViewTextBoxColumn, Me.HoraSalidaDataGridViewTextBoxColumn, Me.TipoHoraDataGridViewTextBoxColumn})
         Me.dgbHorarios.DataSource = Me.HorariosViewBindingSource
-        Me.dgbHorarios.Location = New System.Drawing.Point(6, 25)
+        Me.dgbHorarios.Location = New System.Drawing.Point(6, 62)
         Me.dgbHorarios.Name = "dgbHorarios"
         Me.dgbHorarios.RowHeadersWidth = 50
-        Me.dgbHorarios.Size = New System.Drawing.Size(1314, 358)
+        Me.dgbHorarios.Size = New System.Drawing.Size(1314, 321)
         Me.dgbHorarios.TabIndex = 50
         '
         'IDHorariosDataGridViewTextBoxColumn
@@ -138,13 +140,13 @@ Partial Class EHorarios
         Me.BiomessDataSet11.DataSetName = "biomessDataSet1"
         Me.BiomessDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'TextBox7
+        'txbBuscar
         '
-        Me.TextBox7.BackColor = System.Drawing.Color.Gray
-        Me.TextBox7.Location = New System.Drawing.Point(398, 26)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(513, 30)
-        Me.TextBox7.TabIndex = 49
+        Me.txbBuscar.BackColor = System.Drawing.Color.Gray
+        Me.txbBuscar.Location = New System.Drawing.Point(398, 26)
+        Me.txbBuscar.Name = "txbBuscar"
+        Me.txbBuscar.Size = New System.Drawing.Size(513, 30)
+        Me.txbBuscar.TabIndex = 49
         '
         'Label1
         '
@@ -163,14 +165,16 @@ Partial Class EHorarios
         'GroupBox1
         '
         Me.GroupBox1.BackgroundImage = CType(resources.GetObject("GroupBox1.BackgroundImage"), System.Drawing.Image)
+        Me.GroupBox1.Controls.Add(Me.txbID)
+        Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.cbTipoHora)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.tpFinal)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.tpInicio)
         Me.GroupBox1.Controls.Add(Me.cbEmpleado)
-        Me.GroupBox1.Controls.Add(Me.Button4)
-        Me.GroupBox1.Controls.Add(Me.Button3)
+        Me.GroupBox1.Controls.Add(Me.btnEliminar)
+        Me.GroupBox1.Controls.Add(Me.btnEditar)
         Me.GroupBox1.Controls.Add(Me.btnAgregar)
         Me.GroupBox1.Controls.Add(Me.btnNuevo)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -188,7 +192,7 @@ Partial Class EHorarios
         '
         Me.cbTipoHora.FormattingEnabled = True
         Me.cbTipoHora.Items.AddRange(New Object() {"Normal", "Extra", "Almuerzo", "Suplementaria"})
-        Me.cbTipoHora.Location = New System.Drawing.Point(307, 149)
+        Me.cbTipoHora.Location = New System.Drawing.Point(318, 131)
         Me.cbTipoHora.Name = "cbTipoHora"
         Me.cbTipoHora.Size = New System.Drawing.Size(311, 33)
         Me.cbTipoHora.TabIndex = 63
@@ -200,7 +204,7 @@ Partial Class EHorarios
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
         Me.Label4.ForeColor = System.Drawing.SystemColors.Control
         Me.Label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Label4.Location = New System.Drawing.Point(200, 152)
+        Me.Label4.Location = New System.Drawing.Point(211, 134)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(101, 25)
         Me.Label4.TabIndex = 62
@@ -242,7 +246,7 @@ Partial Class EHorarios
         Me.cbEmpleado.DataSource = Me.EmpleadoBindingSource
         Me.cbEmpleado.DisplayMember = "nombreCompleto"
         Me.cbEmpleado.FormattingEnabled = True
-        Me.cbEmpleado.Location = New System.Drawing.Point(307, 83)
+        Me.cbEmpleado.Location = New System.Drawing.Point(318, 83)
         Me.cbEmpleado.Name = "cbEmpleado"
         Me.cbEmpleado.Size = New System.Drawing.Size(311, 33)
         Me.cbEmpleado.TabIndex = 57
@@ -258,25 +262,25 @@ Partial Class EHorarios
         Me.BiomessDataSet1.DataSetName = "biomessDataSet1"
         Me.BiomessDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'Button4
+        'btnEliminar
         '
-        Me.Button4.BackColor = System.Drawing.Color.DarkSlateBlue
-        Me.Button4.Location = New System.Drawing.Point(1108, 212)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(101, 34)
-        Me.Button4.TabIndex = 52
-        Me.Button4.Text = "Eliminar"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnEliminar.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.btnEliminar.Location = New System.Drawing.Point(1108, 212)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(101, 34)
+        Me.btnEliminar.TabIndex = 52
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnEditar
         '
-        Me.Button3.BackColor = System.Drawing.Color.DarkSlateBlue
-        Me.Button3.Location = New System.Drawing.Point(1001, 212)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(101, 34)
-        Me.Button3.TabIndex = 51
-        Me.Button3.Text = "Editar"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnEditar.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.btnEditar.Location = New System.Drawing.Point(1001, 212)
+        Me.btnEditar.Name = "btnEditar"
+        Me.btnEditar.Size = New System.Drawing.Size(101, 34)
+        Me.btnEditar.TabIndex = 51
+        Me.btnEditar.Text = "Editar"
+        Me.btnEditar.UseVisualStyleBackColor = False
         '
         'btnAgregar
         '
@@ -305,7 +309,7 @@ Partial Class EHorarios
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
         Me.Label2.ForeColor = System.Drawing.SystemColors.Control
         Me.Label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Label2.Location = New System.Drawing.Point(195, 86)
+        Me.Label2.Location = New System.Drawing.Point(206, 86)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(106, 25)
         Me.Label2.TabIndex = 33
@@ -356,6 +360,27 @@ Partial Class EHorarios
         '
         Me.HorariosViewTableAdapter.ClearBeforeFill = True
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.Label5.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label5.Location = New System.Drawing.Point(612, 29)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(37, 25)
+        Me.Label5.TabIndex = 64
+        Me.Label5.Text = "ID:"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'txbID
+        '
+        Me.txbID.Location = New System.Drawing.Point(655, 26)
+        Me.txbID.Name = "txbID"
+        Me.txbID.Size = New System.Drawing.Size(100, 30)
+        Me.txbID.TabIndex = 65
+        '
         'EHorarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -383,13 +408,13 @@ Partial Class EHorarios
 
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents dgbHorarios As DataGridView
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents txbBuscar As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents tpInicio As DateTimePicker
     Friend WithEvents cbEmpleado As ComboBox
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnEliminar As Button
+    Friend WithEvents btnEditar As Button
     Friend WithEvents btnAgregar As Button
     Friend WithEvents btnNuevo As Button
     Friend WithEvents Label2 As Label
@@ -412,4 +437,6 @@ Partial Class EHorarios
     Friend WithEvents HoraEntradaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents HoraSalidaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents TipoHoraDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents txbID As TextBox
+    Friend WithEvents Label5 As Label
 End Class
