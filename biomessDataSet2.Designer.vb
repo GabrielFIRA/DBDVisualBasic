@@ -19547,19 +19547,12 @@ Namespace biomessDataSet2TableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(1) {}
+            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT ID_Asistencia, nombreCompleto, fecha, semana, horaEntrada, horaSalida, EoS"& _ 
                 " FROM dbo.asistenciasView"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT        ID_Asistencia, nombreCompleto, fecha, semana, horaEntrada, horaSali"& _ 
-                "da, EoS"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            asistenciasView"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (nombreCompleto = @nombre"& _ 
-                "Completo)"
-            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombreCompleto", Global.System.Data.SqlDbType.VarChar, 110, Global.System.Data.ParameterDirection.Input, 0, 0, "nombreCompleto", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -19581,40 +19574,6 @@ Namespace biomessDataSet2TableAdapters
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
         Public Overloads Overridable Function GetData() As biomessDataSet2.asistenciasViewDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As biomessDataSet2.asistenciasViewDataTable = New biomessDataSet2.asistenciasViewDataTable()
-            Me.Adapter.Fill(dataTable)
-            Return dataTable
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
-        Public Overloads Overridable Function FillByNombre(ByVal dataTable As biomessDataSet2.asistenciasViewDataTable, ByVal nombreCompleto As String) As Integer
-            Me.Adapter.SelectCommand = Me.CommandCollection(1)
-            If (nombreCompleto Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("nombreCompleto")
-            Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombreCompleto,String)
-            End If
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
-            End If
-            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
-            Return returnValue
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
-        Public Overloads Overridable Function GetDataByNombre(ByVal nombreCompleto As String) As biomessDataSet2.asistenciasViewDataTable
-            Me.Adapter.SelectCommand = Me.CommandCollection(1)
-            If (nombreCompleto Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("nombreCompleto")
-            Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombreCompleto,String)
-            End If
             Dim dataTable As biomessDataSet2.asistenciasViewDataTable = New biomessDataSet2.asistenciasViewDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable

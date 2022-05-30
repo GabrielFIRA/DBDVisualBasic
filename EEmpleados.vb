@@ -1,5 +1,8 @@
 ﻿Imports System.Data.SqlClient
 Public Class EEmpleados
+
+
+
     Private Sub EEmpleados_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'BiomessDataSet1.empleadoView' Puede moverla o quitarla según sea necesario.
         Me.EmpleadoViewTableAdapter.Fill(Me.BiomessDataSet1.empleadoView)
@@ -144,11 +147,5 @@ Public Class EEmpleados
             MsgBox("Error al eliminar el empleado: ", ex.Message())
             MsgBox("Error al eliminar el empleado: ", ex.StackTrace())
         End Try
-    End Sub
-
-    Private Sub btnReporte_Click(sender As Object, e As EventArgs) Handles btnReporte.Click
-        Dim win = New RptEmpleado()
-        Me.Dispose()
-        win.Show()
     End Sub
 End Class

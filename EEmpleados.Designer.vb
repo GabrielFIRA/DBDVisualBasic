@@ -31,18 +31,6 @@ Partial Class EEmpleados
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.dgbEmpleados = New System.Windows.Forms.DataGridView()
-        Me.IDEmpleadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreCompletoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaNacDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CedulaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.INSSDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CorreoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.numeroCel = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaIngresoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nombreCargo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nombreDepart = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PIN = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmpleadoViewBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BiomessDataSet1 = New Biomess_0._1.biomessDataSet1()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
@@ -81,9 +69,19 @@ Partial Class EEmpleados
         Me.EmpleadoBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.CargoTableAdapter = New Biomess_0._1.biomessDataSet1TableAdapters.CargoTableAdapter()
         Me.EmpleadoViewTableAdapter = New Biomess_0._1.biomessDataSet1TableAdapters.empleadoViewTableAdapter()
-        Me.btnReporte = New System.Windows.Forms.Button()
+        Me.dgbEmpleados = New System.Windows.Forms.DataGridView()
+        Me.IDEmpleadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreCompletoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaNacDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CedulaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.INSSDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CorreoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.numeroCel = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaIngresoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombreCargo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombreDepart = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PIN = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.dgbEmpleados, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmpleadoViewBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BiomessDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmpleadoBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,6 +91,7 @@ Partial Class EEmpleados
         CType(Me.BiomessDataSet1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmpleadoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmpleadoBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgbEmpleados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox2
@@ -109,140 +108,6 @@ Partial Class EEmpleados
         Me.GroupBox2.TabIndex = 53
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Empleados"
-        '
-        'dgbEmpleados
-        '
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.DimGray
-        Me.dgbEmpleados.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
-        Me.dgbEmpleados.AutoGenerateColumns = False
-        Me.dgbEmpleados.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.DimGray
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgbEmpleados.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
-        Me.dgbEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgbEmpleados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDEmpleadoDataGridViewTextBoxColumn, Me.NombreCompletoDataGridViewTextBoxColumn, Me.FechaNacDataGridViewTextBoxColumn, Me.CedulaDataGridViewTextBoxColumn, Me.INSSDataGridViewTextBoxColumn, Me.CorreoDataGridViewTextBoxColumn, Me.numeroCel, Me.FechaIngresoDataGridViewTextBoxColumn, Me.nombreCargo, Me.nombreDepart, Me.PIN})
-        Me.dgbEmpleados.DataSource = Me.EmpleadoViewBindingSource
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.DimGray
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgbEmpleados.DefaultCellStyle = DataGridViewCellStyle10
-        Me.dgbEmpleados.Location = New System.Drawing.Point(6, 62)
-        Me.dgbEmpleados.Name = "dgbEmpleados"
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.DimGray
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgbEmpleados.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
-        Me.dgbEmpleados.RowHeadersWidth = 50
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.DimGray
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.RoyalBlue
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White
-        Me.dgbEmpleados.RowsDefaultCellStyle = DataGridViewCellStyle12
-        Me.dgbEmpleados.Size = New System.Drawing.Size(1314, 325)
-        Me.dgbEmpleados.TabIndex = 50
-        '
-        'IDEmpleadoDataGridViewTextBoxColumn
-        '
-        Me.IDEmpleadoDataGridViewTextBoxColumn.DataPropertyName = "ID_Empleado"
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.DimGray
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.White
-        Me.IDEmpleadoDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle9
-        Me.IDEmpleadoDataGridViewTextBoxColumn.HeaderText = "ID"
-        Me.IDEmpleadoDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.IDEmpleadoDataGridViewTextBoxColumn.Name = "IDEmpleadoDataGridViewTextBoxColumn"
-        Me.IDEmpleadoDataGridViewTextBoxColumn.ReadOnly = True
-        Me.IDEmpleadoDataGridViewTextBoxColumn.Width = 40
-        '
-        'NombreCompletoDataGridViewTextBoxColumn
-        '
-        Me.NombreCompletoDataGridViewTextBoxColumn.DataPropertyName = "nombreCompleto"
-        Me.NombreCompletoDataGridViewTextBoxColumn.HeaderText = "Nombre Completo"
-        Me.NombreCompletoDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.NombreCompletoDataGridViewTextBoxColumn.Name = "NombreCompletoDataGridViewTextBoxColumn"
-        Me.NombreCompletoDataGridViewTextBoxColumn.Width = 180
-        '
-        'FechaNacDataGridViewTextBoxColumn
-        '
-        Me.FechaNacDataGridViewTextBoxColumn.DataPropertyName = "fechaNac"
-        Me.FechaNacDataGridViewTextBoxColumn.HeaderText = "Fecha Nacimiento"
-        Me.FechaNacDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.FechaNacDataGridViewTextBoxColumn.Name = "FechaNacDataGridViewTextBoxColumn"
-        Me.FechaNacDataGridViewTextBoxColumn.Width = 110
-        '
-        'CedulaDataGridViewTextBoxColumn
-        '
-        Me.CedulaDataGridViewTextBoxColumn.DataPropertyName = "cedula"
-        Me.CedulaDataGridViewTextBoxColumn.HeaderText = "Cédula"
-        Me.CedulaDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.CedulaDataGridViewTextBoxColumn.Name = "CedulaDataGridViewTextBoxColumn"
-        Me.CedulaDataGridViewTextBoxColumn.Width = 150
-        '
-        'INSSDataGridViewTextBoxColumn
-        '
-        Me.INSSDataGridViewTextBoxColumn.DataPropertyName = "INSS"
-        Me.INSSDataGridViewTextBoxColumn.HeaderText = "INSS"
-        Me.INSSDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.INSSDataGridViewTextBoxColumn.Name = "INSSDataGridViewTextBoxColumn"
-        Me.INSSDataGridViewTextBoxColumn.Width = 75
-        '
-        'CorreoDataGridViewTextBoxColumn
-        '
-        Me.CorreoDataGridViewTextBoxColumn.DataPropertyName = "correo"
-        Me.CorreoDataGridViewTextBoxColumn.HeaderText = "Correo electrónico"
-        Me.CorreoDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.CorreoDataGridViewTextBoxColumn.Name = "CorreoDataGridViewTextBoxColumn"
-        Me.CorreoDataGridViewTextBoxColumn.Width = 150
-        '
-        'numeroCel
-        '
-        Me.numeroCel.DataPropertyName = "numeroCel"
-        Me.numeroCel.HeaderText = "Celular"
-        Me.numeroCel.Name = "numeroCel"
-        '
-        'FechaIngresoDataGridViewTextBoxColumn
-        '
-        Me.FechaIngresoDataGridViewTextBoxColumn.DataPropertyName = "fechaIngreso"
-        Me.FechaIngresoDataGridViewTextBoxColumn.HeaderText = "Fecha Ingreso"
-        Me.FechaIngresoDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.FechaIngresoDataGridViewTextBoxColumn.Name = "FechaIngresoDataGridViewTextBoxColumn"
-        Me.FechaIngresoDataGridViewTextBoxColumn.Width = 115
-        '
-        'nombreCargo
-        '
-        Me.nombreCargo.DataPropertyName = "nombreCargo"
-        Me.nombreCargo.HeaderText = "Cargo"
-        Me.nombreCargo.MinimumWidth = 6
-        Me.nombreCargo.Name = "nombreCargo"
-        Me.nombreCargo.Width = 130
-        '
-        'nombreDepart
-        '
-        Me.nombreDepart.DataPropertyName = "nombreDepart"
-        Me.nombreDepart.HeaderText = "Departamento"
-        Me.nombreDepart.MinimumWidth = 6
-        Me.nombreDepart.Name = "nombreDepart"
-        Me.nombreDepart.Width = 140
-        '
-        'PIN
-        '
-        Me.PIN.DataPropertyName = "PIN"
-        Me.PIN.HeaderText = "PIN"
-        Me.PIN.Name = "PIN"
-        Me.PIN.Width = 80
         '
         'EmpleadoViewBindingSource
         '
@@ -611,17 +476,139 @@ Partial Class EEmpleados
         '
         Me.EmpleadoViewTableAdapter.ClearBeforeFill = True
         '
-        'btnReporte
+        'dgbEmpleados
         '
-        Me.btnReporte.BackColor = System.Drawing.Color.DarkSlateBlue
-        Me.btnReporte.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReporte.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnReporte.Location = New System.Drawing.Point(1231, 12)
-        Me.btnReporte.Name = "btnReporte"
-        Me.btnReporte.Size = New System.Drawing.Size(101, 34)
-        Me.btnReporte.TabIndex = 59
-        Me.btnReporte.Text = "Reporte"
-        Me.btnReporte.UseVisualStyleBackColor = False
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.DimGray
+        Me.dgbEmpleados.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        Me.dgbEmpleados.AutoGenerateColumns = False
+        Me.dgbEmpleados.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.DimGray
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgbEmpleados.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
+        Me.dgbEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgbEmpleados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDEmpleadoDataGridViewTextBoxColumn, Me.NombreCompletoDataGridViewTextBoxColumn, Me.FechaNacDataGridViewTextBoxColumn, Me.CedulaDataGridViewTextBoxColumn, Me.INSSDataGridViewTextBoxColumn, Me.CorreoDataGridViewTextBoxColumn, Me.numeroCel, Me.FechaIngresoDataGridViewTextBoxColumn, Me.nombreCargo, Me.nombreDepart, Me.PIN})
+        Me.dgbEmpleados.DataSource = Me.EmpleadoViewBindingSource
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.DimGray
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgbEmpleados.DefaultCellStyle = DataGridViewCellStyle10
+        Me.dgbEmpleados.Location = New System.Drawing.Point(6, 62)
+        Me.dgbEmpleados.Name = "dgbEmpleados"
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.DimGray
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgbEmpleados.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
+        Me.dgbEmpleados.RowHeadersWidth = 50
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.DimGray
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.RoyalBlue
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White
+        Me.dgbEmpleados.RowsDefaultCellStyle = DataGridViewCellStyle12
+        Me.dgbEmpleados.Size = New System.Drawing.Size(1314, 325)
+        Me.dgbEmpleados.TabIndex = 50
+        '
+        'IDEmpleadoDataGridViewTextBoxColumn
+        '
+        Me.IDEmpleadoDataGridViewTextBoxColumn.DataPropertyName = "ID_Empleado"
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.DimGray
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.White
+        Me.IDEmpleadoDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle9
+        Me.IDEmpleadoDataGridViewTextBoxColumn.HeaderText = "ID"
+        Me.IDEmpleadoDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.IDEmpleadoDataGridViewTextBoxColumn.Name = "IDEmpleadoDataGridViewTextBoxColumn"
+        Me.IDEmpleadoDataGridViewTextBoxColumn.ReadOnly = True
+        Me.IDEmpleadoDataGridViewTextBoxColumn.Width = 40
+        '
+        'NombreCompletoDataGridViewTextBoxColumn
+        '
+        Me.NombreCompletoDataGridViewTextBoxColumn.DataPropertyName = "nombreCompleto"
+        Me.NombreCompletoDataGridViewTextBoxColumn.HeaderText = "Nombre Completo"
+        Me.NombreCompletoDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.NombreCompletoDataGridViewTextBoxColumn.Name = "NombreCompletoDataGridViewTextBoxColumn"
+        Me.NombreCompletoDataGridViewTextBoxColumn.Width = 180
+        '
+        'FechaNacDataGridViewTextBoxColumn
+        '
+        Me.FechaNacDataGridViewTextBoxColumn.DataPropertyName = "fechaNac"
+        Me.FechaNacDataGridViewTextBoxColumn.HeaderText = "Fecha Nacimiento"
+        Me.FechaNacDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.FechaNacDataGridViewTextBoxColumn.Name = "FechaNacDataGridViewTextBoxColumn"
+        Me.FechaNacDataGridViewTextBoxColumn.Width = 110
+        '
+        'CedulaDataGridViewTextBoxColumn
+        '
+        Me.CedulaDataGridViewTextBoxColumn.DataPropertyName = "cedula"
+        Me.CedulaDataGridViewTextBoxColumn.HeaderText = "Cédula"
+        Me.CedulaDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.CedulaDataGridViewTextBoxColumn.Name = "CedulaDataGridViewTextBoxColumn"
+        Me.CedulaDataGridViewTextBoxColumn.Width = 150
+        '
+        'INSSDataGridViewTextBoxColumn
+        '
+        Me.INSSDataGridViewTextBoxColumn.DataPropertyName = "INSS"
+        Me.INSSDataGridViewTextBoxColumn.HeaderText = "INSS"
+        Me.INSSDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.INSSDataGridViewTextBoxColumn.Name = "INSSDataGridViewTextBoxColumn"
+        Me.INSSDataGridViewTextBoxColumn.Width = 75
+        '
+        'CorreoDataGridViewTextBoxColumn
+        '
+        Me.CorreoDataGridViewTextBoxColumn.DataPropertyName = "correo"
+        Me.CorreoDataGridViewTextBoxColumn.HeaderText = "Correo electrónico"
+        Me.CorreoDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.CorreoDataGridViewTextBoxColumn.Name = "CorreoDataGridViewTextBoxColumn"
+        Me.CorreoDataGridViewTextBoxColumn.Width = 150
+        '
+        'numeroCel
+        '
+        Me.numeroCel.DataPropertyName = "numeroCel"
+        Me.numeroCel.HeaderText = "Celular"
+        Me.numeroCel.Name = "numeroCel"
+        '
+        'FechaIngresoDataGridViewTextBoxColumn
+        '
+        Me.FechaIngresoDataGridViewTextBoxColumn.DataPropertyName = "fechaIngreso"
+        Me.FechaIngresoDataGridViewTextBoxColumn.HeaderText = "Fecha Ingreso"
+        Me.FechaIngresoDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.FechaIngresoDataGridViewTextBoxColumn.Name = "FechaIngresoDataGridViewTextBoxColumn"
+        Me.FechaIngresoDataGridViewTextBoxColumn.Width = 115
+        '
+        'nombreCargo
+        '
+        Me.nombreCargo.DataPropertyName = "nombreCargo"
+        Me.nombreCargo.HeaderText = "Cargo"
+        Me.nombreCargo.MinimumWidth = 6
+        Me.nombreCargo.Name = "nombreCargo"
+        Me.nombreCargo.Width = 130
+        '
+        'nombreDepart
+        '
+        Me.nombreDepart.DataPropertyName = "nombreDepart"
+        Me.nombreDepart.HeaderText = "Departamento"
+        Me.nombreDepart.MinimumWidth = 6
+        Me.nombreDepart.Name = "nombreDepart"
+        Me.nombreDepart.Width = 140
+        '
+        'PIN
+        '
+        Me.PIN.DataPropertyName = "PIN"
+        Me.PIN.HeaderText = "PIN"
+        Me.PIN.Name = "PIN"
+        Me.PIN.Width = 80
         '
         'EEmpleados
         '
@@ -629,7 +616,6 @@ Partial Class EEmpleados
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1350, 729)
-        Me.Controls.Add(Me.btnReporte)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button9)
@@ -638,7 +624,6 @@ Partial Class EEmpleados
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.dgbEmpleados, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmpleadoViewBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BiomessDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmpleadoBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -649,6 +634,7 @@ Partial Class EEmpleados
         CType(Me.BiomessDataSet1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmpleadoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmpleadoBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgbEmpleados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -704,5 +690,4 @@ Partial Class EEmpleados
     Friend WithEvents nombreCargo As DataGridViewTextBoxColumn
     Friend WithEvents nombreDepart As DataGridViewTextBoxColumn
     Friend WithEvents PIN As DataGridViewTextBoxColumn
-    Friend WithEvents btnReporte As Button
 End Class
